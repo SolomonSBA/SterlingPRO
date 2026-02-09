@@ -4,42 +4,55 @@ import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
-const PRODUCT_TITLES: Record<string, string> = {
-  'twig-secure': 'TWIG Secure',
-  'twig-secure-instant-pin': 'Twig Secure Instant PIN',
-  'twig-secure-atm-vas': 'TWIG Secure ATM VAS',
-  'atm-monit': 'ATM MONIT (Notif)',
-  'intellicam': 'IntelliCAM',
-  'twig-secure-i-card': 'Twig Secure Instant Card',
-  'card-mon': 'Card MON',
-  'twig-secure-pos-teller': 'Twig Secure POS Teller',
-  'biotranx': 'BIOTRANX – Biometric Cardless Payment',
+import TwigSecure from './products/TwigSecure';
+import TwigSecureInstantPin from './products/TwigSecureInstantPin';
+import TwigSecureAtmVas from './products/TwigSecureAtmVas';
+import TwigSecureIcard from './products/TwigSecureIcard';
+import TwigSecurePosTeller from './products/TwigSecurePosTeller';
+import AtmMonit from './products/AtmMonit';
+import Biotranx from './products/Biotranx';
+import CardMon from './products/CardMon';
+import IntelliCam from './products/IntelliCam';
+import NotFound from './NotFound';
+
+const PRODUCT_COMPONENTS: Record<string, React.ComponentType> = {
+  'twig-secure': TwigSecure,
+  'twig-secure-instant-pin': TwigSecureInstantPin,
+  'twig-secure-atm-vas': TwigSecureAtmVas,
+  'atm-monit': AtmMonit,
+  'intellicam': IntelliCam,
+  'twig-secure-i-card': TwigSecureIcard,
+  'card-mon': CardMon,
+  'twig-secure-pos-teller': TwigSecurePosTeller,
+  'biotranx': Biotranx,
 };
 
 const ProductPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const title = (slug && PRODUCT_TITLES[slug]) || slug || 'Product';
+  const ProductComponent = slug ? PRODUCT_COMPONENTS[slug] : null;
 
+  if(!ProductComponent) {
+    return (
+      <div className="bg-white min-h-screen">
+        <Navbar />
+        <main className="pt-24 pb-20">
+          <NotFound/>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
   return (
-    <div className="min-h-screen bg-white">
+    <div className="bg-white min-h-screen">
       <Navbar />
       <main className="pt-24 pb-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">{title}</h1>
-            <p className="text-gray-600 leading-relaxed mb-8">
-              SterlingPRO Business Applications provides secure, innovative payment technologies for financial institutions and fintech. This product page is a placeholder for the full content from the original site.
-            </p>
-            <Link
-              to="/contact"
-              className="inline-flex items-center px-6 py-3 bg-[#D80369] text-white font-medium rounded-lg hover:bg-[#b8025a] transition-colors"
-            >
-              Get in touch
-            </Link>
+          <ProductComponent/>
           </motion.div>
         </div>
       </main>
