@@ -14,7 +14,6 @@ import shieldDone from "../../assets/Shield-Done.png";
 import technology from "../../assets/technology.png";
 
 const TwigSecure = () => {
-  // Animation variants
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
