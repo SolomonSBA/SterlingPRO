@@ -1,6 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import atm from "../../assets/atmmm-2.png";
+import cyberSecurity from "../../assets/cyber-security.png";
+import idCard from "../../assets/id-card.png";
+import moneyTransfer from "../../assets/money-transfer.png";
+import routeIcon from "../../assets/route.png";
+import customerReview from "../../assets/customer-review.png"; 
+import nodesImg from "../../assets/nodesImg.png";
+import headphones from "../../assets/headphones-1.png";
+import discount from "../../assets/discount-1.png";
+import shieldDone from "../../assets/Shield-Done.png";
+import technology from "../../assets/technology.png";
 
 const TwigSecure = () => {
   // Animation variants
@@ -32,58 +43,64 @@ const TwigSecure = () => {
 
   const features = [
     {
-      icon: 'https://sterlingprong.com/wp-content/uploads/2023/01/customer-review.png',
+     image: customerReview,
       title: 'Delightful customer experiences'
     },
     {
-      icon: 'https://sterlingprong.com/wp-content/uploads/2023/01/money-transfer.png',
+     image: moneyTransfer,
       title: 'Faster in-branch transactions'
     },
     {
-      icon: 'https://sterlingprong.com/wp-content/uploads/2023/02/route.png',
+     image: routeIcon,
       title: 'Transaction tracking, monitoring and history'
     },
     {
-      icon: 'https://sterlingprong.com/wp-content/uploads/2023/02/id-card.png',
+     image: idCard,
       title: 'Real-time customer identification and authentication'
     },
     {
-      icon: 'https://sterlingprong.com/wp-content/uploads/2023/01/atmmm-2.png',
+     image: atm,
       title: 'POS Terminal or PIN management'
     },
     {
-      icon: 'https://sterlingprong.com/wp-content/uploads/2023/01/cyber-security.png',
+      image: cyberSecurity,
       title: 'Payment Card Industry Data Security Standard (PCI DSS) compliant'
     }
   ];
 
   const benefits = [
     {
-      icon: 'https://sterlingprong.com/wp-content/uploads/2023/01/nodes.png',
-      title: 'FLEXIBLE',
-      description: 'Allows for seamless integration to support your existing system and infrastructure and can be customised to meet your organisation\'s needs.'
+      image: nodesImg,
+      title: "FLEXIBLE",
+      description:
+        "Allows for seamless integration to support your existing system and infrastructure and can be customised to meet your organisation's needs.",
     },
     {
-      icon: 'https://sterlingprong.com/wp-content/uploads/2023/01/discount-1.png',
-      title: 'EFFICIENT',
-      description: 'Our product reduces the cost and complexity involved in building high-quality products and delivering delightful user experiences.'
+      image: discount,
+      title: "EFFICIENT",
+      description:
+        "Our product reduces the cost and complexity involved in building high-quality products and delivering delightful user experiences.",
     },
     {
-      icon: 'https://sterlingprong.com/wp-content/uploads/2023/01/Shield-Done.png',
-      title: 'SECURE & RELIABLE',
-      description: 'We deliver security where you need it and reliable infrastructure that enables innovation within the banking and payments ecosystem.'
+      image: shieldDone,
+      title: "SECURE & RELIABLE",
+      description:
+        "We deliver security where you need it and reliable infrastructure that enables innovation within the banking and payments ecosystem.",
     },
     {
-      icon: 'https://sterlingprong.com/wp-content/uploads/2023/01/headphones-1.png',
-      title: 'AVAILABLE CUSTOMER SUPPORT',
-      description: 'Our people are always available to talk to you to ensure that you integrate smoothly and build your products with minimal roadblocks.'
+      image: headphones,
+      title: "AVAILABLE CUSTOMER SUPPORT",
+      description:
+        "Our people are always available to talk to you to ensure that you integrate smoothly and build your products with minimal roadblocks.",
     },
     {
-      icon: 'https://sterlingprong.com/wp-content/uploads/2023/01/technology.png',
-      title: 'STATE-OF-THE-ART TECHNOLOGY',
-      description: 'We are constantly innovating and improving our product as well as releasing new features, ensuring that your company is equipped with the tools needed to build for the future.'
-    }
+      image: technology,
+      title: "STATE-OF-THE-ART TECHNOLOGY",
+      description:
+        "We are constantly innovating and improving our product as well as releasing new features, ensuring that your company is equipped with the tools needed to build for the future.",
+    },
   ];
+
 
   return (
     <div className="bg-white min-h-screen">
@@ -268,7 +285,7 @@ const TwigSecure = () => {
                 <img
                   src="https://sterlingprong.com/wp-content/uploads/2023/02/pos_20-jpg.webp"
                   alt="POS Teller"
-                  className="w-full h-full object-cover"
+                  className="w-30 h-30 object-cover"
                 />
               </div>
               <div className="p-8">
@@ -294,7 +311,7 @@ const TwigSecure = () => {
                 <img
                   src="https://sterlingprong.com/wp-content/uploads/2023/02/bio-jpg.webp"
                   alt="FASTRANX"
-                  className="w-full h-full object-cover"
+                  className="w-30 h-30 object-cover"
                 />
               </div>
               <div className="p-8">
@@ -392,7 +409,7 @@ const TwigSecure = () => {
                   <div className="flex-1">
                     <div className="mb-4">
                       <img 
-                        src={feature.icon} 
+                        src={feature.image} 
                         alt={feature.title}
                         className="w-12 h-12"
                       />
@@ -449,7 +466,7 @@ const TwigSecure = () => {
               >
                 <div className="mb-4">
                   <img 
-                    src={benefit.icon} 
+                    src={benefit.image} 
                     alt={benefit.title}
                     className="w-12 h-12"
                   />
