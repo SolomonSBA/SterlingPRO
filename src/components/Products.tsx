@@ -1,146 +1,568 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown, Shield, Building2, Fingerprint } from 'lucide-react';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
+import atm from "../../assets/atmmm-2.png";
+import cyberSecurity from "../../assets/cyber-security.png";
+import idCard from "../../assets/id-card.png";
+import moneyTransfer from "../../assets/money-transfer.png";
+import routeIcon from "../../assets/route.png";
+import customerReview from "../../assets/customer-review.png"; 
+import nodesImg from "../../assets/nodesImg.png";
+import headphones from "../../assets/headphones-1.png";
+import discount from "../../assets/discount-1.png";
+import shieldDone from "../../assets/Shield-Done.png";
+import technology from "../../assets/technology.png";
 
-interface ProductItem {
-  name: string;
-  items: string[];
-}
-
-interface ProductCategory {
-  title: string;
-  icon: React.ReactNode;
-  products: ProductItem[];
-}
-
-const Products: React.FC = () => {
-  const [expandedProducts, setExpandedProducts] = useState<Record<string, boolean>>({});
-
-  const toggleProduct = (key: string) => {
-    setExpandedProducts(prev => ({
-      ...prev,
-      [key]: !prev[key]
-    }));
+const TwigSecure = () => {
+  const fadeInUp = {
+    initial: { opacity: 0, y: 60 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6, ease: "easeOut" }
   };
 
-  const categories: ProductCategory[] = [
+  const fadeInLeft = {
+    initial: { opacity: 0, x: -60 },
+    animate: { opacity: 1, x: 0 },
+    transition: { duration: 0.6, ease: "easeOut" }
+  };
+
+  const fadeInRight = {
+    initial: { opacity: 0, x: 60 },
+    animate: { opacity: 1, x: 0 },
+    transition: { duration: 0.6, ease: "easeOut" }
+  };
+
+  const staggerContainer = {
+    animate: {
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const features = [
     {
-      title: 'Self-Service Banking Solution',
-      icon: <Shield className="w-6 h-6" />,
-      products: [
-        { name: 'TWIG Secure', items: ['Instant PIN', 'ATM', 'IVR', 'Mobile', 'USSD', 'POS'] },
-        { name: 'TWIG Secure ATM VAS', items: ['ATM Transfer', 'ATM Instant Loan', 'ATM Instant Acct Opening'] },
-        { name: 'ATM MONIT (Notif)', items: ['IntelliCAM', 'Journal & Footage Archiver', 'ATM Monitoring'] },
-      ],
+     image: customerReview,
+      title: 'Delightful customer experiences'
     },
     {
-      title: 'In Branch Banking Solution',
-      icon: <Building2 className="w-6 h-6" />,
-      products: [
-        { name: 'Twig Secure Instant PIN', items: ['POS'] },
-        { name: 'Twig Secure POS Teller', items: [] },
-        { name: 'Twig Secure Instant Card', items: [] },
-        { name: 'Card MON', items: [] },
-      ],
+     image: moneyTransfer,
+      title: 'Faster in-branch transactions'
     },
     {
-      title: 'BIOTRANX',
-      icon: <Fingerprint className="w-6 h-6" />,
-      products: [
-        { name: 'Biometric Cardless Payment', items: ['ATM', 'POS', 'Mobile', 'Online'] },
-      ],
+     image: routeIcon,
+      title: 'Transaction tracking, monitoring and history'
+    },
+    {
+     image: idCard,
+      title: 'Real-time customer identification and authentication'
+    },
+    {
+     image: atm,
+      title: 'POS Terminal or PIN management'
+    },
+    {
+      image: cyberSecurity,
+      title: 'Payment Card Industry Data Security Standard (PCI DSS) compliant'
+    }
+  ];
+
+  const benefits = [
+    {
+      image: nodesImg,
+      title: "FLEXIBLE",
+      description:
+        "Allows for seamless integration to support your existing system and infrastructure and can be customised to meet your organisation's needs.",
+    },
+    {
+      image: discount,
+      title: "EFFICIENT",
+      description:
+        "Our product reduces the cost and complexity involved in building high-quality products and delivering delightful user experiences.",
+    },
+    {
+      image: shieldDone,
+      title: "SECURE & RELIABLE",
+      description:
+        "We deliver security where you need it and reliable infrastructure that enables innovation within the banking and payments ecosystem.",
+    },
+    {
+      image: headphones,
+      title: "AVAILABLE CUSTOMER SUPPORT",
+      description:
+        "Our people are always available to talk to you to ensure that you integrate smoothly and build your products with minimal roadblocks.",
+    },
+    {
+      image: technology,
+      title: "STATE-OF-THE-ART TECHNOLOGY",
+      description:
+        "We are constantly innovating and improving our product as well as releasing new features, ensuring that your company is equipped with the tools needed to build for the future.",
     },
   ];
 
+
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <span className="text-sm font-semibold text-[#D80369] uppercase tracking-wider">
-            Our Products
-          </span>
-          <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-gray-900 max-w-4xl mx-auto leading-tight">
-            With our payment products, we support financial institutions and fintech with innovative payment solutions that improve service delivery and provide great customer experience.
-          </h2>
-        </motion.div>
+    <div className="bg-white min-h-screen">
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        
+        * {
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+      `}</style>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {categories.map((category, catIndex) => (
-            <motion.div
-              key={category.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: catIndex * 0.1 }}
-              className="bg-gray-50 rounded-2xl p-6 hover:shadow-xl transition-shadow"
+      {/* Hero Section */}
+      <section className="relative bg-white overflow-hidden">
+        {/* Background mesh pattern */}
+        <div className="absolute inset-0 opacity-30">
+          <img 
+            src="https://sterlingprong.com/wp-content/uploads/2023/01/bg-mesh.svg" 
+            alt="Background"
+            className="absolute w-full h-full object-cover"
+          />
+        </div>
+
+        <div className="z-10 relative mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 max-w-7xl">
+          <div className="items-center gap-12 grid lg:grid-cols-2">
+            {/* Left Content */}
+            <motion.div 
+              className="space-y-6"
+              initial="initial"
+              animate="animate"
+              variants={staggerContainer}
             >
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#D80369] to-pink-400 flex items-center justify-center text-white">
-                  {category.icon}
-                </div>
-                <h3 className="text-lg font-bold text-gray-900">{category.title}</h3>
+              <motion.h1 
+                className="font-extrabold text-gray-900 text-5xl lg:text-6xl xl:text-7xl leading-tight"
+                variants={fadeInUp}
+              >
+                TWIG SECURE
+              </motion.h1>
+              
+              <motion.h2 
+                className="font-bold text-gray-700 text-3xl lg:text-4xl"
+                variants={fadeInUp}
+              >
+                Seamless In-branch transactions
+              </motion.h2>
+              
+              <motion.p 
+                className="max-w-xl text-gray-600 text-lg lg:text-xl leading-relaxed"
+                variants={fadeInUp}
+              >
+                Enable your customers to perform in-branch transactions using payment cards or biometric verification.
+              </motion.p>
+              
+              <motion.div variants={fadeInUp}>
+                <motion.a
+                  href="#contact"
+                  className="inline-flex items-center gap-2 bg-[#D80369] hover:bg-[#b00258] shadow-lg hover:shadow-xl px-8 py-4 rounded-lg font-semibold text-white text-lg transition-all"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Get Started
+                  <ArrowRight className="w-5 h-5" />
+                </motion.a>
+              </motion.div>
+            </motion.div>
+
+            {/* Right Image */}
+            <motion.div 
+              className="relative"
+              initial="initial"
+              animate="animate"
+              variants={fadeInRight}
+            >
+              <motion.img
+                src="https://sterlingprong.com/wp-content/uploads/2023/02/Rectangle-3-_1_-Edited.webp"
+                alt="Twig Secure Dashboard"
+                className="shadow-2xl rounded-2xl w-full"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+              />
+              
+              {/* Floating images */}
+              <motion.img
+                src="https://sterlingprong.com/wp-content/uploads/2023/02/Group-22-2-Edited-1.png"
+                alt="Feature 1"
+                className="-bottom-8 -left-8 absolute shadow-xl rounded-xl w-32 lg:w-48"
+                animate={{ 
+                  y: [0, -10, 0],
+                }}
+                transition={{ 
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              />
+              
+              <motion.img
+                src="https://sterlingprong.com/wp-content/uploads/2023/02/Group-21-1-Edited.png"
+                alt="Feature 2"
+                className="-top-8 -right-8 absolute shadow-xl rounded-xl w-32 lg:w-48"
+                animate={{ 
+                  y: [0, 10, 0],
+                }}
+                transition={{ 
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.5
+                }}
+              />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Convenient & Secure Section */}
+      <section className="bg-white py-20 lg:py-32">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="items-center gap-16 grid lg:grid-cols-2">
+            {/* Image Side */}
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeInLeft}
+            >
+              <img
+                src="https://sterlingprong.com/wp-content/uploads/2023/02/Group-49-1-e1676245917851.png"
+                alt="Convenient Banking"
+                className="mx-auto w-full max-w-md"
+              />
+            </motion.div>
+
+            {/* Content Side */}
+            <motion.div 
+              className="space-y-6"
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={fadeInRight}
+            >
+              <h2 className="font-bold text-gray-900 text-4xl lg:text-5xl leading-tight">
+                Convenient & Secure Customer Experience
+              </h2>
+              
+              <p className="text-gray-600 text-lg leading-relaxed">
+                TWIG SECURE offers a convenient and secure way to carry out transactions in-branch. Your customers can perform transactions like withdrawals, cash deposits, transfers and more using their cards and PIN on a POS device or via biometric verification, over-the-counter.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Flexible Products Section */}
+      <section className="bg-gray-50 py-20 lg:py-32">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <motion.div 
+            className="mb-16 text-center"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className="mb-4 font-bold text-gray-900 text-4xl lg:text-5xl">
+              Flexible - Pick what works best for your business
+            </h2>
+            <p className="mx-auto max-w-3xl text-gray-600 text-xl">
+              Get the entire package or pick from our sub-products based on your needs.
+            </p>
+          </motion.div>
+
+          <div className="gap-8 grid md:grid-cols-2">
+            {/* POS Teller Card */}
+            <motion.div
+              className="bg-white shadow-lg hover:shadow-2xl rounded-2xl overflow-hidden transition-shadow"
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={fadeInLeft}
+              whileHover={{ y: -8 }}
+            >
+              <div className="flex justify-center items-center bg-gradient-to-br from-pink-50 to-purple-50 aspect-video">
+                <img
+                  src="https://sterlingprong.com/wp-content/uploads/2023/02/pos_20-jpg.webp"
+                  alt="POS Teller"
+                  className="w-30 h-30 object-cover"
+                />
               </div>
-
-              <div className="space-y-3">
-                {category.products.map((product) => {
-                  const productKey = `${category.title}-${product.name}`;
-                  const isExpanded = expandedProducts[productKey];
-                  const hasItems = product.items.length > 0;
-
-                  return (
-                    <div key={product.name} className="border-b border-gray-200 pb-3 last:border-0">
-                      <button
-                        onClick={() => hasItems && toggleProduct(productKey)}
-                        className={`w-full flex items-center justify-between text-left ${
-                          hasItems ? 'cursor-pointer hover:text-[#D80369]' : 'cursor-default'
-                        } transition-colors`}
-                      >
-                        <span className="text-sm font-medium text-gray-700 hover:text-[#D80369]">
-                          {product.name}
-                        </span>
-                        {hasItems && (
-                          <ChevronDown
-                            className={`w-4 h-4 text-gray-400 transition-transform ${
-                              isExpanded ? 'rotate-180' : ''
-                            }`}
-                          />
-                        )}
-                      </button>
-
-                      <AnimatePresence>
-                        {isExpanded && hasItems && (
-                          <motion.ul
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: 'auto', opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.2 }}
-                            className="mt-2 ml-4 space-y-1 overflow-hidden"
-                          >
-                            {product.items.map((item) => (
-                              <li key={item}>
-                                <button className="text-xs text-gray-500 hover:text-[#D80369] transition-colors">
-                                  {item}
-                                </button>
-                              </li>
-                            ))}
-                          </motion.ul>
-                        )}
-                      </AnimatePresence>
-                    </div>
-                  );
-                })}
+              <div className="p-8">
+                <h3 className="mb-4 font-bold text-gray-900 text-2xl">
+                  POS Teller In-Branch
+                </h3>
+                <p className="mb-6 text-gray-600 leading-relaxed">
+                  POS Teller solution enables banks to provide fast and secure cash deposits, withdrawals, transfers, as well as other teller and customer service transactions at the branch to its customers, using payment cards and PINs.
+                </p>
               </div>
             </motion.div>
-          ))}
+
+            {/* FASTRANX Card */}
+            <motion.div
+              className="bg-white shadow-lg hover:shadow-2xl rounded-2xl overflow-hidden transition-shadow"
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={fadeInRight}
+              whileHover={{ y: -8 }}
+            >
+              <div className="flex justify-center items-center bg-gradient-to-br from-blue-50 to-indigo-50 aspect-video">
+                <img
+                  src="https://sterlingprong.com/wp-content/uploads/2023/02/bio-jpg.webp"
+                  alt="FASTRANX"
+                  className="w-30 h-30 object-cover"
+                />
+              </div>
+              <div className="p-8">
+                <h3 className="mb-4 font-bold text-gray-900 text-2xl">
+                  FASTRANX
+                </h3>
+                <p className="mb-6 text-gray-600 leading-relaxed">
+                  Enable your customers to use biometric verification to make secure and fast cash deposits, withdrawals, and other over-the-counter transaction at the branch without the need for slips and lengthy forms.
+                </p>
+              </div>
+            </motion.div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Delight Section */}
+      <section className="bg-white py-20 lg:py-32">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="items-center gap-16 grid lg:grid-cols-2">
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={fadeInLeft}
+            >
+              <img
+                src="https://sterlingprong.com/wp-content/uploads/2023/01/img-1-1-1.png"
+                alt="Customer Delight"
+                className="mx-auto w-full max-w-lg"
+              />
+            </motion.div>
+
+            <motion.div 
+              className="space-y-6"
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={fadeInRight}
+            >
+              <h2 className="font-bold text-gray-900 text-4xl lg:text-5xl leading-tight">
+                Delight your customers with convenient and secure in-branch experiences
+              </h2>
+              
+              <p className="text-gray-600 text-lg leading-relaxed">
+                The solution is designed with your customer in mind and ensures effective, quick, and secure service when customers carry out transactions in your branch.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why TWIG SECURE Section */}
+      <section className="bg-gray-50 py-20 lg:py-32">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <motion.div 
+            className="mb-16 text-center"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className="mb-6 font-bold text-gray-900 text-4xl lg:text-5xl">
+              Why TWIG SECURE?
+            </h2>
+            <p className="mx-auto max-w-4xl text-gray-600 text-xl leading-relaxed">
+              In-branch transactions are usually not so convenient for customers, with long wait times and various slips/forms. TWIG Secure helps financial institutions provide better customer experiences in-branch.
+            </p>
+            <p className="mt-8 font-bold text-gray-900 text-2xl">
+              TWIG SECURE offers:
+            </p>
+          </motion.div>
+
+          <motion.div 
+            className="gap-8 grid md:grid-cols-2 lg:grid-cols-3"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+          >
+            {features.map((feature, index) => (
+              <motion.div
+                key={index}
+                className="bg-white shadow-md hover:shadow-xl p-8 rounded-xl transition-all"
+                variants={fadeInUp}
+                whileHover={{ y: -8, scale: 1.02 }}
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0">
+                    <img 
+                      src="https://sterlingprong.com/wp-content/uploads/2023/01/Union.svg" 
+                      alt="Check"
+                      className="w-6 h-6"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <div className="mb-4">
+                      <img 
+                        src={feature.image} 
+                        alt={feature.title}
+                        className="w-12 h-12"
+                      />
+                    </div>
+                    <h3 className="font-semibold text-gray-900 text-base leading-tight">
+                      {feature.title}
+                    </h3>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Flexible Product Built Section */}
+      <section className="bg-white py-20 lg:py-32">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <div className="items-center gap-16 grid lg:grid-cols-2 mb-20">
+              <div>
+                <h2 className="mb-6 font-bold text-gray-900 text-4xl lg:text-5xl leading-tight">
+                  Flexible product, built with your business needs in mind
+                </h2>
+              </div>
+              <div>
+                <img
+                  src="https://sterlingprong.com/wp-content/uploads/2023/01/img-1-3-1.png"
+                  alt="Flexible Product"
+                  className="ml-auto w-full max-w-md"
+                />
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div 
+            className="gap-6 grid md:grid-cols-2 lg:grid-cols-5"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+          >
+            {benefits.map((benefit, index) => (
+              <motion.div
+                key={index}
+                className="bg-gray-50 hover:bg-white hover:shadow-lg p-6 rounded-xl transition-all"
+                variants={fadeInUp}
+                whileHover={{ y: -8 }}
+              >
+                <div className="mb-4">
+                  <img 
+                    src={benefit.image} 
+                    alt={benefit.title}
+                    className="w-12 h-12"
+                  />
+                </div>
+                <h3 className="mb-3 font-bold text-[#D80369] text-sm uppercase tracking-wide">
+                  {benefit.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {benefit.description}
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Trusted By Section */}
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <motion.h3 
+            className="mb-12 font-bold text-gray-900 text-2xl text-center"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            TWIG SECURE is trusted by
+          </motion.h3>
+          <motion.div 
+            className="flex flex-wrap justify-center items-center gap-12 lg:gap-20"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+          >
+            <motion.img
+              src="https://sterlingprong.com/wp-content/uploads/2023/01/jaiz-bank-logo-05B7DAAFDD-seeklogo-1.png"
+              alt="Jaiz Bank"
+              className="opacity-70 hover:opacity-100 grayscale hover:grayscale-0 h-12 transition-all"
+              variants={fadeInUp}
+              whileHover={{ scale: 1.1 }}
+            />
+            <motion.img
+              src="https://sterlingprong.com/wp-content/uploads/2023/01/STATIC-IBCT-165.svg"
+              alt="Heritage Bank"
+              className="opacity-70 hover:opacity-100 grayscale hover:grayscale-0 h-12 transition-all"
+              variants={fadeInUp}
+              whileHover={{ scale: 1.1 }}
+            />
+            <motion.img
+              src="https://sterlingprong.com/wp-content/uploads/2023/02/Screenshot_7-jpg.webp"
+              alt="Providus Bank"
+              className="opacity-70 hover:opacity-100 grayscale hover:grayscale-0 h-12 transition-all"
+              variants={fadeInUp}
+              whileHover={{ scale: 1.1 }}
+            />
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="relative bg-[#D80369] py-20 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <img 
+            src="https://sterlingprong.com/wp-content/uploads/2023/01/bg-mesh.svg" 
+            alt="Background"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
+        <div className="z-10 relative mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+          >
+            <h2 className="mb-6 font-bold text-white text-4xl lg:text-5xl">
+              Ready to collaborate?
+            </h2>
+            <p className="mb-10 text-pink-100 text-xl lg:text-2xl">
+              Start delivering exceptional customer experiences.
+            </p>
+            <motion.a
+              href="#contact"
+              className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 shadow-xl px-10 py-4 rounded-lg font-bold text-[#D80369] text-lg transition-all"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Start now
+              <ArrowRight className="w-5 h-5" />
+            </motion.a>
+          </motion.div>
+        </div>
+      </section>
+    </div>
   );
 };
 
-export default Products;
+export default TwigSecure;

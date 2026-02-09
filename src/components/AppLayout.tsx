@@ -9,9 +9,9 @@ import Footer from './Footer';
 
 const AppLayout: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="bg-white min-h-screen">
       <Navbar />
-      <main>
+      <main className='overflow-hidden'>
         <Hero />
         <Partners />
         <WhatWeDo />

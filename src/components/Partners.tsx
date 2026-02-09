@@ -1,66 +1,72 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-// Partner logos: use placeholder until you add real logo URLs (e.g. from sterlingprong.com or bank CDNs).
-const PARTNERS: { name: string; logoUrl?: string }[] = [
-  { name: 'Heritage Bank' },
-  { name: 'Wema Bank' },
-  { name: 'Zenith Bank' },
-  { name: 'FCMB' },
-  { name: 'UBA' },
-  { name: 'Skye Bank' },
-  { name: 'Union Bank' },
-  { name: 'First Bank' },
-  { name: 'Sterling Bank' },
-  { name: 'Taj Bank' },
-  { name: 'Jaiz Bank' },
-  { name: 'GTBank' },
-  { name: 'UBA' },
-  { name: 'IBTC' },
-  { name: 'Polaris Bank' },
-].map((p) => ({ ...p, logoUrl: p.logoUrl ?? '/placeholder.svg' }));
+import HeritageBank from '../assets/heritage-bank-logo.png';
+import WemaBank from '../assets/wema-logo.jpg';
+import ZenithBank from '../assets/Zenith-Bank-logo.png';
+import FCMB from '../assets/FCMB-logo.png';
+import UBA from '../assets/Uba-bank-logo.webp';
+import SkyeBank from '../assets/skye-bank-logo.webp';
+import UnionBank from '../assets/union-bank.png';
+import FirstBank from '../assets/first-bank-logo.png';
+import SterlingBank from '../assets/Sterling-Bank-logo.png';
+import TajBank from '../assets/Taj-bank-logo.png';
+import JaizBank from '../assets/jaiz-logo.jpg';
+import GTBank from '../assets/GTBank-logo.png';
+import IBTC from '../assets/Stanbic-logo.webp';
+import PolarisBank from '../assets/Polaris-bank-logo.png';
+
+const PARTNERS: { name: string; logoUrl: string }[] = [
+  { name: 'Heritage Bank', logoUrl: HeritageBank },
+  { name: 'Wema Bank', logoUrl: WemaBank },
+  { name: 'Zenith Bank', logoUrl: ZenithBank },
+  { name: 'FCMB', logoUrl: FCMB },
+  { name: 'UBA', logoUrl: UBA },
+  { name: 'Skye Bank', logoUrl: SkyeBank },
+  { name: 'Union Bank', logoUrl: UnionBank },
+  { name: 'First Bank', logoUrl: FirstBank },
+  { name: 'Sterling Bank', logoUrl: SterlingBank },
+  { name: 'Taj Bank', logoUrl: TajBank },
+  { name: 'Jaiz Bank', logoUrl: JaizBank },
+  { name: 'GTBank', logoUrl: GTBank },
+  { name: 'UBA', logoUrl: UBA },
+  { name: 'IBTC', logoUrl: IBTC },
+  { name: 'Polaris Bank', logoUrl: PolarisBank },
+];
 
 const Partners: React.FC = () => {
   return (
-    <section className="py-16 bg-white overflow-hidden" aria-label="Our Partners">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.h3
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-sm font-semibold text-gray-500 uppercase tracking-wider text-center mb-10"
+    <div className="bg-gray-50 py-12 md:py-16 lg:py-20 w-full overflow-hidden">
+      <h2 className="mb-8 md:mb-12 px-4 font-bold text-gray-800 text-2xl sm:text-3xl md:text-4xl text-center">
+        Our Partners
+      </h2>
+      <div className="relative flex overflow-hidden">
+        <motion.div
+          className="flex gap-8 md:gap-12 lg:gap-16"
+          animate={{
+            x: ['0%', '-50%'],
+          }}
+          transition={{
+            duration: 30,
+            repeat: Infinity,
+            ease: 'linear',
+          }}
         >
-          Our Partners
-        </motion.h3>
-
-        <div className="relative">
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
-
-          <div className="flex overflow-hidden">
-            <motion.div
-              animate={{ x: [0, -1920] }}
-              transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
-              className="flex items-center gap-12 pr-12"
+          {[...PARTNERS, ...PARTNERS].map((partner, index) => (
+            <div
+              key={index}
+              className="flex flex-shrink-0 justify-center items-center bg-white shadow-sm hover:shadow-md p-3 sm:p-4 rounded-lg w-24 sm:w-32 md:w-40 lg:w-48 h-16 sm:h-20 md:h-24 lg:h-28 transition-shadow"
             >
-              {[...PARTNERS, ...PARTNERS].map((partner, index) => (
-                <div
-                  key={`${partner.name}-${index}`}
-                  className="flex-shrink-0 h-12 flex items-center justify-center grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition-all"
-                >
-                  <img
-                    src={partner.logoUrl}
-                    alt={partner.name}
-                    className="h-10 w-auto max-w-[120px] object-contain"
-                    loading="lazy"
-                  />
-                </div>
-              ))}
-            </motion.div>
-          </div>
-        </div>
+              <img
+                src={partner.logoUrl}
+                alt={partner.name}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+          ))}
+        </motion.div>
       </div>
-    </section>
+    </div>
   );
 };
 
