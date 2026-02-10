@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import deliverImage from "../assets/HomePage.jpg";
 
 const WhatWeDo: React.FC = () => {
   const sampleImage = "https://d64gsuwffb70l.cloudfront.net/697f7ac71d12f67dac85b673_1769962439912_e94160a3.png";
-  const deliverImage = "https://d64gsuwffb70l.cloudfront.net/697f7ac71d12f67dac85b673_1769962422986_8ce4080a.jpg";
+
   const teamImage = "https://d64gsuwffb70l.cloudfront.net/697f7ac71d12f67dac85b673_1769962384368_2c3170ef.png";
 
   return (

@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Target, Eye, TrendingUp, Users, Lightbulb, Award } from 'lucide-react';
+import whoWeAres from "../assets/HomePage.jpg";
+
 
 const AboutPage: React.FC = () => {
   const teamImage = "https://d64gsuwffb70l.cloudfront.net/697f7ac71d12f67dac85b673_1769962384368_2c3170ef.png";
@@ -101,7 +103,7 @@ const AboutPage: React.FC = () => {
               >
                 <div className="absolute -inset-4 bg-gradient-to-br from-[#D80369]/10 to-transparent rounded-3xl"></div>
                 <img
-                  src="https://d64gsuwffb70l.cloudfront.net/697f7ac71d12f67dac85b673_1769962422986_8ce4080a.jpg"
+                  src={whoWeAres}
                   alt="Who we are"
                   className="relative rounded-2xl shadow-xl w-full"
                 />

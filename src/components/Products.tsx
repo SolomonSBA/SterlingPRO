@@ -1,17 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import atm from "../../assets/atmmm-2.png";
-import cyberSecurity from "../../assets/cyber-security.png";
-import idCard from "../../assets/id-card.png";
-import moneyTransfer from "../../assets/money-transfer.png";
-import routeIcon from "../../assets/route.png";
-import customerReview from "../../assets/customer-review.png"; 
-import nodesImg from "../../assets/nodesImg.png";
-import headphones from "../../assets/headphones-1.png";
-import discount from "../../assets/discount-1.png";
-import shieldDone from "../../assets/Shield-Done.png";
-import technology from "../../assets/technology.png";
+import atm from "../assets/atmmm-2.png";
+import cyberSecurity from "../assets/cyber-security.png";
+import idCard from "../assets/id-card.png";
+import moneyTransfer from "../assets/money-transfer.png";
+import routeIcon from "../assets/route.png";
+import customerReview from "../assets/customer-review.png"; 
+import nodesImg from "../assets/nodesImg.png";
+import headphones from "../assets/headphones-1.png";
+import discount from "../assets/discount-1.png";
+import shieldDone from "../assets/Shield-Done.png";
+import technology from "../assets/technology.png";
 
 const TwigSecure = () => {
   const fadeInUp = {
