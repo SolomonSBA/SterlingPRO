@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import deliverImage from "../assets/HomePage.jpg";
+import teamImage from "../assets/teamImage.webp";
+import sampleImage from "../assets/sampleImage.png";
 
 const WhatWeDo: React.FC = () => {
-  const sampleImage = "https://d64gsuwffb70l.cloudfront.net/697f7ac71d12f67dac85b673_1769962439912_e94160a3.png";
-
-  const teamImage = "https://d64gsuwffb70l.cloudfront.net/697f7ac71d12f67dac85b673_1769962384368_2c3170ef.png";
+  
 
   return (
     <section className="py-20 bg-gray-50" id="learnmore">
@@ -94,7 +94,7 @@ const WhatWeDo: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Our how</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Our How</h3>
             <p className="text-gray-600 leading-relaxed mb-6">
               With unlimited industry knowledge we study and understand gaps that exist within the payment eco system and emerging future needs of financial institutions, and fintech, and in turn we build novel payment technologies that enable seamless and safe transactions for their customers across the globe.
             </p>

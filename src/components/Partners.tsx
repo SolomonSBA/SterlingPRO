@@ -55,12 +55,12 @@ const Partners: React.FC = () => {
           {[...PARTNERS, ...PARTNERS].map((partner, index) => (
             <div
               key={index}
-              className="flex flex-shrink-0 justify-center items-center bg-white shadow-sm hover:shadow-md p-3 sm:p-4 rounded-lg w-24 sm:w-32 md:w-40 lg:w-48 h-16 sm:h-20 md:h-24 lg:h-28 transition-shadow"
+              className="flex flex-shrink-0 justify-center items-center h-12 sm:h-14 md:h-16"
             >
               <img
                 src={partner.logoUrl}
                 alt={partner.name}
-                className="max-w-full max-h-full object-contain"
+                className="h-full w-auto max-w-[140px] object-contain object-center"
               />
             </div>
           ))}

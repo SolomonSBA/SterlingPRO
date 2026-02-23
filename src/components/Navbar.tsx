@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
         { name: 'ATM Instant Loan', slug: 'twig-secure-atm-vas' },
         { name: 'ATM Instant Acct Opening', slug: 'twig-secure-atm-vas' },
       ]},
-      { name: 'ATM MONIT (Notif)', slug: 'atm-monit', items: [
+      { name: 'ATM MONIT (Notify)', slug: 'atm-monit', items: [
         { name: 'IntelliCAM', slug: 'intellicam' },
         { name: 'Journal & Footage Archiver', slug: 'atm-monit' },
         { name: 'ATM Monitoring', slug: 'atm-monit' },

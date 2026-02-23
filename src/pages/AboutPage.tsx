@@ -6,9 +6,11 @@ import Footer from '@/components/Footer';
 import { Target, Eye, TrendingUp, Users, Lightbulb, Award } from 'lucide-react';
 import whoWeAres from "../assets/HomePage.jpg";
 
+import teamImage from "../assets/teamImage.webp";
+
 
 const AboutPage: React.FC = () => {
-  const teamImage = "https://d64gsuwffb70l.cloudfront.net/697f7ac71d12f67dac85b673_1769962384368_2c3170ef.png";
+  
   const teamMembers = [
     { name: 'John Doe', role: 'Chief Executive Officer', image: 'https://d64gsuwffb70l.cloudfront.net/697f7ac71d12f67dac85b673_1769962402937_0a994ecb.png' },
     { name: 'Jane Smith', role: 'Chief Technology Officer', image: 'https://d64gsuwffb70l.cloudfront.net/697f7ac71d12f67dac85b673_1769962408805_0fcc1a40.png' },
