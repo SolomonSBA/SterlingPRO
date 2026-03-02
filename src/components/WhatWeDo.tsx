@@ -21,7 +21,7 @@ const WhatWeDo: React.FC = () => {
             className="relative"
           >
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-br from-[#D80369]/10 to-transparent rounded-3xl"></div>
+              <div className="absolute -inset-4 bg-gradient-to-br from-[#E91E8C]/10 to-transparent rounded-3xl"></div>
               <img
                 src={sampleImage}
                 alt="Payment technology"
@@ -36,18 +36,18 @@ const WhatWeDo: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <span className="text-sm font-semibold text-[#D80369] uppercase tracking-wider">
+            <span className="text-sm font-semibold text-[#E91E8C] uppercase tracking-wider">
               What We Do
             </span>
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
               Tailored payment technologies that boost your business.
             </h2>
             <p className="mt-6 text-gray-600 leading-relaxed">
-              SterlingPRO Business Applications provides secure, innovative and market relevant EFT/payment technologies that drive high performance, reduce cost, deliver great customer experience and increase profitability.
+              We design and run the infrastructure behind your channels secure, PCI-aligned, and built to drive performance and profitability without the usual cost and complexity.
             </p>
             <Link
               to="/contact"
-              className="mt-8 inline-flex items-center px-6 py-3 bg-[#D80369] text-white font-medium rounded-lg hover:bg-[#b8025a] transition-colors shadow-lg shadow-[#D80369]/25"
+              className="mt-8 inline-flex items-center px-6 py-3 bg-[#E91E8C] text-white font-medium rounded-lg hover:bg-[#C41A78] transition-colors shadow-lg shadow-[#E91E8C]/25"
             >
               Get in touch
             </Link>
@@ -100,7 +100,7 @@ const WhatWeDo: React.FC = () => {
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center px-6 py-3 bg-[#D80369] text-white font-medium rounded-lg hover:bg-[#b8025a] transition-colors shadow-lg shadow-[#D80369]/25"
+              className="inline-flex items-center px-6 py-3 bg-[#E91E8C] text-white font-medium rounded-lg hover:bg-[#C41A78] transition-colors shadow-lg shadow-[#E91E8C]/25"
             >
               Get in touch
             </Link>

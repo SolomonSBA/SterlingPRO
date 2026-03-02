@@ -61,12 +61,12 @@ const Navbar: React.FC = () => {
       { name: 'Twig Secure Instant Card', slug: 'twig-secure-i-card', items: [] },
       { name: 'Card MON', slug: 'card-mon', items: [] },
     ],
-    'BIOTRANX': [
-      { name: 'Biometric Cardless Payment', slug: 'biotranx', items: [
+    'Biometric Payments': [
+      { name: 'Biometric Payments', slug: 'biotranx', items: [
         { name: 'ATM', slug: 'biotranx' },
         { name: 'POS', slug: 'biotranx' },
         { name: 'Mobile', slug: 'biotranx' },
-        { name: 'Online', slug: 'biotranx' },
+        { name: 'Biomonie', slug: 'biotranx' },
       ]},
     ],
   };
@@ -112,16 +112,16 @@ const Navbar: React.FC = () => {
           <div className="hidden xl:flex items-center space-x-6 2xl:space-x-8">
             <Link
               to="/"
-              className={`text-sm font-medium transition-colors hover:text-[#D80369] ${
-                location.pathname === '/' ? 'text-[#D80369]' : 'text-gray-700'
+              className={`text-sm font-medium transition-colors hover:text-[#E91E8C] ${
+                location.pathname === '/' ? 'text-[#E91E8C]' : 'text-gray-700'
               }`}
             >
               Home
             </Link>
             <Link
               to="/about"
-              className={`text-sm font-medium transition-colors hover:text-[#D80369] ${
-                location.pathname === '/about' ? 'text-[#D80369]' : 'text-gray-700'
+              className={`text-sm font-medium transition-colors hover:text-[#E91E8C] ${
+                location.pathname === '/about' ? 'text-[#E91E8C]' : 'text-gray-700'
               }`}
             >
               About Us
@@ -133,7 +133,7 @@ const Navbar: React.FC = () => {
               onMouseEnter={() => setServicesDropdownOpen(true)}
               onMouseLeave={() => setServicesDropdownOpen(false)}
             >
-              <button className="flex items-center font-medium text-gray-700 hover:text-[#D80369] text-sm whitespace-nowrap transition-colors">
+              <button className="flex items-center font-medium text-gray-700 hover:text-[#E91E8C] text-sm whitespace-nowrap transition-colors">
                 Applications & Services
                 <ChevronDown className={`ml-1 w-4 h-4 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
@@ -157,8 +157,8 @@ const Navbar: React.FC = () => {
                             className="flex justify-between items-center bg-gray-50 hover:bg-gray-100 px-3 py-2.5 rounded-lg w-full text-left transition-colors"
                             onClick={() => toggleDesktopCategory(category)}
                           >
-                            <span className="font-semibold text-[#D80369] text-sm">{category}</span>
-                            <ChevronRight className={`w-4 h-4 text-[#D80369] transition-transform ${desktopExpandedCategory === category ? 'rotate-90' : ''}`} />
+                            <span className="font-semibold text-[#E91E8C] text-sm">{category}</span>
+                            <ChevronRight className={`w-4 h-4 text-[#E91E8C] transition-transform ${desktopExpandedCategory === category ? 'rotate-90' : ''}`} />
                           </button>
 
                           {/* Category Items */}
@@ -197,7 +197,7 @@ const Navbar: React.FC = () => {
                                                   <li key={subItem.name}>
                                                     <Link
                                                       to={productSlug(subItem.slug)}
-                                                      className="block hover:bg-pink-50 px-3 py-2 rounded-lg text-gray-600 hover:text-[#D80369] text-xs transition-colors"
+                                                      className="block hover:bg-pink-50 px-3 py-2 rounded-lg text-gray-600 hover:text-[#E91E8C] text-xs transition-colors"
                                                       onClick={() => {
                                                         setServicesDropdownOpen(false);
                                                         setDesktopExpandedCategory(null);
@@ -215,7 +215,7 @@ const Navbar: React.FC = () => {
                                       ) : (
                                         <Link
                                           to={productSlug(item.slug)}
-                                          className="block hover:bg-gray-50 px-3 py-2 rounded-lg text-gray-700 hover:text-[#D80369] text-sm transition-colors"
+                                          className="block hover:bg-gray-50 px-3 py-2 rounded-lg text-gray-700 hover:text-[#E91E8C] text-sm transition-colors"
                                           onClick={() => {
                                             setServicesDropdownOpen(false);
                                             setDesktopExpandedCategory(null);
@@ -243,16 +243,16 @@ const Navbar: React.FC = () => {
           <div className="hidden xl:hidden lg:flex items-center space-x-4">
             <Link
               to="/"
-              className={`text-sm font-medium transition-colors hover:text-[#D80369] ${
-                location.pathname === '/' ? 'text-[#D80369]' : 'text-gray-700'
+              className={`text-sm font-medium transition-colors hover:text-[#E91E8C] ${
+                location.pathname === '/' ? 'text-[#E91E8C]' : 'text-gray-700'
               }`}
             >
               Home
             </Link>
             <Link
               to="/about"
-              className={`text-sm font-medium transition-colors hover:text-[#D80369] ${
-                location.pathname === '/about' ? 'text-[#D80369]' : 'text-gray-700'
+              className={`text-sm font-medium transition-colors hover:text-[#E91E8C] ${
+                location.pathname === '/about' ? 'text-[#E91E8C]' : 'text-gray-700'
               }`}
             >
               About
@@ -263,7 +263,7 @@ const Navbar: React.FC = () => {
           <div className="hidden lg:block">
             <Link
               to="/contact"
-              className="inline-flex items-center bg-[#D80369] hover:bg-[#b8025a] shadow-[#D80369]/25 shadow-lg px-4 xl:px-6 py-2 xl:py-2.5 rounded-lg font-medium text-white text-sm transition-colors"
+              className="inline-flex items-center bg-[#E91E8C] hover:bg-[#C41A78] shadow-[#E91E8C]/25 shadow-lg px-4 xl:px-6 py-2 xl:py-2.5 rounded-lg font-medium text-white text-sm transition-colors"
             >
               Contact Us
             </Link>
@@ -299,8 +299,8 @@ const Navbar: React.FC = () => {
                 to="/"
                 className={`block py-3 px-3 rounded-lg font-medium transition-colors ${
                   location.pathname === '/' 
-                    ? 'text-[#D80369] bg-pink-50' 
-                    : 'text-gray-700 hover:text-[#D80369] hover:bg-gray-50'
+                    ? 'text-[#E91E8C] bg-pink-50' 
+                    : 'text-gray-700 hover:text-[#E91E8C] hover:bg-gray-50'
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -312,8 +312,8 @@ const Navbar: React.FC = () => {
                 to="/about"
                 className={`block py-3 px-3 rounded-lg font-medium transition-colors ${
                   location.pathname === '/about' 
-                    ? 'text-[#D80369] bg-pink-50' 
-                    : 'text-gray-700 hover:text-[#D80369] hover:bg-gray-50'
+                    ? 'text-[#E91E8C] bg-pink-50' 
+                    : 'text-gray-700 hover:text-[#E91E8C] hover:bg-gray-50'
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -346,8 +346,8 @@ const Navbar: React.FC = () => {
                               className="flex justify-between items-center bg-gray-50 hover:bg-gray-100 px-3 py-2.5 rounded-lg w-full text-left transition-colors"
                               onClick={() => toggleCategory(category)}
                             >
-                              <span className="font-semibold text-[#D80369] text-sm">{category}</span>
-                              <ChevronRight className={`w-4 h-4 text-[#D80369] transition-transform ${expandedCategory === category ? 'rotate-90' : ''}`} />
+                              <span className="font-semibold text-[#E91E8C] text-sm">{category}</span>
+                              <ChevronRight className={`w-4 h-4 text-[#E91E8C] transition-transform ${expandedCategory === category ? 'rotate-90' : ''}`} />
                             </button>
 
                             {/* Category Items */}
@@ -386,7 +386,7 @@ const Navbar: React.FC = () => {
                                                     <li key={subItem.name}>
                                                       <Link
                                                         to={productSlug(subItem.slug)}
-                                                        className="block hover:bg-pink-50 px-3 py-2 rounded-lg text-gray-600 hover:text-[#D80369] text-xs transition-colors"
+                                                        className="block hover:bg-pink-50 px-3 py-2 rounded-lg text-gray-600 hover:text-[#E91E8C] text-xs transition-colors"
                                                         onClick={() => {
                                                           setMobileMenuOpen(false);
                                                           setServicesDropdownOpen(false);
@@ -405,7 +405,7 @@ const Navbar: React.FC = () => {
                                         ) : (
                                           <Link
                                             to={productSlug(item.slug)}
-                                            className="block hover:bg-gray-50 px-3 py-2 rounded-lg text-gray-700 hover:text-[#D80369] text-sm transition-colors"
+                                            className="block hover:bg-gray-50 px-3 py-2 rounded-lg text-gray-700 hover:text-[#E91E8C] text-sm transition-colors"
                                             onClick={() => {
                                               setMobileMenuOpen(false);
                                               setServicesDropdownOpen(false);
@@ -432,7 +432,7 @@ const Navbar: React.FC = () => {
               {/* Mobile Contact Button */}
               <Link
                 to="/contact"
-                className="block bg-[#D80369] hover:bg-[#b8025a] shadow-[#D80369]/25 shadow-lg mt-4 px-6 py-3 rounded-lg w-full font-medium text-white text-center transition-colors"
+                className="block bg-[#E91E8C] hover:bg-[#C41A78] shadow-[#E91E8C]/25 shadow-lg mt-4 px-6 py-3 rounded-lg w-full font-medium text-white text-center transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact Us

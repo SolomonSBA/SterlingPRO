@@ -63,6 +63,11 @@ export default {
           'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))'
+        },
+        // Vibrant magenta-toned pink for CTAs, icons, accents
+        brand: {
+          DEFAULT: '#E91E8C',
+          hover: '#C41A78',
         }
       },
       fontFamily: {

@@ -163,7 +163,7 @@ const IntelliCam: React.FC = () => {
             className="w-full md:text-left text-center"
           >
             <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl leading-tight">
-             Intelli<span className="text-[#D80369]">CAM</span>
+             Intelli<span className="text-[#E91E8C]">CAM</span>
             </h1>
 
             <h3 className="mb-4 font-bold text-grey text-xl">AI Powered ATM Surveillance Solution</h3>
@@ -176,7 +176,7 @@ const IntelliCam: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => navigate("/contact")}
-              className="bg-[#D80369] hover:bg-[#b8025a] shadow-lg px-7 md:px-8 py-3 rounded-lg font-semibold text-white text-sm transition-all"
+              className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-7 md:px-8 py-3 rounded-lg font-semibold text-white text-sm transition-all"
             >
               Get Started 
             </motion.button>
@@ -235,7 +235,7 @@ const IntelliCam: React.FC = () => {
                >
                  <h2 className="mb-4 font-bold text-xl md:text-3xl">
                   Why{" "}
-                   <span className="text-[#D80369]"> Intellicam? </span>
+                   <span className="text-[#E91E8C]"> Intellicam? </span>
                   
                  </h2>
                  <p className="text-grey text-sm">ATM machines are prime targets for criminals. Financial institutions need to stay ahead of them by providing maximum protection across all their ATMs.</p>
@@ -254,9 +254,9 @@ const IntelliCam: React.FC = () => {
                        }}
                        className="group relative flex gap-4 bg-white/70 hover:shadow-lg p-4 md:p-5 rounded-2xl transition-all hover:-translate-y-1"
                      >
-                       <span className="top-1/3 left-0 absolute bg-[#D80369] rounded-full w-1 h-8 -translate-y-1/2" />
+                       <span className="top-1/3 left-0 absolute bg-[#E91E8C] rounded-full w-1 h-8 -translate-y-1/2" />
      
-                       <div className="flex-shrink-0 justify-center items-center grid bg-[#D80369]/10 group-hover:bg-[#D80369]/20 rounded-xl w-11 h-11 transition-all">
+                       <div className="flex-shrink-0 justify-center items-center grid bg-[#E91E8C]/10 group-hover:bg-[#E91E8C]/20 rounded-xl w-11 h-11 transition-all">
                          <img
                            src={reason.image}
                            alt={reason.title}
@@ -289,7 +289,7 @@ const IntelliCam: React.FC = () => {
         >
           <h2 className="mb-3 font-bold text-lg md:text-4xl">
            Total {" "}
-            <span className="text-[#D80369]">ATM Protection</span>
+            <span className="text-[#E91E8C]">ATM Protection</span>
           </h2>
           
         </motion.div>
@@ -302,7 +302,7 @@ const IntelliCam: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white p-4 md:p-8 border-2 border-gray-100 hover:border-[#D80369]/20 rounded-2xl w-full transition-all"
+              className="bg-white p-4 md:p-8 border-2 border-gray-100 hover:border-[#E91E8C]/20 rounded-2xl w-full transition-all"
             >
               <div className="rounded-xl overflow-hidden">
                 <img
@@ -313,8 +313,8 @@ const IntelliCam: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-2 mb-3">
-                <div className="bg-[#D80369] rounded-full w-1.5 h-1.5" />
-                <span className="font-semibold text-[#D80369] text-xs uppercase tracking-wider">
+                <div className="bg-[#E91E8C] rounded-full w-1.5 h-1.5" />
+                <span className="font-semibold text-[#E91E8C] text-xs uppercase tracking-wider">
                   Feature
                 </span>
               </div>
@@ -357,7 +357,7 @@ const IntelliCam: React.FC = () => {
                   >
                     <h2 className="mb-4 md:mb-6 font-bold text-2xl md:text-3xl leading-tight">
                      Delight your customers with
-                      <span className="text-[#D80369]"> innovative, convenient</span> and <span className="text-[#D80369]"> secure</span> customer experiences.
+                      <span className="text-[#E91E8C]"> innovative, convenient</span> and <span className="text-[#E91E8C]"> secure</span> customer experiences.
                     </h2>
         
                     <p className="mx-auto md:mx-0 mb-6 max-w-xl text-gray-600 text-sm leading-relaxed">
@@ -377,7 +377,7 @@ const IntelliCam: React.FC = () => {
         >
           <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
             Flexible product, built with your{" "}
-            <span className="text-[#D80369]">business needs in mind</span>
+            <span className="text-[#E91E8C]">business needs in mind</span>
           </h2>
         </motion.div>
         <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full">
@@ -394,12 +394,12 @@ const IntelliCam: React.FC = () => {
               }}
               className={`
           rounded-2xl border border-gray-200 bg-white
-          p-6 md:p-8 transition-colors hover:border-[#D80369]/30
+          p-6 md:p-8 transition-colors hover:border-[#E91E8C]/30
           ${index === benefits.length - 1 ? "md:col-span-2" : ""}
         `}
             >
               <div className="mb-5">
-                <div className="flex justify-center items-center bg-[#D80369]/10 rounded-lg w-12 h-12">
+                <div className="flex justify-center items-center bg-[#E91E8C]/10 rounded-lg w-12 h-12">
                   <img
                     src={benefit.image}
                     alt={benefit.title}
@@ -438,7 +438,7 @@ const IntelliCam: React.FC = () => {
         {/* Left Side - Text */}
           <div className="flex-1 text-center md:text-center">
             <h2 className="font-bold text-gray-900 text-xl md:text-6xl">
-              <span className="text-[#D80369] text-left">Intellicam  </span> is 
+              <span className="text-[#E91E8C] text-left">Intellicam  </span> is 
               <br className="hidden md:block" />
              trusted by
             </h2>
@@ -448,14 +448,14 @@ const IntelliCam: React.FC = () => {
   <div className="flex-1 gap-4 grid grid-cols-2 w-full">
     {/* Banks */}
     <div className="relative bg-white shadow-sm hover:shadow-lg p-6 border border-gray-200 rounded-2xl text-center transition-all">
-      <div className="flex justify-center items-center bg-[#D80369]/10 mx-auto mb-3 rounded-xl w-12 h-12">
+      <div className="flex justify-center items-center bg-[#E91E8C]/10 mx-auto mb-3 rounded-xl w-12 h-12">
         <img src={bank} alt="Banks" className="w-12 h-12" />
       </div>
       <h3 className="font-bold text-gray-900 text-3xl">{banksCount}+</h3>
       <p className="mt-1 font-medium text-gray-500 text-sm">Banks</p>
     </div>
     <div className="relative bg-white shadow-sm hover:shadow-lg p-6 border border-gray-200 rounded-2xl text-center transition-all">
-      <div className="flex justify-center items-center bg-[#D80369]/10 mx-auto mb-3 rounded-xl w-12 h-12">
+      <div className="flex justify-center items-center bg-[#E91E8C]/10 mx-auto mb-3 rounded-xl w-12 h-12">
         <img src={atm_4} alt="Atms" className="w-8 h-8" />
       </div>
       <h3 className="font-bold text-gray-900 text-3xl">{atmCount.toLocaleString()}+</h3>
@@ -513,7 +513,7 @@ const IntelliCam: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate("/contact")}
-                className="bg-[#D80369] hover:bg-[#b8025a] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
+                className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
               >
                 Start Now
               </motion.button>

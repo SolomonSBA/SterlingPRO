@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Mail, Phone, Send, CheckCircle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { submitContactForm } from '@/lib/contact-api';
 
 const ContactPage: React.FC = () => {
   const { toast } = useToast();
@@ -51,29 +52,42 @@ const ContactPage: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    toast({
-      title: "Message sent successfully!",
-      description: "We'll get back to you within 24 hours.",
+    const result = await submitContactForm({
+      name: formData.name,
+      email: formData.email,
+      company: formData.company,
+      product: formData.product,
+      location: formData.location,
+      industry: formData.industry,
+      message: formData.message,
     });
 
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        product: '',
-        location: '',
-        industry: '',
-        message: '',
+    setIsSubmitting(false);
+    if (result.ok) {
+      setIsSubmitted(true);
+      toast({
+        title: "Message sent successfully!",
+        description: "We'll get back to you within 24 hours.",
       });
-    }, 3000);
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          product: '',
+          location: '',
+          industry: '',
+          message: '',
+        });
+      }, 3000);
+    } else {
+      toast({
+        title: "Submission failed",
+        description: result.error || "Please try again later.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (

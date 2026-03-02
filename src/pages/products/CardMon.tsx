@@ -175,7 +175,7 @@ const CardMon: React.FC = () => {
             className="w-full md:text-left text-center"
           >
             <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl leading-tight">
-              CARD <span className="text-[#D80369]">MON</span>
+              CARD <span className="text-[#E91E8C]">MON</span>
             </h1>
 
           
@@ -188,7 +188,7 @@ const CardMon: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => navigate("/contact")}
-              className="bg-[#D80369] hover:bg-[#b8025a] shadow-lg px-7 md:px-8 py-3 rounded-lg font-semibold text-white text-sm transition-all"
+              className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-7 md:px-8 py-3 rounded-lg font-semibold text-white text-sm transition-all"
             >
               Get Started
             </motion.button>
@@ -227,7 +227,7 @@ const CardMon: React.FC = () => {
           className="mb-12 md:mb-16 w-[75%] text-left"
         >
           <h2 className="mb-4 font-bold text-xl md:text-4xl leading-tight">
-             <span className="text-[#D80369]">
+             <span className="text-[#E91E8C]">
               Build and scale{" "}
             </span>
            flexible card operations that benefit you and your customers
@@ -248,7 +248,7 @@ const CardMon: React.FC = () => {
                 duration: 0.5,
                 ease: "easeOut",
               }}
-              className="bg-white p-6 md:p-8 border border-gray-200 hover:border-[#D80369]/30 rounded-2xl transition-colors"
+              className="bg-white p-6 md:p-8 border border-gray-200 hover:border-[#E91E8C]/30 rounded-2xl transition-colors"
             >
               <div className="mb-5">
                 <div className="flex justify-center items-center">
@@ -281,7 +281,7 @@ const CardMon: React.FC = () => {
           className="mb-12 md:mb-16 w-[75%] text-left"
         >
           <h2 className="mb-4 font-bold text-xl md:text-4xl leading-tight">
-           <span className="text-[#D80369]">Simple</span> to integrate into your system, feature-rich, and smooth to use.
+           <span className="text-[#E91E8C]">Simple</span> to integrate into your system, feature-rich, and smooth to use.
           </h2>
         </motion.div>
         <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full">
@@ -296,7 +296,7 @@ const CardMon: React.FC = () => {
                 duration: 0.5,
                 ease: "easeOut",
               }}
-              className="bg-white p-6 md:p-8 border border-gray-200 hover:border-[#D80369]/30 rounded-2xl transition-colors"
+              className="bg-white p-6 md:p-8 border border-gray-200 hover:border-[#E91E8C]/30 rounded-2xl transition-colors"
             >
               <div className="mb-5">
                 <div className="flex justify-center items-center">
@@ -330,7 +330,7 @@ const CardMon: React.FC = () => {
         >
           <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
             Flexible product, built with your{" "}
-            <span className="text-[#D80369]">business needs in mind</span>
+            <span className="text-[#E91E8C]">business needs in mind</span>
           </h2>
         </motion.div>
         <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full">
@@ -347,12 +347,12 @@ const CardMon: React.FC = () => {
               }}
               className={`
           rounded-2xl border border-gray-200 bg-white
-          p-6 md:p-8 transition-colors hover:border-[#D80369]/30
+          p-6 md:p-8 transition-colors hover:border-[#E91E8C]/30
           ${index === benefits.length - 1 ? "md:col-span-2" : ""}
         `}
             >
               <div className="mb-5">
-                <div className="flex justify-center items-center bg-[#D80369]/10 rounded-lg w-12 h-12">
+                <div className="flex justify-center items-center bg-[#E91E8C]/10 rounded-lg w-12 h-12">
                   <img
                     src={benefit.image}
                     alt={benefit.title}
@@ -390,7 +390,7 @@ const CardMon: React.FC = () => {
           {/* Left Side */}
           <div className="flex-1 text-center md:text-center">
             <h2 className="font-bold text-gray-900 text-xl md:text-6xl">
-              <span className="text-[#D80369] text-left">Card Mon</span> Is 
+              <span className="text-[#E91E8C] text-left">Card Mon</span> Is 
                <br className="hidden md:block" /> Used by
             </h2>
           </div>
@@ -399,7 +399,7 @@ const CardMon: React.FC = () => {
           <div className="flex-1 gap-4 grid grid-cols-2 w-full">
             {/* Banks */}
             <div className="relative bg-white shadow-sm hover:shadow-lg p-6 border border-gray-200 rounded-2xl text-center transition-all">
-              <div className="flex justify-center items-center bg-[#D80369]/10 mx-auto mb-3 rounded-xl w-12 h-12">
+              <div className="flex justify-center items-center bg-[#E91E8C]/10 mx-auto mb-3 rounded-xl w-12 h-12">
                 <img src={bank} alt="Banks" className="w-12 h-12" />
               </div>
               <h3 className="font-bold text-gray-900 text-3xl">
@@ -408,14 +408,14 @@ const CardMon: React.FC = () => {
               <p className="mt-1 font-medium text-gray-500 text-sm">Banks</p>
             </div>
             <div className="relative bg-white shadow-sm hover:shadow-lg p-6 border border-gray-200 rounded-2xl text-center transition-all">
-              <div className="flex justify-center items-center bg-[#D80369]/10 mx-auto mb-3 rounded-xl w-12 h-12">
+              <div className="flex justify-center items-center bg-[#E91E8C]/10 mx-auto mb-3 rounded-xl w-12 h-12">
                 <img src={atm_4} alt="Atms" className="w-8 h-8" />
               </div>
               <h3 className="font-bold text-gray-900 text-3xl">
                 {atmCount.toLocaleString()}
               </h3>
               <p className="mt-1 font-medium text-gray-500 text-sm">
-                <span className="text-[#D80369] text-left">financial companies</span> <br />
+                <span className="text-[#E91E8C] text-left">financial companies</span> <br />
                to manage 28,000+ Cards nationwide
               </p>
             </div>
@@ -472,7 +472,7 @@ const CardMon: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate("/contact")}
-                className="bg-[#D80369] hover:bg-[#b8025a] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
+                className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
               >
                 Start Now
               </motion.button>

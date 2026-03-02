@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen pt-20 overflow-hidden bg-gradient-to-br from-white via-white to-pink-50/30">
       {/* Background Decorations */}
-      <div className="absolute top-40 right-0 w-96 h-96 bg-gradient-to-bl from-[#D80369]/5 to-transparent rounded-full blur-3xl"></div>
+      <div className="absolute top-40 right-0 w-96 h-96 bg-gradient-to-bl from-[#E91E8C]/5 to-transparent rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-0 w-64 h-64 bg-gradient-to-tr from-pink-100/50 to-transparent rounded-full blur-2xl"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-24">
@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
               <span className="relative">
                 payment eco
                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 12" fill="none">
-                  <path d="M2 10C50 2 150 2 198 10" stroke="#D80369" strokeWidth="3" strokeLinecap="round" opacity="0.3"/>
+                  <path d="M2 10C50 2 150 2 198 10" stroke="#E91E8C" strokeWidth="3" strokeLinecap="round" opacity="0.3"/>
                 </svg>
               </span>{' '}
               system across the globe
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl"
             >
-              With our products, we support banks and fintechs to build products that improve service delivery for payments and provide other value added services to their customers.
+              One platform in-branch, ATM, and biometric built for scale and trusted by Nigeria's leading banks.
             </motion.p>
             
             <motion.div
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
             >
               <a
                 href="#learnmore"
-                className="inline-flex items-center text-gray-900 font-semibold hover:text-[#D80369] transition-colors group"
+                className="inline-flex items-center text-gray-900 font-semibold hover:text-[#E91E8C] transition-colors group"
               >
                 Learn more &gt;&gt;
               </a>
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
           >
             {/* Decorative curved line */}
             <svg
-              className="absolute -top-8 right-0 w-32 h-32 text-[#D80369]"
+              className="absolute -top-8 right-0 w-32 h-32 text-[#E91E8C]"
               viewBox="0 0 100 100"
               fill="none"
             >
@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
             
             {/* Image Container with gradient border */}
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-br from-[#D80369]/20 via-pink-200/30 to-transparent rounded-3xl blur-sm"></div>
+              <div className="absolute -inset-4 bg-gradient-to-br from-[#E91E8C]/20 via-pink-200/30 to-transparent rounded-3xl blur-sm"></div>
               <div className="relative bg-gradient-to-br from-pink-100 to-pink-50 p-2 rounded-3xl shadow-2xl">
                 <img
                   src={heroImage}
@@ -98,7 +98,7 @@ const Hero: React.FC = () => {
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-4 -left-4 w-20 h-20 bg-gradient-to-br from-[#D80369] to-pink-400 rounded-2xl opacity-20 blur-xl"
+              className="absolute -bottom-4 -left-4 w-20 h-20 bg-gradient-to-br from-[#E91E8C] to-pink-400 rounded-2xl opacity-20 blur-xl"
             ></motion.div>
           </motion.div>
         </div>

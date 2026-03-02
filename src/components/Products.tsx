@@ -102,7 +102,7 @@ const TwigSecure = () => {
 
 
   return (
-    <div className="bg-white min-h-screen">
+    <div id="products" className="scroll-mt-24 bg-white min-h-screen">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
         
@@ -142,7 +142,7 @@ const TwigSecure = () => {
                 className="font-bold text-gray-700 text-3xl lg:text-4xl"
                 variants={fadeInUp}
               >
-                Seamless In-branch transactions
+                Seamless In branch transactions
               </motion.h2>
               
               <motion.p 
@@ -155,7 +155,7 @@ const TwigSecure = () => {
               <motion.div variants={fadeInUp}>
                 <motion.a
                   href="#contact"
-                  className="inline-flex items-center gap-2 bg-[#D80369] hover:bg-[#b00258] shadow-lg hover:shadow-xl px-8 py-4 rounded-lg font-semibold text-white text-lg transition-all"
+                  className="inline-flex items-center gap-2 bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg hover:shadow-xl px-8 py-4 rounded-lg font-semibold text-white text-lg transition-all"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -245,7 +245,7 @@ const TwigSecure = () => {
               </h2>
               
               <p className="text-gray-600 text-lg leading-relaxed">
-                TWIG SECURE offers a convenient and secure way to carry out transactions in-branch. Your customers can perform transactions like withdrawals, cash deposits, transfers and more using their cards and PIN on a POS device or via biometric verification, over-the-counter.
+                TWIG SECURE offers a convenient and secure way to carry out transactions in-branch. Your customers can perform transactions like withdrawals, cash deposits, transfers and more using their cards and PIN on a POS device or via biometric verification, over the counter.
               </p>
             </motion.div>
           </div>
@@ -263,10 +263,10 @@ const TwigSecure = () => {
             variants={fadeInUp}
           >
             <h2 className="mb-4 font-bold text-gray-900 text-4xl lg:text-5xl">
-              Flexible - Pick what works best for your business
+              Flexible  Pick what works best for your business
             </h2>
             <p className="mx-auto max-w-3xl text-gray-600 text-xl">
-              Get the entire package or pick from our sub-products based on your needs.
+              Get the entire package or pick from our sub products based on your needs.
             </p>
           </motion.div>
 
@@ -318,7 +318,7 @@ const TwigSecure = () => {
                   FASTRANX
                 </h3>
                 <p className="mb-6 text-gray-600 leading-relaxed">
-                  Enable your customers to use biometric verification to make secure and fast cash deposits, withdrawals, and other over-the-counter transaction at the branch without the need for slips and lengthy forms.
+                  Enable your customers to use biometric verification to make secure and fast cash deposits, withdrawals, and other over the counter transaction at the branch without the need for slips and lengthy forms.
                 </p>
               </div>
             </motion.div>
@@ -351,7 +351,7 @@ const TwigSecure = () => {
               variants={fadeInRight}
             >
               <h2 className="font-bold text-gray-900 text-4xl lg:text-5xl leading-tight">
-                Delight your customers with convenient and secure in-branch experiences
+                Delight your customers with convenient and secure in branch experiences
               </h2>
               
               <p className="text-gray-600 text-lg leading-relaxed">
@@ -376,7 +376,7 @@ const TwigSecure = () => {
               Why TWIG SECURE?
             </h2>
             <p className="mx-auto max-w-4xl text-gray-600 text-xl leading-relaxed">
-              In-branch transactions are usually not so convenient for customers, with long wait times and various slips/forms. TWIG Secure helps financial institutions provide better customer experiences in-branch.
+              In-branch transactions are usually not so convenient for customers, with long wait times and various slips/forms. TWIG Secure helps financial institutions provide better customer experiences in branch.
             </p>
             <p className="mt-8 font-bold text-gray-900 text-2xl">
               TWIG SECURE offers:
@@ -470,7 +470,7 @@ const TwigSecure = () => {
                     className="w-12 h-12"
                   />
                 </div>
-                <h3 className="mb-3 font-bold text-[#D80369] text-sm uppercase tracking-wide">
+                <h3 className="mb-3 font-bold text-[#E91E8C] text-sm uppercase tracking-wide">
                   {benefit.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -527,7 +527,7 @@ const TwigSecure = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative bg-[#D80369] py-20 lg:py-32 overflow-hidden">
+      <section className="relative bg-[#E91E8C] py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img 
             src="https://sterlingprong.com/wp-content/uploads/2023/01/bg-mesh.svg" 
@@ -551,7 +551,7 @@ const TwigSecure = () => {
             </p>
             <motion.a
               href="#contact"
-              className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 shadow-xl px-10 py-4 rounded-lg font-bold text-[#D80369] text-lg transition-all"
+              className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 shadow-xl px-10 py-4 rounded-lg font-bold text-[#E91E8C] text-lg transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

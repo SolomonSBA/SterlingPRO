@@ -29,7 +29,7 @@ const TwigSecure: React.FC = () => {
       image: bioImg,
       title: "FASTRANX",
       description:
-        "Enable your customers to use biometric verification to make secure and fast cash deposits, withdrawals, and other over-the-counter transaction at the branch without the need for slips and lengthy forms.",
+        "Enable your customers to use biometric verification to make secure and fast cash deposits, withdrawals, and other over the counter transaction at the branch without the need for slips and lengthy forms.",
     },
   ];
 
@@ -121,18 +121,18 @@ const TwigSecure: React.FC = () => {
             className="w-full md:text-left text-center"
           >
             <div className="flex justify-center md:justify-start gap-2 mb-4 md:mb-6">
-              <div className="bg-[#D80369] mt-1 rounded-full w-2 h-2"></div>
-              <span className="font-medium text-[#D80369] text-xs md:text-sm uppercase tracking-wide">
+              <div className="bg-[#E91E8C] mt-1 rounded-full w-2 h-2"></div>
+              <span className="font-medium text-[#E91E8C] text-xs md:text-sm uppercase tracking-wide">
                 Seamless & Secure
               </span>
             </div>
 
             <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl leading-tight">
-              TWIG <span className="text-[#D80369]">SECURE</span>
+              TWIG <span className="text-[#E91E8C]">SECURE</span>
             </h1>
 
             <h2 className="mb-4 md:mb-6 font-semibold text-gray-800 text-xl md:text-2xl">
-              Seamless In-branch transactions
+              Seamless In branch transactions
             </h2>
 
             <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
@@ -144,7 +144,7 @@ const TwigSecure: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => navigate("/contact")}
-              className="bg-[#D80369] hover:bg-[#b8025a] shadow-lg px-7 md:px-8 py-3 rounded-lg font-semibold text-white md:text-sm text-base transition-all"
+              className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-7 md:px-8 py-3 rounded-lg font-semibold text-white md:text-sm text-base transition-all"
             >
               Get Started 
             </motion.button>
@@ -202,7 +202,7 @@ const TwigSecure: React.FC = () => {
           >
             <h2 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl leading-tight">
               Convenient & Secure
-              <span className="text-[#D80369]"> Customer Experience</span>
+              <span className="text-[#E91E8C]"> Customer Experience</span>
             </h2>
 
             <p className="mx-auto md:mx-0 mb-6 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
@@ -210,7 +210,7 @@ const TwigSecure: React.FC = () => {
               transactions in-branch. Your customers can perform transactions
               like withdrawals, cash deposits, transfers and more using their
               cards and PIN on a POS device or via biometric verification,
-              over-the-counter.
+              over the counter.
             </p>
           </motion.div>
         </div>
@@ -228,7 +228,7 @@ const TwigSecure: React.FC = () => {
         >
           <h2 className="mb-3 font-bold text-lg md:text-3xl">
             Flexible -{" "}
-            <span className="text-[#D80369]">
+            <span className="text-[#E91E8C]">
               Pick what works best for your business
             </span>
           </h2>
@@ -246,7 +246,7 @@ const TwigSecure: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white p-4 md:p-8 border-2 border-gray-100 hover:border-[#D80369]/20 rounded-2xl w-full transition-all"
+              className="bg-white p-4 md:p-8 border-2 border-gray-100 hover:border-[#E91E8C]/20 rounded-2xl w-full transition-all"
             >
               <div className="rounded-xl overflow-hidden">
                 <img
@@ -257,8 +257,8 @@ const TwigSecure: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-2 mb-3">
-                <div className="bg-[#D80369] rounded-full w-1.5 h-1.5" />
-                <span className="font-semibold text-[#D80369] text-xs uppercase tracking-wider">
+                <div className="bg-[#E91E8C] rounded-full w-1.5 h-1.5" />
+                <span className="font-semibold text-[#E91E8C] text-xs uppercase tracking-wider">
                   Feature
                 </span>
               </div>
@@ -285,15 +285,15 @@ const TwigSecure: React.FC = () => {
             className="order-2 md:order-1 w-full"
           >
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-[#D80369] rounded-full w-2 h-2" />
-              <span className="font-semibold text-[#D80369] text-xs uppercase tracking-wide">
+              <div className="bg-[#E91E8C] rounded-full w-2 h-2" />
+              <span className="font-semibold text-[#E91E8C] text-xs uppercase tracking-wide">
                 Customer Experience
               </span>
             </div>
 
             <h2 className="mb-5 font-bold text-gray-900 text-lg md:text-3xl leading-tight">
               Delight your customers with{" "}
-              <span className="text-[#D80369]">
+              <span className="text-[#E91E8C]">
                 convenient and secure in-branch experiences
               </span>
             </h2>
@@ -352,14 +352,14 @@ const TwigSecure: React.FC = () => {
             className="w-full"
           >
             <h2 className="mb-4 font-bold text-lg md:text-3xl">
-              Why <span className="text-[#D80369]">TWIG SECURE?</span>
+              Why <span className="text-[#E91E8C]">TWIG SECURE?</span>
             </h2>
 
             <p className="mb-8 max-w-xl text-gray-600 text-sm md:text-base leading-relaxed">
               In-branch transactions are usually not so convenient for
               customers, with long wait times and various slips/forms. TWIG
               Secure helps financial institutions provide better customer
-              experiences in-branch.
+              experiences in branch.
             </p>
 
           <div className="space-y-3 md:space-y-0 grid grid-cols-1 md:grid-cols-2">
@@ -376,9 +376,9 @@ const TwigSecure: React.FC = () => {
                                  }}
                                  className="group relative flex gap-4 bg-white/70 hover:shadow-lg p-4 md:p-5 rounded-2xl transition-all hover:-translate-y-1"
                                >
-                                 <span className="top-1/3 left-0 absolute bg-[#D80369] rounded-full w-1 h-8 -translate-y-1/2" />
+                                 <span className="top-1/3 left-0 absolute bg-[#E91E8C] rounded-full w-1 h-8 -translate-y-1/2" />
                
-                                 <div className="flex-shrink-0 justify-center items-center grid bg-[#D80369]/10 group-hover:bg-[#D80369]/20 rounded-xl w-11 h-11 transition-all">
+                                 <div className="flex-shrink-0 justify-center items-center grid bg-[#E91E8C]/10 group-hover:bg-[#E91E8C]/20 rounded-xl w-11 h-11 transition-all">
                                    <img
                                      src={reason.image}
                                      alt={reason.title}
@@ -408,7 +408,7 @@ const TwigSecure: React.FC = () => {
         >
           <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
             Flexible product, built with your{" "}
-            <span className="text-[#D80369]">business needs in mind</span>
+            <span className="text-[#E91E8C]">business needs in mind</span>
           </h2>
         </motion.div>
         <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full">
@@ -425,12 +425,12 @@ const TwigSecure: React.FC = () => {
               }}
               className={`
           rounded-2xl border border-gray-200 bg-white
-          p-6 md:p-8 transition-colors hover:border-[#D80369]/30
+          p-6 md:p-8 transition-colors hover:border-[#E91E8C]/30
           ${index === benefits.length - 1 ? "md:col-span-2" : ""}
         `}
             >
               <div className="mb-5">
-                <div className="flex justify-center items-center bg-[#D80369]/10 rounded-lg w-12 h-12">
+                <div className="flex justify-center items-center bg-[#E91E8C]/10 rounded-lg w-12 h-12">
                   <img
                     src={benefit.image}
                     alt={benefit.title}
@@ -460,7 +460,7 @@ const TwigSecure: React.FC = () => {
           className="mb-12 md:mb-16 text-center"
         >
           <h2 className="font-bold text-lg md:text-4xl">
-            <span className="text-[#D80369]">TWIG SECURE</span> is trusted by
+            <span className="text-[#E91E8C]">TWIG SECURE</span> is trusted by
           </h2>
         </motion.div>
 
@@ -505,7 +505,7 @@ const TwigSecure: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate("/contact")}
-                className="bg-[#D80369] hover:bg-[#b8025a] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
+                className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
               >
                 Start Now
               </motion.button>

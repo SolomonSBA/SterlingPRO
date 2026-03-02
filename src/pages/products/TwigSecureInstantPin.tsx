@@ -165,7 +165,7 @@ const TwigSecureInstantPin: React.FC = () => {
           >
 
             <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl leading-tight">
-              TWIG SECURE <span className="text-[#D80369]">INSTANT PIN</span>
+              TWIG SECURE <span className="text-[#E91E8C]">INSTANT PIN</span>
             </h1>
 
             <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
@@ -178,7 +178,7 @@ const TwigSecureInstantPin: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate("/contact")}
-            className="bg-[#D80369] hover:bg-[#b8025a] shadow-lg px-7 md:px-8 py-3 rounded-lg font-semibold text-white md:text-sm text-base transition-all"
+            className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-7 md:px-8 py-3 rounded-lg font-semibold text-white md:text-sm text-base transition-all"
           >
             Get Started 
           </motion.button>
@@ -237,7 +237,7 @@ const TwigSecureInstantPin: React.FC = () => {
           >
             <h2 className="mb-4 md:mb-6 font-bold text-xl md:text-4xl leading-relaxed">
               Instant
-              <span className="text-[#D80369]"> PIN solution</span> for newly
+              <span className="text-[#E91E8C]"> PIN solution</span> for newly
               generated bank cards
             </h2>
 
@@ -262,7 +262,7 @@ const TwigSecureInstantPin: React.FC = () => {
           className="mt-16 mb-16 text-center"
         >
           <h2 className="mb-3 font-bold text-lg md:text-4xl">
-            <span className="text-[#D80369]">Secure Issuance</span> of Debit and
+            <span className="text-[#E91E8C]">Secure Issuance</span> of Debit and
             Credit Card PINs with our Sub-products{" "}
           </h2>
         </motion.div>
@@ -275,7 +275,7 @@ const TwigSecureInstantPin: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white p-4 md:p-8 border-2 border-gray-100 hover:border-[#D80369]/20 rounded-2xl w-full transition-all"
+              className="bg-white p-4 md:p-8 border-2 border-gray-100 hover:border-[#E91E8C]/20 rounded-2xl w-full transition-all"
             >
               <div className="rounded-xl overflow-hidden">
                 <img
@@ -286,8 +286,8 @@ const TwigSecureInstantPin: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-2 mb-3">
-                <div className="bg-[#D80369] rounded-full w-1.5 h-1.5" />
-                <span className="font-semibold text-[#D80369] text-xs uppercase tracking-wider">
+                <div className="bg-[#E91E8C] rounded-full w-1.5 h-1.5" />
+                <span className="font-semibold text-[#E91E8C] text-xs uppercase tracking-wider">
                   Feature
                 </span>
               </div>
@@ -315,7 +315,7 @@ const TwigSecureInstantPin: React.FC = () => {
           >
             <h2 className="mb-5 font-bold text-gray-900 text-lg md:text-4xl leading-tight">
               Convenient and secure PIN selection through{" "}
-              <span className="text-[#D80369]">POS, ATM & mobile channels</span>
+              <span className="text-[#E91E8C]">POS, ATM & mobile channels</span>
             </h2>
 
             <p className="max-w-xl text-gray-600 text-sm md:text-base leading-relaxed">
@@ -373,7 +373,7 @@ const TwigSecureInstantPin: React.FC = () => {
           >
             <h2 className="mb-4 font-bold text-xl md:text-3xl">
               Why TWIG SECURE{" "}
-              <span className="text-[#D80369]"> INSTANT PIN ?</span>
+              <span className="text-[#E91E8C]"> INSTANT PIN ?</span>
             </h2>
 
             <div className="space-y-3 md:space-y-0">
@@ -390,9 +390,9 @@ const TwigSecureInstantPin: React.FC = () => {
                   }}
                   className="group relative flex gap-4 bg-white/70 hover:shadow-lg p-4 md:p-5 rounded-2xl transition-all hover:-translate-y-1"
                 >
-                  <span className="top-1/4 md:top-1/2 left-0 absolute bg-[#D80369] rounded-full w-1 h-8 -translate-y-1/2" />
+                  <span className="top-1/4 md:top-1/2 left-0 absolute bg-[#E91E8C] rounded-full w-1 h-8 -translate-y-1/2" />
 
-                  <div className="flex flex-shrink-0 justify-center items-center bg-[#D80369]/10 group-hover:bg-[#D80369]/20 rounded-xl w-11 h-11 transition-all">
+                  <div className="flex flex-shrink-0 justify-center items-center bg-[#E91E8C]/10 group-hover:bg-[#E91E8C]/20 rounded-xl w-11 h-11 transition-all">
                     <img
                       src={reason.image}
                       alt={reason.title}
@@ -422,7 +422,7 @@ const TwigSecureInstantPin: React.FC = () => {
         >
           <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
             Flexible product, built with your{" "}
-            <span className="text-[#D80369]">business needs in mind</span>
+            <span className="text-[#E91E8C]">business needs in mind</span>
           </h2>
         </motion.div>
         <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full">
@@ -439,12 +439,12 @@ const TwigSecureInstantPin: React.FC = () => {
               }}
               className={`
           rounded-2xl border border-gray-200 bg-white
-          p-6 md:p-8 transition-colors hover:border-[#D80369]/30
+          p-6 md:p-8 transition-colors hover:border-[#E91E8C]/30
           ${index === benefits.length - 1 ? "md:col-span-2" : ""}
         `}
             >
               <div className="mb-5">
-                <div className="flex justify-center items-center bg-[#D80369]/10 rounded-lg w-12 h-12">
+                <div className="flex justify-center items-center bg-[#E91E8C]/10 rounded-lg w-12 h-12">
                   <img
                     src={benefit.image}
                     alt={benefit.title}
@@ -473,7 +473,7 @@ const TwigSecureInstantPin: React.FC = () => {
           className="mb-14 text-center"
         >
           <h2 className="font-bold text-gray-900 text-xl md:text-4xl">
-            <span className="text-[#D80369]">TWIG SECURE Instant PIN </span>
+            <span className="text-[#E91E8C]">TWIG SECURE Instant PIN </span>
             <br className="hidden md:block" />
             is trusted by leading institutions
           </h2>
@@ -492,7 +492,7 @@ const TwigSecureInstantPin: React.FC = () => {
         >
           {/* Banks */}
           <div className="relative bg-white shadow-sm hover:shadow-lg p-8 border border-gray-200 rounded-2xl text-center transition-all">
-            <div className="flex justify-center items-center bg-[#D80369]/10 mx-auto mb-4 rounded-xl w-14 h-14">
+            <div className="flex justify-center items-center bg-[#E91E8C]/10 mx-auto mb-4 rounded-xl w-14 h-14">
               <img src={bank} alt="Banks" className="w-7 h-7" />
             </div>
 
@@ -502,7 +502,7 @@ const TwigSecureInstantPin: React.FC = () => {
 
           {/* ATMs */}
           <div className="relative bg-white shadow-sm hover:shadow-lg p-8 border border-gray-200 rounded-2xl text-center transition-all">
-            <div className="flex justify-center items-center bg-[#D80369]/10 mx-auto mb-4 rounded-xl w-14 h-14">
+            <div className="flex justify-center items-center bg-[#E91E8C]/10 mx-auto mb-4 rounded-xl w-14 h-14">
               <img src={atm_4} alt="ATMs" className="w-7 h-7" />
             </div>
 
@@ -569,7 +569,7 @@ const TwigSecureInstantPin: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate("/contact")}
-                className="bg-[#D80369] hover:bg-[#b8025a] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
+                className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
               >
                 Start Now
               </motion.button>

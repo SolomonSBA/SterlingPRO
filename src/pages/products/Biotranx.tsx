@@ -36,7 +36,7 @@ const Biotranx: React.FC = () => {
       image: moneyTransfer,
       title: "Bills Payment",
       description:
-        "Pay bills and utilities through the BIOTRANX network with biometric authorisation.",
+        "Pay bills and utilities through the Biometric Payments network with biometric authorisation.",
     },
     {
       image: moneyTransfer,
@@ -93,7 +93,7 @@ const Biotranx: React.FC = () => {
       image: nodesImg,
       title: "FLEXIBLE",
       description:
-        "Seamless integration with your existing system. BIOTRANX can be customised for agency banking, merchant payment, and more.",
+        "Seamless integration with your existing system. Biometric Payments can be customised for agency banking, merchant payment, and more.",
     },
     {
       image: discount,
@@ -111,7 +111,7 @@ const Biotranx: React.FC = () => {
       image: headphones,
       title: "AVAILABLE CUSTOMER SUPPORT",
       description:
-        "Our team supports you through integration and beyond so you can deploy BIOTRANX with minimal friction.",
+        "Our team supports you through integration and beyond so you can deploy Biometric Payments with minimal friction.",
     },
     {
       image: technology,
@@ -133,14 +133,14 @@ const Biotranx: React.FC = () => {
             className="w-full md:text-left text-center"
           >
             <div className="flex justify-center md:justify-start gap-2 mb-4 md:mb-6">
-              <div className="bg-[#D80369] mt-1 rounded-full w-2 h-2" />
-              <span className="font-medium text-[#D80369] text-xs md:text-sm uppercase tracking-wide">
-                Biometric Cardless Payment
+              <div className="bg-[#E91E8C] mt-1 rounded-full w-2 h-2" />
+              <span className="font-medium text-[#E91E8C] text-xs md:text-sm uppercase tracking-wide">
+                Biometric Payments
               </span>
             </div>
 
             <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl leading-tight">
-              <span className="text-[#D80369]">BIOTRANX</span>
+              <span className="text-[#E91E8C]">Biometric Payments</span>
             </h1>
 
             <h2 className="mb-4 md:mb-6 font-semibold text-gray-800 text-xl md:text-2xl">
@@ -148,14 +148,14 @@ const Biotranx: React.FC = () => {
             </h2>
 
             <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
-              BIOTRANX is a biometric end-to-end cardless payment service that enables customers to transact and authorise deduction of funds from a bank account using biometric authentication across ATMs, POS, mobile, and more.
+              Biometric Payments is a biometric end-to-end cardless payment service that enables customers to transact and authorise deduction of funds from a bank account using biometric authentication across ATMs, POS, mobile, and more.
             </p>
 
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => navigate("/contact")}
-              className="bg-[#D80369] hover:bg-[#b8025a] shadow-lg px-7 md:px-8 py-3 rounded-lg font-semibold text-white md:text-sm text-base transition-all"
+              className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-7 md:px-8 py-3 rounded-lg font-semibold text-white md:text-sm text-base transition-all"
             >
               Get Started
             </motion.button>
@@ -174,7 +174,7 @@ const Biotranx: React.FC = () => {
             >
               <img
                 src={bioImg}
-                alt="BIOTRANX biometric payment"
+                alt="Biometric Payments"
                 className="w-full h-auto object-cover"
               />
             </motion.div>
@@ -182,7 +182,7 @@ const Biotranx: React.FC = () => {
         </div>
       </section>
 
-      {/* What is BIOTRANX + Features */}
+      {/* What is Biometric Payments + Features */}
       <section className="bg-gray-50 px-6 md:px-8 py-20 md:py-24 w-full">
         <div className="items-center gap-12 md:gap-16 grid grid-cols-1 md:grid-cols-2 w-full">
           <motion.div
@@ -193,7 +193,7 @@ const Biotranx: React.FC = () => {
           >
             <img
               src={bioImg}
-              alt="BIOTRANX biometric device"
+              alt="Biometric Payments device"
               className="w-full h-auto object-cover"
             />
           </motion.div>
@@ -207,18 +207,18 @@ const Biotranx: React.FC = () => {
           >
             <h2 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl leading-tight">
               One service,{" "}
-              <span className="text-[#D80369]">many use cases</span>
+              <span className="text-[#E91E8C]">many use cases</span>
             </h2>
 
             <p className="mx-auto md:mx-0 mb-6 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
-              From agency banking and merchant payment to toll collection, tax collection, direct benefit transfer, and health insurance BIOTRANX powers cardless, biometric-authorised transactions wherever you need them.
+              From agency banking and merchant payment to toll collection, tax collection, direct benefit transfer, and health insurance Biometric Payments powers cardless, biometric-authorised transactions wherever you need them.
             </p>
 
             <div className="flex flex-wrap gap-2 justify-center md:justify-start">
               {["Agency Banking", "Merchant Payment", "BioWallets · BioPurse"].map((tag) => (
                 <span
                   key={tag}
-                  className="px-3 py-1.5 rounded-full bg-[#D80369]/10 text-[#D80369] font-medium text-sm"
+                  className="px-3 py-1.5 rounded-full bg-[#E91E8C]/10 text-[#E91E8C] font-medium text-sm"
                 >
                   {tag}
                 </span>
@@ -240,7 +240,7 @@ const Biotranx: React.FC = () => {
         >
           <h2 className="mb-3 font-bold text-lg md:text-3xl">
             Features {" "}
-            <span className="text-[#D80369]">what customers can do</span>
+            <span className="text-[#E91E8C]">what customers can do</span>
           </h2>
           <p className="text-gray-600 text-sm">
             Cash withdrawal, transfers, balance enquiry, bills payment, and cash deposit all with biometric authentication.
@@ -255,9 +255,9 @@ const Biotranx: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.08 }}
-              className="bg-white p-4 md:p-6 border-2 border-gray-100 hover:border-[#D80369]/20 rounded-2xl w-full transition-all"
+              className="bg-white p-4 md:p-6 border-2 border-gray-100 hover:border-[#E91E8C]/20 rounded-2xl w-full transition-all"
             >
-              <div className="rounded-xl overflow-hidden mb-4 bg-[#D80369]/5 p-4 flex justify-center">
+              <div className="rounded-xl overflow-hidden mb-4 bg-[#E91E8C]/5 p-4 flex justify-center">
                 <img
                   src={feature.image}
                   alt={feature.title}
@@ -265,8 +265,8 @@ const Biotranx: React.FC = () => {
                 />
               </div>
               <div className="flex items-center gap-2 mb-2">
-                <div className="bg-[#D80369] rounded-full w-1.5 h-1.5" />
-                <span className="font-semibold text-[#D80369] text-xs uppercase tracking-wider">
+                <div className="bg-[#E91E8C] rounded-full w-1.5 h-1.5" />
+                <span className="font-semibold text-[#E91E8C] text-xs uppercase tracking-wider">
                   Feature
                 </span>
               </div>
@@ -287,7 +287,7 @@ const Biotranx: React.FC = () => {
         >
           <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
             Use cases {" "}
-            <span className="text-[#D80369]">where BIOTRANX fits</span>
+            <span className="text-[#E91E8C]">where Biometric Payments fits</span>
           </h2>
         </motion.div>
 
@@ -299,7 +299,7 @@ const Biotranx: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="bg-gray-50 hover:bg-[#D80369]/5 p-4 md:p-5 rounded-xl border border-gray-100 transition-colors"
+              className="bg-gray-50 hover:bg-[#E91E8C]/5 p-4 md:p-5 rounded-xl border border-gray-100 transition-colors"
             >
               <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
               <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
@@ -308,7 +308,7 @@ const Biotranx: React.FC = () => {
         </div>
       </section>
 
-      {/* How BIOTRANX Works */}
+      {/* How Biometric Payments Works */}
       <section className="bg-gray-50 px-6 md:px-8 py-20 md:py-24 w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -317,7 +317,7 @@ const Biotranx: React.FC = () => {
           className="mb-12 text-center"
         >
           <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
-            How <span className="text-[#D80369]">BIOTRANX</span> works
+            How <span className="text-[#E91E8C]">Biometric Payments</span> works
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             From customer walk-in to cash handover six simple steps.
@@ -334,7 +334,7 @@ const Biotranx: React.FC = () => {
               transition={{ delay: index * 0.1 }}
               className="flex gap-4 items-start bg-white p-4 md:p-5 rounded-xl shadow-sm border border-gray-100"
             >
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#D80369] text-white font-bold flex items-center justify-center">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#E91E8C] text-white font-bold flex items-center justify-center">
                 {item.step}
               </div>
               <p className="text-gray-700 font-medium pt-1">{item.text}</p>
@@ -343,7 +343,7 @@ const Biotranx: React.FC = () => {
         </div>
       </section>
 
-      {/* How BIOTRANX Self-Enrollment Works */}
+      {/* How Biometric Payments Self-Enrollment Works */}
       <section className="bg-white px-6 md:px-8 py-20 md:py-24 w-full">
         <div className="items-start gap-12 md:gap-16 grid grid-cols-1 md:grid-cols-2 w-full">
           <motion.div
@@ -353,14 +353,14 @@ const Biotranx: React.FC = () => {
             className="w-full md:text-left text-center"
           >
             <div className="flex items-center gap-2 mb-4 justify-center md:justify-start">
-              <div className="bg-[#D80369] rounded-full w-2 h-2" />
-              <span className="font-semibold text-[#D80369] text-xs uppercase tracking-wide">
+              <div className="bg-[#E91E8C] rounded-full w-2 h-2" />
+              <span className="font-semibold text-[#E91E8C] text-xs uppercase tracking-wide">
                 Security & technology
               </span>
             </div>
 
             <h2 className="mb-4 font-bold text-2xl md:text-4xl leading-tight">
-              How BIOTRANX self-enrollment works
+              How Biometric Payments self-enrollment works
             </h2>
 
             <p className="mx-auto md:mx-0 mb-8 max-w-xl text-gray-600 text-sm md:text-base leading-relaxed">
@@ -405,7 +405,7 @@ const Biotranx: React.FC = () => {
         >
           <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
             Built with your{" "}
-            <span className="text-[#D80369]">business in mind</span>
+            <span className="text-[#E91E8C]">business in mind</span>
           </h2>
         </motion.div>
 
@@ -417,10 +417,10 @@ const Biotranx: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5, ease: "easeOut" }}
-              className="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 transition-colors hover:border-[#D80369]/30"
+              className="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 transition-colors hover:border-[#E91E8C]/30"
             >
               <div className="mb-5">
-                <div className="flex justify-center items-center bg-[#D80369]/10 rounded-lg w-12 h-12">
+                <div className="flex justify-center items-center bg-[#E91E8C]/10 rounded-lg w-12 h-12">
                   <img
                     src={benefit.image}
                     alt={benefit.title}
@@ -450,13 +450,13 @@ const Biotranx: React.FC = () => {
                 Ready to go cardless?
               </h2>
               <p className="mb-6 text-gray-600 text-sm">
-                Start delivering biometric payment experiences with BIOTRANX.
+                Start delivering biometric payment experiences with Biometric Payments.
               </p>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate("/contact")}
-                className="bg-[#D80369] hover:bg-[#b8025a] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
+                className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
               >
                 Get in touch
               </motion.button>

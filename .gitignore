@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+# Server local config and deploy build (do not commit secrets or built copy)
+server/config.local.js
+server/config.local.json
+server/public
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

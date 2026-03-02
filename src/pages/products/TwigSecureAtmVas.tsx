@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { ArrowRight, FolderOpen, ArrowLeftRight, Banknote, LayoutGrid, Link2, Smartphone } from "lucide-react";
 import revenue from "../../assets/revenue.png"
 import experienced from "../../assets/experienced.webp"
 import productivity from "../../assets/productivity.webp"
@@ -151,65 +152,97 @@ const TwigSecureAtmVas: React.FC = () => {
 
   return (
     <div className="bg-white w-full min-h-screen overflow-x-hidden">
-      {/* Hero Section*/}
+      {/* Hero Section – tagline, headline, copy, CTAs + services grid */}
       <section className="bg-white px-6 md:px-10 pt-10 pb-20 md:pb-24 w-full">
-        <div className="items-center gap-12 md:gap-16 grid grid-cols-1 md:grid-cols-2 w-full">
+        <div className="items-center gap-12 md:gap-16 grid grid-cols-1 lg:grid-cols-2 w-full">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="w-full md:text-left text-center"
           >
-            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl leading-tight">
-              TWIG SECURE <span className="text-[#D80369]">ATM VAS</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-3 py-1.5 mb-4 md:mb-6">
+              <span className="rounded-full bg-[#E91E8C] w-2 h-2" />
+              <span className="text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                ATM Value-Added Services
+              </span>
+            </div>
+
+            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl lg:text-5xl leading-tight">
+              Your ATM can do{" "}
+              <span className="text-[#E91E8C]">far more</span> than dispense cash.
             </h1>
 
             <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
-              Power ATM transactions with self-service capabilities for bank
-              customers via ATM and reduce the need for your customers to go
-              into a branch.
+              TWIG Secure ATM VAS transforms your ATM network into a full-service banking channel enabling account opening, instant loans, BVN linking, transfers, and more, right at the machine.
             </p>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => navigate("/contact")}
-              className="bg-[#D80369] hover:bg-[#b8025a] shadow-lg px-7 md:px-8 py-3 rounded-lg font-semibold text-white md:text-sm text-base transition-all"
-            >
-              Get Started 
-            </motion.button>
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+              <motion.button
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => navigate("/contact")}
+                className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-6 py-3 rounded-lg font-semibold text-white text-sm uppercase tracking-wide transition-colors"
+              >
+                Request a Demo
+              </motion.button>
+              <a
+                href="#atm-vas-services"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-gray-700 text-sm border-2 border-gray-300 hover:border-[#E91E8C] hover:text-[#E91E8C] transition-colors"
+              >
+                See All Services
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
           </motion.div>
 
+          {/* Services grid – glassmorphic on pink */}
           <motion.div
-            initial={{ opacity: 0, x: 60 }}
+            initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-            className="relative flex justify-center w-full"
+            transition={{ duration: 0.8, delay: 0.15 }}
+            className="relative w-full max-w-lg mx-auto lg:max-w-none"
           >
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="relative shadow-2xl border-8 border-gray-100 rounded-2xl md:max-w-full max-w-md overflow-hidden"
-            >
-              <img
-                src="/src/assets/twig-atm-1.jpg"
-                alt="TWIG Secure Payment"
-                className="w-full h-auto object-cover"
-              />
-            </motion.div>
+            <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-[#E91E8C] to-[#C41A78] p-6 md:p-8 shadow-2xl">
+              <div className="absolute inset-0 opacity-10 bg-[repeating-linear-gradient(-45deg,transparent,transparent_8px,rgba(255,255,255,.03)_8px,rgba(255,255,255,.03)_16px)]" aria-hidden />
+              <p className="relative text-xs font-semibold text-white/90 uppercase tracking-widest mb-5">
+                ATM Services Available
+              </p>
+              <div className="relative grid grid-cols-2 gap-3 md:gap-4 mb-5">
+                {[
+                  { name: "Account Opening", icon: FolderOpen },
+                  { name: "Fund Transfer", icon: ArrowLeftRight },
+                  { name: "Instant Loan", icon: Banknote },
+                  { name: "Airtime & Bills", icon: LayoutGrid },
+                  { name: "BVN Linking", icon: Link2 },
+                  { name: "Phone Update", icon: Smartphone },
+                ].map((service) => (
+                  <div
+                    key={service.name}
+                    className="rounded-xl bg-white/15 backdrop-blur-sm border border-white/20 p-4 flex flex-col items-center justify-center text-center min-h-[100px]"
+                  >
+                    <service.icon className="w-8 h-8 text-white mb-2" strokeWidth={1.5} />
+                    <span className="text-sm font-medium text-white">{service.name}</span>
+                  </div>
+                ))}
+              </div>
+              <button
+                type="button"
+                onClick={() => navigate("/contact")}
+                className="relative w-full py-3.5 rounded-xl bg-white/20 hover:bg-white/30 border border-white/30 text-white font-semibold text-sm uppercase tracking-wide transition-colors"
+              >
+                All at the ATM
+              </button>
+            </div>
           </motion.div>
         </div>
       </section>
 
-       {/* Why TWIG ATMVAS  Section*/}
-      <section className="bg-gray-50 px-6 md:px-8 py-20 md:py-24 w-full">
-            <h2 className="mb-2 w-[60%] font-bold text-xl md:text-3xl">
+       {/* Why TWIG ATMVAS / Services detail */}
+      <section id="atm-vas-services" className="scroll-mt-24 bg-gray-50 px-6 md:px-8 py-20 md:py-24 w-full">
+            <h2 className="mb-2 w-full md:w-[60%] font-bold text-xl md:text-3xl">
               Deliver more than just cash withdrawal services to your customers with{" "}
-              <span className="text-[#D80369]"> our product</span>
+              <span className="text-[#E91E8C]"> our product</span>
             </h2>
             <p className="mb-10 text-black text-sm">Customers can do so much more with an ATM than just withdrawing cash.</p>
         <div className="items-start gap-12 md:gap-20 grid grid-cols-1 md:grid-cols-2 w-full">
@@ -253,9 +286,9 @@ const TwigSecureAtmVas: React.FC = () => {
                                  }}
                                  className="group relative flex gap-4 bg-white/70 hover:shadow-lg p-4 md:p-5 rounded-2xl transition-all hover:-translate-y-1"
                                >
-                                 <span className="top-1/3 left-0 absolute bg-[#D80369] rounded-full w-1 h-8 -translate-y-1/2" />
+                                 <span className="top-1/3 left-0 absolute bg-[#E91E8C] rounded-full w-1 h-8 -translate-y-1/2" />
                
-                                 <div className="flex-shrink-0 justify-center items-center grid bg-[#D80369]/10 group-hover:bg-[#D80369]/20 rounded-xl w-11 h-11 transition-all">
+                                 <div className="flex-shrink-0 justify-center items-center grid bg-[#E91E8C]/10 group-hover:bg-[#E91E8C]/20 rounded-xl w-11 h-11 transition-all">
                                    <img
                                      src={reason.image}
                                      alt={reason.title}
@@ -287,7 +320,7 @@ const TwigSecureAtmVas: React.FC = () => {
         >
           <h2 className="mb-3 font-bold text-lg md:text-4xl">
             Harness the full potential of {" "}
-            <span className="text-[#D80369]">ATMs.</span>
+            <span className="text-[#E91E8C]">ATMs.</span>
           </h2>
           <p className="w-full text-sm text-center">
           Reduce your customers' reliance on branches by offering self-service capabilities{' '}
@@ -304,7 +337,7 @@ const TwigSecureAtmVas: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white p-4 md:p-8 border-2 border-gray-100 hover:border-[#D80369]/20 rounded-2xl w-full transition-all"
+              className="bg-white p-4 md:p-8 border-2 border-gray-100 hover:border-[#E91E8C]/20 rounded-2xl w-full transition-all"
             >
               <div className="rounded-xl overflow-hidden">
                 <img
@@ -315,8 +348,8 @@ const TwigSecureAtmVas: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-2 mb-3">
-                <div className="bg-[#D80369] rounded-full w-1.5 h-1.5" />
-                <span className="font-semibold text-[#D80369] text-xs uppercase tracking-wider">
+                <div className="bg-[#E91E8C] rounded-full w-1.5 h-1.5" />
+                <span className="font-semibold text-[#E91E8C] text-xs uppercase tracking-wider">
                   Feature
                 </span>
               </div>
@@ -343,7 +376,7 @@ const TwigSecureAtmVas: React.FC = () => {
         >
           <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
             Flexible product, built with your{" "}
-            <span className="text-[#D80369]">business needs in mind</span>
+            <span className="text-[#E91E8C]">business needs in mind</span>
           </h2>
         </motion.div>
         <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full">
@@ -360,12 +393,12 @@ const TwigSecureAtmVas: React.FC = () => {
               }}
               className={`
           rounded-2xl border border-gray-200 bg-white
-          p-6 md:p-8 transition-colors hover:border-[#D80369]/30
+          p-6 md:p-8 transition-colors hover:border-[#E91E8C]/30
           ${index === benefits.length - 1 ? "md:col-span-2" : ""}
         `}
             >
               <div className="mb-5">
-                <div className="flex justify-center items-center bg-[#D80369]/10 rounded-lg w-12 h-12">
+                <div className="flex justify-center items-center bg-[#E91E8C]/10 rounded-lg w-12 h-12">
                   <img
                     src={benefit.image}
                     alt={benefit.title}
@@ -394,7 +427,7 @@ const TwigSecureAtmVas: React.FC = () => {
           className="mb-14 text-center"
         >
           <h2 className="font-bold text-gray-900 text-xl md:text-4xl">
-            <span className="text-[#D80369]">TWIG SECURE ATM VAS  </span>
+            <span className="text-[#E91E8C]">TWIG SECURE ATM VAS  </span>
             <br className="hidden md:block" />
             is trusted by leading institutions
           </h2>
@@ -413,7 +446,7 @@ const TwigSecureAtmVas: React.FC = () => {
         >
           {/* Banks */}
           <div className="relative bg-white shadow-sm hover:shadow-lg p-8 border border-gray-200 rounded-2xl text-center transition-all">
-            <div className="flex justify-center items-center bg-[#D80369]/10 mx-auto mb-4 rounded-xl w-14 h-14">
+            <div className="flex justify-center items-center bg-[#E91E8C]/10 mx-auto mb-4 rounded-xl w-14 h-14">
               <img src={bank} alt="Banks" className="w-7 h-7" />
             </div>
 
@@ -423,7 +456,7 @@ const TwigSecureAtmVas: React.FC = () => {
 
           {/* ATMs */}
           <div className="relative bg-white shadow-sm hover:shadow-lg p-8 border border-gray-200 rounded-2xl text-center transition-all">
-            <div className="flex justify-center items-center bg-[#D80369]/10 mx-auto mb-4 rounded-xl w-14 h-14">
+            <div className="flex justify-center items-center bg-[#E91E8C]/10 mx-auto mb-4 rounded-xl w-14 h-14">
               <img src={atm_4} alt="ATMs" className="w-7 h-7" />
             </div>
 
@@ -485,7 +518,7 @@ const TwigSecureAtmVas: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate("/contact")}
-                className="bg-[#D80369] hover:bg-[#b8025a] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
+                className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
               >
                 Start Now
               </motion.button>

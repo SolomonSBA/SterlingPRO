@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import TransactAtScale from './TransactAtScale';
 import Hero from './Hero';
 import Partners from './Partners';
 import WhatWeDo from './WhatWeDo';
@@ -12,6 +13,7 @@ const AppLayout: React.FC = () => {
     <div className="bg-white min-h-screen">
       <Navbar />
       <main className='overflow-hidden'>
+        <TransactAtScale />
         <Hero />
         <Partners />
         <WhatWeDo />

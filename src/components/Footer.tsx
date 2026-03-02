@@ -26,12 +26,12 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Global HQ</h3>
             <div className="space-y-3 text-gray-600 text-sm">
               <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-[#D80369] flex-shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 text-[#E91E8C] flex-shrink-0 mt-0.5" />
                 <p>Suite G04, 1 Quality Court, Chancery Lane, London WC2A 1HR United Kingdom.</p>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-[#D80369] flex-shrink-0" />
-                <a href="mailto:info@sterlingprobiotranx.co.uk" className="hover:text-[#D80369] transition-colors">
+                <Mail className="w-5 h-5 text-[#E91E8C] flex-shrink-0" />
+                <a href="mailto:info@sterlingprobiotranx.co.uk" className="hover:text-[#E91E8C] transition-colors">
                   info@sterlingprobiotranx.co.uk
                 </a>
               </div>
@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
                 href="https://ng.linkedin.com/company/sterlingpro-business-applications"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#D80369] hover:text-white transition-all"
+                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#E91E8C] hover:text-white transition-all"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                 href="https://twitter.com/Sterlingpro_ng"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#D80369] hover:text-white transition-all"
+                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#E91E8C] hover:text-white transition-all"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
                 href="https://www.instagram.com/sterlingprong/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#D80369] hover:text-white transition-all"
+                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#E91E8C] hover:text-white transition-all"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
             className="relative flex items-center justify-center"
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#D80369]/10 to-transparent rounded-full blur-3xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#E91E8C]/10 to-transparent rounded-full blur-3xl"></div>
               <p className="text-4xl md:text-5xl font-light italic text-gray-300 relative z-10">
                 Just Transact...
               </p>
@@ -94,18 +94,18 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Nigeria Office</h3>
             <div className="space-y-3 text-gray-600 text-sm">
               <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-[#D80369] flex-shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 text-[#E91E8C] flex-shrink-0 mt-0.5" />
                 <p>15/17c Bush Street, Anthony-Maryland, Lagos, Nigeria.</p>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-[#D80369] flex-shrink-0" />
-                <a href="tel:+2348077394817" className="hover:text-[#D80369] transition-colors">
+                <Phone className="w-5 h-5 text-[#E91E8C] flex-shrink-0" />
+                <a href="tel:+2348077394817" className="hover:text-[#E91E8C] transition-colors">
                   +234 (0) 807 739 4817
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-[#D80369] flex-shrink-0" />
-                <a href="mailto:info@sterlingprong.com" className="hover:text-[#D80369] transition-colors">
+                <Mail className="w-5 h-5 text-[#E91E8C] flex-shrink-0" />
+                <a href="mailto:info@sterlingprong.com" className="hover:text-[#E91E8C] transition-colors">
                   info@sterlingprong.com
                 </a>
               </div>

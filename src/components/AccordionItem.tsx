@@ -26,7 +26,7 @@ const AccordionItem: React.FC<{
         <motion.div
           animate={{ rotate: isOpen ? 45 : 0 }}
           transition={{ duration: 0.3 }}
-          className="flex flex-shrink-0 justify-center items-center bg-[#D80369] rounded-full w-8 h-8"
+          className="flex flex-shrink-0 justify-center items-center bg-[#E91E8C] rounded-full w-8 h-8"
         >
           <span className="font-bold text-white text-xl">+</span>
         </motion.div>

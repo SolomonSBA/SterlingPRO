@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { ArrowRight, AlertTriangle } from "lucide-react";
 import AccordionItem from "@/components/AccordionItem";
 import security from "../../assets/security.png"
 import management from "../../assets/management.png"
@@ -190,54 +191,91 @@ const AtmMonit: React.FC = () => {
 
   return (
     <div className="bg-white w-full min-h-screen overflow-x-hidden">
-      {/* Hero Section*/}
+      {/* Hero Section – tagline, copy, CTAs + live dashboard mockup */}
       <section className="bg-white px-6 md:px-10 pt-10 pb-20 md:pb-24 w-full">
-        <div className="items-center gap-12 md:gap-16 grid grid-cols-1 md:grid-cols-2 w-full">
+        <div className="items-center gap-12 md:gap-16 grid grid-cols-1 lg:grid-cols-2 w-full">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="w-full md:text-left text-center"
           >
-            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl leading-tight">
-             ATM <span className="text-[#D80369]">MONIT</span>
+            <div className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-3 py-1.5 mb-4 md:mb-6">
+              <span className="rounded-full bg-[#E91E8C] w-2 h-2" />
+              <span className="text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                ATM Network Intelligence
+              </span>
+            </div>
+
+            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl lg:text-5xl leading-tight">
+              Monitor every ATM.{" "}
+              <span className="text-[#E91E8C]">Prevent</span> every incident. Always.
             </h1>
 
             <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
-              Seamlessly monitor your entire ATM network, ensure constant uptime, secure your ATM against fraud, and deliver a better customer experience.
+              ATM MONIT is an all-in-one ATM monitoring and management platform — ensuring constant uptime, protecting customers from fraud, and giving your ops team complete, real-time network visibility.
             </p>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => navigate("/contact")}
-              className="bg-[#D80369] hover:bg-[#b8025a] shadow-lg px-7 md:px-8 py-3 rounded-lg font-semibold text-white text-sm transition-all"
-            >
-              Get Started 
-            </motion.button>
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+              <motion.button
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={() => navigate("/contact")}
+                className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-6 py-3 rounded-lg font-semibold text-white text-sm uppercase tracking-wide transition-colors"
+              >
+                Request a Demo
+              </motion.button>
+              <a
+                href="#atm-monit-capabilities"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-gray-700 text-sm border-2 border-gray-300 hover:border-[#E91E8C] hover:text-[#E91E8C] transition-colors"
+              >
+                Explore Capabilities
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
           </motion.div>
 
+          {/* Dashboard mockup – Network Status + Suspicious Activity */}
           <motion.div
-            initial={{ opacity: 0, x: 60 }}
+            initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-            className="relative flex justify-center w-full"
+            transition={{ duration: 0.8, delay: 0.15 }}
+            className="relative w-full max-w-lg mx-auto lg:max-w-none"
           >
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="relative shadow-2xl border-8 border-gray-100 rounded-2xl md:max-w-full max-w-md overflow-hidden"
-            >
-              <img
-                src="/src/assets/atm-monit-1.jpg"
-                alt="TWIG Secure Payment"
-                className="w-full h-auto object-cover"
-              />
-            </motion.div>
+            <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-[#E91E8C] to-[#C41A78] p-6 md:p-8 shadow-2xl">
+              <div className="space-y-4">
+                <div className="rounded-xl bg-white/15 backdrop-blur-sm border border-white/20 p-4">
+                  <p className="text-[10px] md:text-xs font-semibold text-white/90 uppercase tracking-widest mb-3">
+                    Network Status — Live
+                  </p>
+                  <ul className="space-y-2">
+                    {[
+                      { id: "004", location: "Ikeja", status: "Online", statusClass: "bg-emerald-500" },
+                      { id: "017", location: "VI", status: "Online", statusClass: "bg-emerald-500" },
+                      { id: "031", location: "Surulere", status: "Cash Low", statusClass: "bg-amber-500" },
+                      { id: "045", location: "Lekki", status: "Incident", statusClass: "bg-red-500" },
+                    ].map((atm) => (
+                      <li
+                        key={atm.id}
+                        className="flex items-center justify-between text-white text-sm py-1.5"
+                      >
+                        <span>ATM #{atm.id} · {atm.location}</span>
+                        <span className={`px-2 py-0.5 rounded text-xs font-medium ${atm.statusClass} text-white`}>
+                          {atm.status}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="rounded-xl bg-white/15 backdrop-blur-sm border border-white/20 p-4 flex items-start gap-3">
+                  <AlertTriangle className="w-8 h-8 text-amber-300 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-white text-sm">Suspicious Activity Detected</p>
+                    <p className="text-white/90 text-xs mt-0.5">ATM #045 — Escalation sent to custodian</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -270,7 +308,7 @@ const AtmMonit: React.FC = () => {
                >
                  <h2 className="mb-4 font-bold text-xl md:text-3xl">
                   An{" "}
-                   <span className="text-[#D80369]"> all-in-one </span>
+                   <span className="text-[#E91E8C]"> all-in-one </span>
                   ATM monitoring solution. 
                  </h2>
                  <p className="text-grey">A powerful ATM network monitoring and management system that seamlessly integrates with your existing infrastructure.</p>
@@ -289,9 +327,9 @@ const AtmMonit: React.FC = () => {
                                       }}
                                       className="group relative flex gap-4 bg-white/70 hover:shadow-lg p-4 md:p-5 rounded-2xl transition-all hover:-translate-y-1"
                                     >
-                                      <span className="top-1/3 left-0 absolute bg-[#D80369] rounded-full w-1 h-8 -translate-y-1/2" />
+                                      <span className="top-1/3 left-0 absolute bg-[#E91E8C] rounded-full w-1 h-8 -translate-y-1/2" />
                     
-                                      <div className="flex-shrink-0 justify-center items-center grid bg-[#D80369]/10 group-hover:bg-[#D80369]/20 rounded-xl w-11 h-11 transition-all">
+                                      <div className="flex-shrink-0 justify-center items-center grid bg-[#E91E8C]/10 group-hover:bg-[#E91E8C]/20 rounded-xl w-11 h-11 transition-all">
                                         <img
                                           src={reason.image}
                                           alt={reason.title}
@@ -317,14 +355,15 @@ const AtmMonit: React.FC = () => {
         <div className="top-0 left-0 absolute bg-white rounded-b-[100%] w-full h-32" />
 
         <motion.div
+          id="atm-monit-capabilities"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-16 mb-16 text-center"
+          className="mt-16 mb-16 text-center scroll-mt-24"
         >
           <h2 className="mb-3 font-bold text-lg md:text-4xl">
             An ATM monitoring solution with a  {" "}
-            <span className="text-[#D80369]">wide range </span> of capabilities.
+            <span className="text-[#E91E8C]">wide range </span> of capabilities.
           </h2>
           
         </motion.div>
@@ -337,7 +376,7 @@ const AtmMonit: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white p-4 md:p-8 border-2 border-gray-100 hover:border-[#D80369]/20 rounded-2xl w-full transition-all"
+              className="bg-white p-4 md:p-8 border-2 border-gray-100 hover:border-[#E91E8C]/20 rounded-2xl w-full transition-all"
             >
               <div className="rounded-xl overflow-hidden">
                 <img
@@ -348,8 +387,8 @@ const AtmMonit: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-2 mb-3">
-                <div className="bg-[#D80369] rounded-full w-1.5 h-1.5" />
-                <span className="font-semibold text-[#D80369] text-xs uppercase tracking-wider">
+                <div className="bg-[#E91E8C] rounded-full w-1.5 h-1.5" />
+                <span className="font-semibold text-[#E91E8C] text-xs uppercase tracking-wider">
                   Feature
                 </span>
               </div>
@@ -374,7 +413,7 @@ const AtmMonit: React.FC = () => {
             className="mb-12 text-center"
           >
             <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
-              How <span className="text-[#D80369]">ATM MONIT</span> can help you
+              How <span className="text-[#E91E8C]">ATM MONIT</span> can help you
             </h2>
           </motion.div>
 
@@ -426,7 +465,7 @@ const AtmMonit: React.FC = () => {
         >
           <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
             Flexible API, built with your{" "}
-            <span className="text-[#D80369]">business needs in mind</span>
+            <span className="text-[#E91E8C]">business needs in mind</span>
           </h2>
         </motion.div>
         <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full">
@@ -443,12 +482,12 @@ const AtmMonit: React.FC = () => {
               }}
               className={`
           rounded-2xl border border-gray-200 bg-white
-          p-6 md:p-8 transition-colors hover:border-[#D80369]/30
+          p-6 md:p-8 transition-colors hover:border-[#E91E8C]/30
           ${index === benefits.length - 1 ? "md:col-span-2" : ""}
         `}
             >
               <div className="mb-5">
-                <div className="flex justify-center items-center bg-[#D80369]/10 rounded-lg w-12 h-12">
+                <div className="flex justify-center items-center bg-[#E91E8C]/10 rounded-lg w-12 h-12">
                   <img
                     src={benefit.image}
                     alt={benefit.title}
@@ -487,7 +526,7 @@ const AtmMonit: React.FC = () => {
   {/* Left Side - Text */}
     <div className="flex-1 text-center md:text-center">
           <h2 className="font-bold text-gray-900 text-xl md:text-6xl">
-            <span className="text-[#D80369] text-left">ATM Monit  </span> is 
+            <span className="text-[#E91E8C] text-left">ATM Monit  </span> is 
             <br className="hidden md:block" />
            trusted by
           </h2>
@@ -497,7 +536,7 @@ const AtmMonit: React.FC = () => {
   <div className="flex-1 gap-4 grid grid-cols-2 grid-rows-2 w-full">
     {/* Banks */}
     <div className="relative bg-white shadow-sm hover:shadow-lg p-6 border border-gray-200 rounded-2xl text-center transition-all">
-      <div className="flex justify-center items-center bg-[#D80369]/10 mx-auto mb-3 rounded-xl w-12 h-12">
+      <div className="flex justify-center items-center bg-[#E91E8C]/10 mx-auto mb-3 rounded-xl w-12 h-12">
         <img src={bank} alt="Banks" className="w-6 h-6" />
       </div>
       <h3 className="font-bold text-gray-900 text-3xl">{banksCount}+</h3>
@@ -506,7 +545,7 @@ const AtmMonit: React.FC = () => {
 
     {/* Fintech */}
     <div className="relative bg-white shadow-sm hover:shadow-lg p-6 border border-gray-200 rounded-2xl text-center transition-all">
-      <div className="flex justify-center items-center bg-[#D80369]/10 mx-auto mb-3 rounded-xl w-12 h-12">
+      <div className="flex justify-center items-center bg-[#E91E8C]/10 mx-auto mb-3 rounded-xl w-12 h-12">
         <img src={bank} alt="Fintech" className="w-6 h-6" />
       </div>
       <h3 className="font-bold text-gray-900 text-3xl">{fintechCount}+</h3>
@@ -515,7 +554,7 @@ const AtmMonit: React.FC = () => {
 
     {/* ATMs - Spans 2 columns */}
     <div className="relative col-span-2 bg-white shadow-sm hover:shadow-lg p-6 border border-gray-200 rounded-2xl text-center transition-all">
-      <div className="flex justify-center items-center bg-[#D80369]/10 mx-auto mb-3 rounded-xl w-12 h-12">
+      <div className="flex justify-center items-center bg-[#E91E8C]/10 mx-auto mb-3 rounded-xl w-12 h-12">
         <img src={atm_4} alt="ATMs" className="w-6 h-6" />
       </div>
       <h3 className="font-bold text-gray-900 text-3xl">
@@ -577,7 +616,7 @@ const AtmMonit: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => navigate("/contact")}
-                className="bg-[#D80369] hover:bg-[#b8025a] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
+                className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
               >
                 Start Now
               </motion.button>
