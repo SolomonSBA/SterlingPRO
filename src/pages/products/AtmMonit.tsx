@@ -207,7 +207,7 @@ const AtmMonit: React.FC = () => {
               </span>
             </div>
 
-            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl lg:text-5xl leading-tight">
+            <h1 className="mb-4 md:mb-6 font-bold text-2xl text-[#020817] md:text-4xl lg:text-5xl leading-tight">
               Monitor every ATM.{" "}
               <span className="text-[#E91E8C]">Prevent</span> every incident. Always.
             </h1>
@@ -306,7 +306,7 @@ const AtmMonit: React.FC = () => {
                  viewport={{ once: true }}
                  className="w-full"
                >
-                 <h2 className="mb-4 font-bold text-xl md:text-3xl">
+                 <h2 className="mb-4 font-bold text-xl md:text-3xl text-[#020817]">
                   An{" "}
                    <span className="text-[#E91E8C]"> all-in-one </span>
                   ATM monitoring solution. 
@@ -361,7 +361,7 @@ const AtmMonit: React.FC = () => {
           viewport={{ once: true }}
           className="mt-16 mb-16 text-center scroll-mt-24"
         >
-          <h2 className="mb-3 font-bold text-lg md:text-4xl">
+          <h2 className="mb-3 font-bold text-lg md:text-4xl text-[#020817]">
             An ATM monitoring solution with a  {" "}
             <span className="text-[#E91E8C]">wide range </span> of capabilities.
           </h2>
@@ -412,7 +412,7 @@ const AtmMonit: React.FC = () => {
             viewport={{ once: true }}
             className="mb-12 text-center"
           >
-            <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
+            <h2 className="mb-3 font-bold text-xl text-[#020817] md:text-4xl leading-tight">
               How <span className="text-[#E91E8C]">ATM MONIT</span> can help you
             </h2>
           </motion.div>
@@ -463,7 +463,7 @@ const AtmMonit: React.FC = () => {
           viewport={{ once: true }}
           className="mb-12 md:mb-16 text-center"
         >
-          <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
+          <h2 className="mb-3 font-bold text-xl text-[#020817] md:text-4xl leading-tight">
             Flexible API, built with your{" "}
             <span className="text-[#E91E8C]">business needs in mind</span>
           </h2>

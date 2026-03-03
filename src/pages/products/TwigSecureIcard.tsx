@@ -168,7 +168,7 @@ const TwigSecureIcard: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="w-full md:text-left text-center"
           >
-            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl leading-tight">
+            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl text-[#020817] leading-tight">
               TWIG SECURE <span className="text-[#E91E8C]">I-CARD</span>
             </h1>
 
@@ -223,7 +223,7 @@ const TwigSecureIcard: React.FC = () => {
           viewport={{ once: true }}
           className="mb-12 md:mb-16 w-[75%] text-left"
         >
-          <h2 className="mb-4 font-bold text-xl md:text-4xl leading-tight">
+          <h2 className="mb-4 font-bold text-xl md:text-4xl text-[#020817] leading-tight">
             An API for quickly{" "}
             <span className="text-[#E91E8C]">
               creating, printing, and managing physical cards{" "}
@@ -354,7 +354,7 @@ const TwigSecureIcard: React.FC = () => {
           viewport={{ once: true }}
           className="mb-12 md:mb-16 w-[75%] text-left"
         >
-          <h2 className="mb-4 font-bold text-xl md:text-4xl leading-tight">
+          <h2 className="mb-4 font-bold text-xl md:text-4xl text-[#020817] leading-tight">
             With TWIG <span className="text-[#E91E8C]">SECURE I-CARD</span> you
             issue debit and credit cards that are…
           </h2>
@@ -403,7 +403,7 @@ const TwigSecureIcard: React.FC = () => {
           viewport={{ once: true }}
           className="mb-12 md:mb-16 text-center"
         >
-          <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
+          <h2 className="mb-3 font-bold text-xl md:text-4xl text-[#020817] leading-tight">
             Flexible product, built with your{" "}
             <span className="text-[#E91E8C]">business needs in mind</span>
           </h2>

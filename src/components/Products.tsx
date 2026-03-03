@@ -263,7 +263,7 @@ const TwigSecure = () => {
             variants={fadeInUp}
           >
             <h2 className="mb-4 font-bold text-gray-900 text-4xl lg:text-5xl">
-              Flexible  Pick what works best for your business
+              Pick what works best for your business
             </h2>
             <p className="mx-auto max-w-3xl text-gray-600 text-xl">
               Get the entire package or pick from our sub products based on your needs.
@@ -435,7 +435,7 @@ const TwigSecure = () => {
           >
             <div className="items-center gap-16 grid lg:grid-cols-2 mb-20">
               <div>
-                <h2 className="mb-6 font-bold text-gray-900 text-4xl lg:text-5xl leading-tight">
+                <h2 className="mb-6 font-bold text-gray-900 text-4xl text-[#020817] lg:text-5xl leading-tight">
                   Flexible product, built with your business needs in mind
                 </h2>
               </div>
@@ -484,9 +484,9 @@ const TwigSecure = () => {
 
       {/* Trusted By Section */}
       <section className="bg-gray-50 py-16">
-        <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-[#020817]">
           <motion.h3 
-            className="mb-12 font-bold text-gray-900 text-2xl text-center"
+            className="mb-12 font-bold text-gray-900 text-2xl text-[#020817] text-center"
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}

@@ -205,7 +205,7 @@ const Biotranx: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="w-full md:text-left text-center"
           >
-            <h2 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl leading-tight">
+            <h2 className="mb-4 md:mb-6 font-bold text-2xl text-[#020817] md:text-4xl leading-tight">
               One service,{" "}
               <span className="text-[#E91E8C]">many use cases</span>
             </h2>
@@ -238,7 +238,7 @@ const Biotranx: React.FC = () => {
           viewport={{ once: true }}
           className="mt-16 mb-16 text-center"
         >
-          <h2 className="mb-3 font-bold text-lg md:text-3xl">
+          <h2 className="mb-3 font-bold text-lg md:text-3xl text-[#020817]">
             Features {" "}
             <span className="text-[#E91E8C]">what customers can do</span>
           </h2>
@@ -285,7 +285,7 @@ const Biotranx: React.FC = () => {
           viewport={{ once: true }}
           className="mb-12 text-center"
         >
-          <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
+          <h2 className="mb-3 font-bold text-xl md:text-4xl text-[#020817] leading-tight">
             Use cases {" "}
             <span className="text-[#E91E8C]">where Biometric Payments fits</span>
           </h2>
@@ -316,7 +316,7 @@ const Biotranx: React.FC = () => {
           viewport={{ once: true }}
           className="mb-12 text-center"
         >
-          <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
+          <h2 className="mb-3 font-bold text-xl text-[#020817] md:text-4xl leading-tight">
             How <span className="text-[#E91E8C]">Biometric Payments</span> works
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -359,7 +359,7 @@ const Biotranx: React.FC = () => {
               </span>
             </div>
 
-            <h2 className="mb-4 font-bold text-2xl md:text-4xl leading-tight">
+            <h2 className="mb-4 font-bold text-2xl md:text-4xl text-[#020817] leading-tight">
               How Biometric Payments self-enrollment works
             </h2>
 
@@ -403,7 +403,7 @@ const Biotranx: React.FC = () => {
           viewport={{ once: true }}
           className="mb-12 md:mb-16 text-center"
         >
-          <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
+          <h2 className="mb-3 font-bold text-xl md:text-4xl text-[#020817] leading-tight">
             Built with your{" "}
             <span className="text-[#E91E8C]">business in mind</span>
           </h2>

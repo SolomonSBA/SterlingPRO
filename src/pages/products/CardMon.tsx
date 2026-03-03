@@ -174,7 +174,7 @@ const CardMon: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="w-full md:text-left text-center"
           >
-            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl leading-tight">
+            <h1 className="mb-4 md:mb-6 font-bold text-2xl text-[#020817] md:text-4xl leading-tight">
               CARD <span className="text-[#E91E8C]">MON</span>
             </h1>
 
@@ -226,7 +226,7 @@ const CardMon: React.FC = () => {
           viewport={{ once: true }}
           className="mb-12 md:mb-16 w-[75%] text-left"
         >
-          <h2 className="mb-4 font-bold text-xl md:text-4xl leading-tight">
+          <h2 className="mb-4 font-bold text-xl md:text-4xl text-[#020817] leading-tight">
              <span className="text-[#E91E8C]">
               Build and scale{" "}
             </span>
@@ -280,7 +280,7 @@ const CardMon: React.FC = () => {
           viewport={{ once: true }}
           className="mb-12 md:mb-16 w-[75%] text-left"
         >
-          <h2 className="mb-4 font-bold text-xl md:text-4xl leading-tight">
+          <h2 className="mb-4 font-bold text-xl md:text-4xl text-[#020817] leading-tight">
            <span className="text-[#E91E8C]">Simple</span> to integrate into your system, feature-rich, and smooth to use.
           </h2>
         </motion.div>
@@ -328,7 +328,7 @@ const CardMon: React.FC = () => {
           viewport={{ once: true }}
           className="mb-12 md:mb-16 text-center"
         >
-          <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
+          <h2 className="mb-3 font-bold text-xl md:text-4xl text-[#020817] leading-tight">
             Flexible product, built with your{" "}
             <span className="text-[#E91E8C]">business needs in mind</span>
           </h2>

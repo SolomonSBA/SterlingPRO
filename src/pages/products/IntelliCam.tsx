@@ -162,11 +162,11 @@ const IntelliCam: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="w-full md:text-left text-center"
           >
-            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl leading-tight">
+            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl text-[#020817] leading-tight">
              Intelli<span className="text-[#E91E8C]">CAM</span>
             </h1>
 
-            <h3 className="mb-4 font-bold text-grey text-xl">AI Powered ATM Surveillance Solution</h3>
+            <h3 className="mb-4 font-bold text-grey text-xl text-[#020817]">ATM Surveillance Solution</h3>
 
             <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm leading-relaxed">
               24/7 camera surveillance that does more than ATM monitoring. A smart solution that mitigates fraudulent activities.
@@ -233,7 +233,7 @@ const IntelliCam: React.FC = () => {
                  viewport={{ once: true }}
                  className="w-full"
                >
-                 <h2 className="mb-4 font-bold text-xl md:text-3xl">
+                 <h2 className="mb-4 font-bold text-xl md:text-3xl text-[#020817]">
                   Why{" "}
                    <span className="text-[#E91E8C]"> Intellicam? </span>
                   
@@ -355,7 +355,7 @@ const IntelliCam: React.FC = () => {
                     transition={{ delay: 0.2 }}
                     className="w-full md:text-left text-center"
                   >
-                    <h2 className="mb-4 md:mb-6 font-bold text-2xl md:text-3xl leading-tight">
+                    <h2 className="mb-4 md:mb-6 font-bold text-2xl md:text-3xl text-[#020817] leading-tight">
                      Delight your customers with
                       <span className="text-[#E91E8C]"> innovative, convenient</span> and <span className="text-[#E91E8C]"> secure</span> customer experiences.
                     </h2>
@@ -375,7 +375,7 @@ const IntelliCam: React.FC = () => {
           viewport={{ once: true }}
           className="mb-12 md:mb-16 text-center"
         >
-          <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
+          <h2 className="mb-3 font-bold text-xl md:text-4xl text-[#020817] leading-tight">
             Flexible product, built with your{" "}
             <span className="text-[#E91E8C]">business needs in mind</span>
           </h2>

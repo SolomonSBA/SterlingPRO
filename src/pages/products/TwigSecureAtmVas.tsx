@@ -168,7 +168,7 @@ const TwigSecureAtmVas: React.FC = () => {
               </span>
             </div>
 
-            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl lg:text-5xl leading-tight">
+            <h1 className="mb-4 md:mb-6 font-bold text-2xl text-[#020817] md:text-4xl lg:text-5xl leading-tight">
               Your ATM can do{" "}
               <span className="text-[#E91E8C]">far more</span> than dispense cash.
             </h1>
@@ -240,7 +240,7 @@ const TwigSecureAtmVas: React.FC = () => {
 
        {/* Why TWIG ATMVAS / Services detail */}
       <section id="atm-vas-services" className="scroll-mt-24 bg-gray-50 px-6 md:px-8 py-20 md:py-24 w-full">
-            <h2 className="mb-2 w-full md:w-[60%] font-bold text-xl md:text-3xl">
+            <h2 className="mb-2 w-full md:w-[60%] font-bold text-xl md:text-3xl text-[#020817]">
               Deliver more than just cash withdrawal services to your customers with{" "}
               <span className="text-[#E91E8C]"> our product</span>
             </h2>
@@ -318,7 +318,7 @@ const TwigSecureAtmVas: React.FC = () => {
           viewport={{ once: true }}
           className="mt-16 mb-16 text-center"
         >
-          <h2 className="mb-3 font-bold text-lg md:text-4xl">
+          <h2 className="mb-3 font-bold text-lg md:text-4xl text-[#020817]">
             Harness the full potential of {" "}
             <span className="text-[#E91E8C]">ATMs.</span>
           </h2>
@@ -374,7 +374,7 @@ const TwigSecureAtmVas: React.FC = () => {
           viewport={{ once: true }}
           className="mb-12 md:mb-16 text-center"
         >
-          <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
+          <h2 className="mb-3 font-bold text-xl md:text-4xl text-[#020817] leading-tight">
             Flexible product, built with your{" "}
             <span className="text-[#E91E8C]">business needs in mind</span>
           </h2>

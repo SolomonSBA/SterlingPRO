@@ -164,7 +164,7 @@ const TwigSecureInstantPin: React.FC = () => {
             className="w-full md:text-left text-center"
           >
 
-            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl leading-tight">
+            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl text-[#020817]  leading-tight">
               TWIG SECURE <span className="text-[#E91E8C]">INSTANT PIN</span>
             </h1>
 
@@ -261,7 +261,7 @@ const TwigSecureInstantPin: React.FC = () => {
           viewport={{ once: true }}
           className="mt-16 mb-16 text-center"
         >
-          <h2 className="mb-3 font-bold text-lg md:text-4xl">
+          <h2 className="mb-3 font-bold text-lg md:text-4xl text-[#020817]">
             <span className="text-[#E91E8C]">Secure Issuance</span> of Debit and
             Credit Card PINs with our Sub-products{" "}
           </h2>
@@ -420,7 +420,7 @@ const TwigSecureInstantPin: React.FC = () => {
           viewport={{ once: true }}
           className="mb-12 md:mb-16 text-center"
         >
-          <h2 className="mb-3 font-bold text-xl md:text-4xl leading-tight">
+          <h2 className="mb-3 font-bold text-xl md:text-4xl text-[#020817] leading-tight">
             Flexible product, built with your{" "}
             <span className="text-[#E91E8C]">business needs in mind</span>
           </h2>

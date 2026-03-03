@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
                 href="https://ng.linkedin.com/company/sterlingpro-business-applications"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#E91E8C] hover:text-white transition-all"
+                className="w-10 h-10 rounded-full bg-gray-400 flex items-center justify-center hover:bg-[#E91E8C] hover:text-white transition-all"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                 href="https://twitter.com/Sterlingpro_ng"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#E91E8C] hover:text-white transition-all"
+                className="w-10 h-10 rounded-full bg-gray-400 flex items-center justify-center hover:bg-[#E91E8C] hover:text-white transition-all"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
                 href="https://www.instagram.com/sterlingprong/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-[#E91E8C] hover:text-white transition-all"
+                className="w-10 h-10 rounded-full bg-gray-400 flex items-center justify-center hover:bg-[#E91E8C] hover:text-white transition-all"
                 aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
