@@ -88,10 +88,11 @@ const TransactAtScale: React.FC = () => {
                   exit={{ opacity: 0, y: -6 }}
                   transition={{ duration: 0.25 }}
                 >
-                  <p className="text-2xl md:text-3xl font-bold text-gray-900">{currentTx.amount}</p>
+                  <p className="text-2xl md:text-3xl font-bold text-gray-900">{currentTx.channel}</p>
                   <p className="mt-1 flex items-center gap-2 text-sm text-gray-600">
                     <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
-                    Approved · {currentTx.channel}
+                     Approved 
+                    {/* Approved · {currentTx.channel} */}
                   </p>
                 </motion.div>
               </AnimatePresence>
