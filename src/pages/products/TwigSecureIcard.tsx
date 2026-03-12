@@ -172,7 +172,7 @@ const TwigSecureIcard: React.FC = () => {
               TWIG SECURE <span className="text-[#E91E8C]">I-CARD</span>
             </h1>
 
-            <h3 className="mb-4 font-bold text-grey text-xl">
+            <h3 className="mb-4 font-bold text-grey text-[#020817] text-xl">
               Issue instant Physical Cards In-Branch
             </h3>
 
@@ -230,7 +230,7 @@ const TwigSecureIcard: React.FC = () => {
             </span>{" "}
             in the branch
           </h2>
-          <p className="text-grey text-sm">
+          <p className="text-sm text-[#020817]">
             TWIG SECURE I-CARD allows you to easily create, manage, and scale
             debit/credit cards. Get started in minutes and control every detail,
             from card design to printing and card management.
@@ -297,7 +297,7 @@ const TwigSecureIcard: React.FC = () => {
             viewport={{ once: true }}
             className="w-full"
           >
-            <h2 className="mb-4 font-bold text-xl md:text-3xl">
+            <h2 className="mb-4 font-bold text-[#020817] text-xl md:text-3xl">
               A flexible card program that{" "}
               <span className="text-[#E91E8C]">
                 {" "}

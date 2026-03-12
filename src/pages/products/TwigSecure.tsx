@@ -20,16 +20,25 @@ const TwigSecure: React.FC = () => {
 
   const features = [
     {
-      image: posTeller,
-      title: "POS Teller In-Branch",
+      image: cyberSecurity,
+      title: "TWIG Secure Instant PIN",
       description:
-        "POS Teller solution enables banks to provide fast and secure cash deposits, withdrawals, transfers, as well as other teller and customer service transactions at the branch to its customers, using payment cards and PINs.",
+        "Enable customers to securely select or change their payment card PIN in-branch, assisted by staff using a POS terminal at the counter.",
+      slug: "/products/twig-secure-instant-pin-branch",
     },
     {
       image: bioImg,
-      title: "FASTRANX",
+      title: "TWIG Secure POSTeller",
       description:
-        "Enable your customers to use biometric verification to make secure and fast cash deposits, withdrawals, and other over the counter transaction at the branch without the need for slips and lengthy forms.",
+        "Extend teller and branch transaction services securely through Point-of-Sale (POS) terminals. Ideal for branch, agency banking, and controlled service locations.",
+      slug: "/products/twig-secure-pos-teller",
+    },
+    {
+      image: moneyTransfer,
+      title: "CardMon",
+      description:
+        "Automate the end-to-end settlement lifecycle across ATM (NOU/ROU), IMTO, PayDirect, and VTU channels with straight-through processing, dual-control workflows, and comprehensive audit trails.",
+      slug: "/products/card-mon",
     },
   ];
 
@@ -123,21 +132,22 @@ const TwigSecure: React.FC = () => {
             <div className="flex justify-center md:justify-start gap-2 mb-4 md:mb-6">
               <div className="bg-[#E91E8C] mt-1 rounded-full w-2 h-2"></div>
               <span className="font-medium text-[#E91E8C] text-xs md:text-sm uppercase tracking-wide">
-                Seamless & Secure
+                In-Branch Banking Solutions
               </span>
             </div>
 
             <h1 className="mb-4 md:mb-6 font-bold text-2xl text-[#020817] md:text-4xl leading-tight">
-              TWIG <span className="text-[#E91E8C]">SECURE</span>
+              Secure and Efficient Banking at the <span className="text-[#E91E8C]">Counter</span>
             </h1>
 
-            <h2 className="mb-4 md:mb-6 font-semibold text-gray-800 text-xl md:text-2xl">
-              Seamless In branch transactions
-            </h2>
-
             <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
-              Enable your customers to perform in-branch transactions using
-              payment cards or biometric verification.
+              Modern banking customers expect fast, secure service even when they visit a branch. SterlingPRO’s In-Branch
+              Banking Solutions provide banks with the tools needed to streamline counter transactions, improve customer
+              experience, and strengthen operational control within the branch environment.
+            </p>
+            <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
+              By combining secure authentication, transaction processing, and monitoring capabilities, these solutions help
+              banks modernize the branch experience while maintaining compliance with operational and security requirements.
             </p>
 
             <motion.button
@@ -201,16 +211,17 @@ const TwigSecure: React.FC = () => {
             className="w-full md:text-left text-center"
           >
             <h2 className="mb-4 md:mb-6 font-bold text-2xl text-[#020817] md:text-4xl leading-tight">
-              Convenient & Secure
-              <span className="text-[#E91E8C]"> Customer Experience</span>
+              Built for Modern <span className="text-[#E91E8C]">Branch Operations</span>
             </h2>
 
             <p className="mx-auto md:mx-0 mb-6 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
-              TWIG SECURE offers a convenient and secure way to carry out
-              transactions in-branch. Your customers can perform transactions
-              like withdrawals, cash deposits, transfers and more using their
-              cards and PIN on a POS device or via biometric verification,
-              over the counter.
+              Branches remain an important customer touchpoint for many banking services. SterlingPRO’s in-branch solutions
+              support bank staff with secure systems that simplify customer transactions, reduce manual processes, and improve
+              service efficiency.
+            </p>
+            <p className="mx-auto md:mx-0 mb-6 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
+              From instant PIN selection to POS-based teller services and settlement automation, the platform helps banks
+              deliver reliable services while maintaining full visibility into in-branch activities.
             </p>
           </motion.div>
         </div>
@@ -226,15 +237,13 @@ const TwigSecure: React.FC = () => {
           viewport={{ once: true }}
           className="mt-16 mb-16 text-center"
         >
-          <h2 className="mb-3 font-bold text-lg md:text-3xl">
-            Flexible -{" "}
-            <span className="text-[#E91E8C]">
-              Pick what works best for your business
-            </span>
+          <h2 className="mb-3 font-bold text-lg text-[#020817] md:text-3xl">
+            Solutions within the{" "}
+            <span className="text-[#E91E8C]">In-Branch Banking</span> Suite
           </h2>
           <p className="text-gray-600 text-sm">
-            Get the entire package or pick from our sub-products based on your
-            needs.
+            Secure, operationally controlled tooling that helps branch teams deliver efficient service—without compromising
+            compliance.
           </p>
         </motion.div>
 
@@ -259,7 +268,7 @@ const TwigSecure: React.FC = () => {
               <div className="flex items-center gap-2 mb-3">
                 <div className="bg-[#E91E8C] rounded-full w-1.5 h-1.5" />
                 <span className="font-semibold text-[#E91E8C] text-xs uppercase tracking-wider">
-                  Feature
+                  Solution
                 </span>
               </div>
 
@@ -270,6 +279,16 @@ const TwigSecure: React.FC = () => {
               <p className="text-gray-600 text-sm leading-relaxed">
                 {feature.description}
               </p>
+
+              <div className="mt-5">
+                <button
+                  type="button"
+                  onClick={() => navigate(feature.slug)}
+                  className="inline-flex items-center justify-center rounded-lg border border-gray-200 px-4 py-2 text-sm font-semibold text-gray-800 hover:border-[#E91E8C]/30 hover:text-[#E91E8C] transition-colors"
+                >
+                  Learn more
+                </button>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -351,7 +370,7 @@ const TwigSecure: React.FC = () => {
             viewport={{ once: true }}
             className="w-full"
           >
-            <h2 className="mb-4 font-bold text-lg md:text-3xl">
+            <h2 className="mb-4 font-bold text-lg text-[#020817] md:text-3xl">
               Why <span className="text-[#E91E8C]">TWIG SECURE?</span>
             </h2>
 

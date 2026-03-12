@@ -36,38 +36,32 @@ const Navbar: React.FC = () => {
   const productSlug = (path: string) => `/products/${path}`;
   const servicesMenu = {
     'Self Service Banking Solutions': [
-      { name: 'TWIG Secure', slug: 'twig-secure', items: [
-        { name: 'Instant PIN', slug: 'twig-secure-instant-pin' },
-        { name: 'ATM', slug: 'twig-secure' },
-        { name: 'IVR', slug: 'twig-secure' },
-        { name: 'Mobile', slug: 'twig-secure' },
-        { name: 'USSD', slug: 'twig-secure' },
-        { name: 'POS', slug: 'twig-secure' },
+      { name: 'TWIG Secure Instant PIN', slug: 'twig-secure-instant-pin', items: [
+        { name: 'ATM', slug: 'twig-secure-instant-pin-atm' },
+        { name: 'POS', slug: 'twig-secure-instant-pin-pos' },
+        { name: 'Mobile App & Internet Banking', slug: 'twig-secure-instant-pin-mobile-internet' },
+        { name: 'USSD', slug: 'twig-secure-instant-pin-ussd' },
+        { name: 'IVR', slug: 'twig-secure-instant-pin-ivr' },
       ]},
       { name: 'TWIG Secure ATM VAS', slug: 'twig-secure-atm-vas', items: [
         { name: 'ATM Transfer', slug: 'twig-secure-atm-vas' },
         { name: 'ATM Instant Loan', slug: 'twig-secure-atm-vas' },
         { name: 'ATM Instant Acct Opening', slug: 'twig-secure-atm-vas' },
       ]},
-      { name: 'ATM MONIT (Notify)', slug: 'atm-monit', items: [
+      { name: 'ATM MONIT', slug: 'atm-monit', items: [
         { name: 'IntelliCAM', slug: 'intellicam' },
-        { name: 'Journal & Footage Archiver', slug: 'atm-monit' },
-        { name: 'ATM Monitoring', slug: 'atm-monit' },
+        { name: 'Journal Footage & Archival', slug: 'journal-footage-archival' },
+        { name: 'ATM Monitoring', slug: 'atm-monitoring' },
       ]},
     ],
     'In Branch Banking Solutions': [
-      { name: 'Twig Secure Instant PIN', slug: 'twig-secure-instant-pin', items: [{ name: 'POS', slug: 'twig-secure-instant-pin' }] },
-      { name: 'Twig Secure POS Teller', slug: 'twig-secure-pos-teller', items: [] },
+      { name: 'TWIG Secure Instant PIN', slug: 'twig-secure-instant-pin-branch', items: [] },
+      { name: 'TWIG Secure POSTeller', slug: 'twig-secure-pos-teller', items: [] },
       { name: 'Twig Secure Instant Card', slug: 'twig-secure-i-card', items: [] },
-      { name: 'Card MON', slug: 'card-mon', items: [] },
+      { name: 'CardMon', slug: 'card-mon', items: [] },
     ],
     'Biometric Payments': [
-      { name: 'Biometric Payments', slug: 'biotranx', items: [
-        { name: 'ATM', slug: 'biotranx' },
-        { name: 'POS', slug: 'biotranx' },
-        { name: 'Mobile', slug: 'biotranx' },
-        { name: 'Biomonie', slug: 'biotranx' },
-      ]},
+      { name: 'Biomonie', slug: 'biomonie', items: [] },
     ],
   };
 
@@ -134,7 +128,7 @@ const Navbar: React.FC = () => {
               onMouseLeave={() => setServicesDropdownOpen(false)}
             >
               <button className="flex items-center font-medium text-gray-700 hover:text-[#E91E8C] text-sm whitespace-nowrap transition-colors">
-                Applications & Services
+                Our Product
                 <ChevronDown className={`ml-1 w-4 h-4 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               
@@ -320,13 +314,13 @@ const Navbar: React.FC = () => {
                 About Us
               </Link>
               
-              {/* Applications & Services Dropdown */}
+              {/* Our Product Dropdown */}
               <div className="mt-2 pt-2 border-gray-100 border-t">
                 <button
                   className="flex justify-between items-center hover:bg-gray-50 px-3 py-3 rounded-lg w-full font-medium text-gray-700 transition-colors"
                   onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
                 >
-                  <span>Applications & Services</span>
+                  <span>Our Product</span>
                   <ChevronDown className={`w-4 h-4 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`} />
                 </button>
                 

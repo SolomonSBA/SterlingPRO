@@ -56,42 +56,26 @@ const AtmMonit: React.FC = () => {
 
   const features = [
     {
-      image: security,
-      title: "Monitor your entire ATM network",
-      description:
-        "Designed to monitor incidents, link each transaction to the user, facilitate dispute resolution, report on ATM status, and mitigate criminal activity. Receive real-time updates via SMS and email.",
-    },
-    {
-      image: management,
-      title: "Incident Management",
-      description:
-        "Monitors certain behaviours on the ATM like cash low, cash out, card reader status, journal printer status, etc. and subsequently sends an escalation message to the ATM custodian responsible.",
-    },
-    {
-      image: protection,
-      title: "Total Protection against skimming",
-      description:
-        "It monitors ATMs and allows or prevents the customer from performing a transaction based on the status received. Suspicious actions are escalated instantly with incident reports provided.",
-    },
-     {
       image: Intelligent_Camera,
-      title: "Intelligent Camera",
+      title: "IntelliCAM",
       description:
-        "ATM Monit provides the ability to view real-time video and photos and to pre-and post-incident scene footage. It provides 24/7 ATM surveillance and can detect and block suspicious activities.",
-    },
-     {
-      image: journal,
-      title: "Total Protection against skimming",
-      description:
-        "It monitors ATMs and allows or prevents the customer from performing a transaction based on the status received. Suspicious actions are escalated instantly with incident reports provided.",
+        "Monitor ATM activity with intelligent camera integration that provides visual context around transactions and customer interactions. IntelliCAM helps operations and security teams quickly access relevant footage when reviewing incidents or investigating disputes. By linking surveillance with ATM events, banks gain clearer visibility into what happens at the terminal.",
+      slug: "/products/intellicam",
     },
     {
-      image: encryption,
-      title: "PCI-Compliant",
+      image: journal,
+      title: "Journal Footage & Archival",
       description:
-        "ATM Monit is PCI-DSS Level 1 Certified. We take pride in being compliant with the recommended safety standards to reduce the risk of your customers' data being attacked or compromised.",
+        "Maintain a secure repository of ATM electronic journals and associated transaction records for easy retrieval and review. Journal Footage & Archival allows banks to quickly access historical transaction data and supporting evidence when handling customer inquiries, reconciliation issues, or internal audits. The system ensures reliable long-term storage and efficient search of ATM activity records.",
+      slug: "/products/journal-footage-archival",
     },
-    
+    {
+      image: security,
+      title: "ATM Monitoring",
+      description:
+        "Track the operational status and performance of ATMs across your network from a centralized monitoring interface. ATM Monitoring provides real-time visibility into device availability, alerts operations teams to potential issues, and supports faster response to service disruptions. This helps banks maintain reliable ATM services and improve overall network uptime.",
+      slug: "/products/atm-monitoring",
+    },
   ];
 
   const reasons = [
@@ -208,12 +192,14 @@ const AtmMonit: React.FC = () => {
             </div>
 
             <h1 className="mb-4 md:mb-6 font-bold text-2xl text-[#020817] md:text-4xl lg:text-5xl leading-tight">
-              Monitor every ATM.{" "}
-              <span className="text-[#E91E8C]">Prevent</span> every incident. Always.
+              Intelligent Monitoring for ATM Operations
             </h1>
 
+            <p className="mx-auto md:mx-0 mb-6 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
+              ATM MONIT is a 3-service product suite that provides banks with a centralized platform for monitoring, managing, and reviewing ATM activity across their network. By bringing together ATM monitoring, camera intelligence, and transaction journal management, the suite enables operations and security teams to maintain visibility into ATM performance and quickly investigate transaction-related events.
+            </p>
             <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
-              ATM MONIT is an all-in-one ATM monitoring and management platform — ensuring constant uptime, protecting customers from fraud, and giving your ops team complete, real-time network visibility.
+              Designed for modern banking operations, the MONIT Suite helps financial institutions improve oversight of their ATM infrastructure while simplifying access to critical operational and security data.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
@@ -306,45 +292,29 @@ const AtmMonit: React.FC = () => {
                  viewport={{ once: true }}
                  className="w-full"
                >
-                 <h2 className="mb-4 font-bold text-xl md:text-3xl text-[#020817]">
-                  An{" "}
-                   <span className="text-[#E91E8C]"> all-in-one </span>
-                  ATM monitoring solution. 
+                  <h2 className="mb-4 font-bold text-xl md:text-3xl text-[#020817]">
+                  A{" "}
+                   <span className="text-[#E91E8C]"> Unified Platform </span>
+                  for ATM Visibility 
                  </h2>
-                 <p className="text-grey">A powerful ATM network monitoring and management system that seamlessly integrates with your existing infrastructure.</p>
+                 <p className="max-w-xl text-gray-600 text-sm leading-relaxed mb-4">ATM networks generate large volumes of operational data, transaction records, and surveillance footage. Managing these elements separately can slow down investigations and increase operational complexity.</p>
+                 <p className="max-w-xl text-gray-600 text-sm leading-relaxed mb-4">The MONIT Suite addresses this by consolidating key ATM monitoring and verification tools into a single platform. This enables banks to monitor ATM availability, review transaction journals, and access relevant camera footage when required — all within a unified environment.</p>
+                 <p className="max-w-xl text-gray-600 text-sm leading-relaxed">The result is improved operational efficiency, faster incident investigation, and stronger oversight of ATM activity.</p>
+
+                 <div className="mt-7 rounded-2xl border border-gray-200 bg-white p-5 md:p-6 shadow-sm">
+                   <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">
+                     What the MONIT Suite Enables
+                   </p>
+                   <ul className="grid gap-2 text-sm text-gray-700">
+                     <li>Centralized monitoring of ATM network performance</li>
+                     <li>Access to ATM electronic journals for transaction review</li>
+                     <li>Integrated camera footage linked to ATM activity</li>
+                     <li>Faster investigation of disputes and operational issues</li>
+                     <li>Improved visibility for ATM operations and security teams</li>
+                   </ul>
+                 </div>
      
-               <div className="space-y-3 md:space-y-0 grid grid-cols-1 md:grid-cols-2">
-                                  {reasons.map((reason, index) => (
-                                    <motion.div
-                                      key={reason.title}
-                                      initial={{ opacity: 0, x: -30 }}
-                                      whileInView={{ opacity: 1, x: 0 }}
-                                      viewport={{ once: true }}
-                                      transition={{
-                                        delay: index * 0.1,
-                                        duration: 0.6,
-                                        ease: "easeOut",
-                                      }}
-                                      className="group relative flex gap-4 bg-white/70 hover:shadow-lg p-4 md:p-5 rounded-2xl transition-all hover:-translate-y-1"
-                                    >
-                                      <span className="top-1/3 left-0 absolute bg-[#E91E8C] rounded-full w-1 h-8 -translate-y-1/2" />
-                    
-                                      <div className="flex-shrink-0 justify-center items-center grid bg-[#E91E8C]/10 group-hover:bg-[#E91E8C]/20 rounded-xl w-11 h-11 transition-all">
-                                        <img
-                                          src={reason.image}
-                                          alt={reason.title}
-                                          className="w-7 h-7"
-                                        />
-                                      </div>
-                    
-                                      <div>
-                                        <p className="text-gray-600 text-sm leading-relaxed">
-                                          {reason.description}
-                                        </p>
-                                      </div>
-                                    </motion.div>
-                                  ))}
-                                </div>
+                  {/* Removed reasons section to clean up this part as it overlaps with features */}
                </motion.div>
              </div>
            </section>
@@ -362,8 +332,8 @@ const AtmMonit: React.FC = () => {
           className="mt-16 mb-16 text-center scroll-mt-24"
         >
           <h2 className="mb-3 font-bold text-lg md:text-4xl text-[#020817]">
-            An ATM monitoring solution with a  {" "}
-            <span className="text-[#E91E8C]">wide range </span> of capabilities.
+            Services within the  {" "}
+            <span className="text-[#E91E8C]">ATM MONIT </span> Suite
           </h2>
           
         </motion.div>
@@ -400,6 +370,16 @@ const AtmMonit: React.FC = () => {
               <p className="text-gray-600 text-sm leading-relaxed">
                 {feature.description}
               </p>
+
+              <div className="mt-5">
+                <button
+                  type="button"
+                  onClick={() => navigate(feature.slug)}
+                  className="inline-flex items-center justify-center rounded-lg border border-gray-200 px-4 py-2 text-sm font-semibold text-gray-800 hover:border-[#E91E8C]/30 hover:text-[#E91E8C] transition-colors"
+                >
+                  Learn more
+                </button>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -413,8 +393,11 @@ const AtmMonit: React.FC = () => {
             className="mb-12 text-center"
           >
             <h2 className="mb-3 font-bold text-xl text-[#020817] md:text-4xl leading-tight">
-              How <span className="text-[#E91E8C]">ATM MONIT</span> can help you
+              Built for <span className="text-[#E91E8C]">ATM Operations and Security Teams</span>
             </h2>
+            <p className="max-w-2xl mx-auto text-gray-600 text-sm md:text-base">
+              The MONIT Suite is designed to support the daily needs of teams responsible for managing ATM networks. By combining operational monitoring with investigative tools, the platform enables banks to maintain reliable ATM services while ensuring that transaction events can be reviewed quickly and efficiently when needed.
+            </p>
           </motion.div>
 
           <div className="items-center gap-12 md:gap-16 grid grid-cols-1 md:grid-cols-2 w-full">

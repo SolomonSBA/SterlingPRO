@@ -51,28 +51,34 @@ const TwigSecureInstantPin: React.FC = () => {
 
   const features = [
     {
-      image: selfServe,
-      title: "TWIG Secure POS In-branch Self-Serve",
-      description:
-        "Allow your customers to select and update their PIN via self-service using a POS device inside your branch.",
+      image: atm,
+      title: "ATM",
+      description: "Customers can change their card PIN directly at ATMs.",
+      slug: "/products/twig-secure-instant-pin-atm",
     },
     {
       image: inBranch,
-      title: "TWIG Secure POS In-branch",
-      description:
-        "Allow your customers to select and update their PIN using a POS device inside your branch with the help of a PIN officer.",
-    },
-    {
-      image: offSite,
-      title: "TWIG Secure POS Off-site",
-      description:
-        "Allow your customers to select and update their PIN using a POS device from an authorised agent outside the bank branch.",
+      title: "POS",
+      description: "Secure PIN selection through POS terminals at authorized locations.",
+      slug: "/products/twig-secure-instant-pin-pos",
     },
     {
       image: selfServeChannels,
-      title: "TWIG Secure Self-Serve Channels",
-      description:
-        "Allow your customers to use self-service channels like ATM, mobile, USSD, web, etc, to select and update their PIN instantly.",
+      title: "Mobile App & Internet Banking",
+      description: "Customers can securely select or change their card PIN directly through the bank's mobile banking app or internet banking platform, providing a convenient self-service option without visiting a branch or ATM.",
+      slug: "/products/twig-secure-instant-pin-mobile-internet",
+    },
+    {
+      image: offSite,
+      title: "USSD",
+      description: "PIN management through simple mobile USSD banking sessions.",
+      slug: "/products/twig-secure-instant-pin-ussd",
+    },
+    {
+      image: headphones,
+      title: "IVR",
+      description: "Customers can reset or select a PIN through automated voice banking systems.",
+      slug: "/products/twig-secure-instant-pin-ivr",
     },
   ];
 
@@ -164,14 +170,15 @@ const TwigSecureInstantPin: React.FC = () => {
             className="w-full md:text-left text-center"
           >
 
-            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl text-[#020817]  leading-tight">
-              TWIG SECURE <span className="text-[#E91E8C]">INSTANT PIN</span>
+            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-3xl lg:text-4xl text-[#020817] leading-tight">
+              Secure Multi-Channel PIN Selection for Payment Cards
             </h1>
 
             <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
-              Multi-channel PIN issuance solution that allows customers to set
-              PINs for their cards on mobile, in-branch, USSD, POS devices, and
-              more.
+              TWIG Secure Instant PIN enables banks to provide customers with a secure and convenient way to select or change their payment card PIN instantly across multiple banking channels. The solution removes reliance on traditional PIN mailers and allows customers to manage their card PIN securely using familiar banking touchpoints.
+            </p>
+            <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
+              By supporting PIN services across ATM, POS, MOBILE & INTERNET BANKING, USSD and IVR, TWIG Secure Instant PIN helps financial institutions improve customer convenience while maintaining strong security controls around PIN management.
             </p>
 
             <motion.button
@@ -235,17 +242,15 @@ const TwigSecureInstantPin: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="w-full md:text-left text-center"
           >
-            <h2 className="mb-4 md:mb-6 font-bold text-xl md:text-4xl leading-relaxed">
-              Instant
-              <span className="text-[#E91E8C]"> PIN solution</span> for newly
-              generated bank cards
+            <h2 className="mb-4 md:mb-6 font-bold text-xl md:text-4xl text-[#020817] leading-relaxed">
+              Convenient <span className="text-[#E91E8C]">PIN Management</span> Across Banking Channels
             </h2>
 
             <p className="mx-auto md:mx-0 mb-6 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
-              TWIG SECURE Instant PIN is a software solution that powers PIN
-              management for financial institutions. Instant PIN ensures that
-              your customers can conveniently and securely setup and update PIN
-              for their cards in and outside your branch.
+              Customers increasingly expect to manage their card security without visiting a branch or waiting for PIN mailers. TWIG Secure Instant PIN allows customers to securely select or reset their PIN through several banking channels already available to them.
+            </p>
+            <p className="mx-auto md:mx-0 mb-6 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
+              Once a new PIN is confirmed, it is securely transmitted to the bank’s Card Management System, ensuring that the update is processed immediately and reflected across all card transaction channels.
             </p>
           </motion.div>
         </div>
@@ -262,9 +267,11 @@ const TwigSecureInstantPin: React.FC = () => {
           className="mt-16 mb-16 text-center"
         >
           <h2 className="mb-3 font-bold text-lg md:text-4xl text-[#020817]">
-            <span className="text-[#E91E8C]">Secure Issuance</span> of Debit and
-            Credit Card PINs with our Sub-products{" "}
+            Supported <span className="text-[#E91E8C]">Channels</span>
           </h2>
+          <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto mt-4">
+            TWIG Secure Instant PIN can be deployed across multiple banking channels, enabling customers to select or reset their PIN in a way that is most convenient for them.
+          </p>
         </motion.div>
 
         <div className="gap-12 grid md:grid-cols-2 w-full">
@@ -299,6 +306,16 @@ const TwigSecureInstantPin: React.FC = () => {
               <p className="text-gray-600 text-sm leading-relaxed">
                 {feature.description}
               </p>
+
+              <div className="mt-5">
+                <button
+                  type="button"
+                  onClick={() => navigate(feature.slug)}
+                  className="inline-flex items-center justify-center rounded-lg border border-gray-200 px-4 py-2 text-sm font-semibold text-gray-800 hover:border-[#E91E8C]/30 hover:text-[#E91E8C] transition-colors"
+                >
+                  Learn more
+                </button>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -319,9 +336,10 @@ const TwigSecureInstantPin: React.FC = () => {
             </h2>
 
             <p className="max-w-xl text-gray-600 text-sm md:text-base leading-relaxed">
-              Instant PIN solution that enables your customers to create PINs on
-              newly generated bank cards via POS in and outside your bank
-              branch, via ATM and self-service using web, mobile app or USSD.
+              Instant PIN solution for newly-issued bank cards.
+            </p>
+            <p className="mt-4 max-w-xl text-gray-600 text-sm md:text-base leading-relaxed">
+              TWIG Secure Instant PIN is trusted by leading financial institutions.
             </p>
           </motion.div>
 
@@ -371,7 +389,7 @@ const TwigSecureInstantPin: React.FC = () => {
             viewport={{ once: true }}
             className="w-full"
           >
-            <h2 className="mb-4 font-bold text-xl md:text-3xl">
+            <h2 className="mb-4 font-bold text-xl text-[#020817] md:text-3xl">
               Why TWIG SECURE{" "}
               <span className="text-[#E91E8C]"> INSTANT PIN ?</span>
             </h2>
@@ -475,7 +493,7 @@ const TwigSecureInstantPin: React.FC = () => {
           <h2 className="font-bold text-gray-900 text-xl md:text-4xl">
             <span className="text-[#E91E8C]">TWIG SECURE Instant PIN </span>
             <br className="hidden md:block" />
-            is trusted by leading institutions
+            is trusted by leading financial institutions
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-gray-500 text-sm md:text-base">

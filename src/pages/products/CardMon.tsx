@@ -102,60 +102,54 @@ const CardMon: React.FC = () => {
   const benefits = [
     {
       image: nodesImg,
-      title: "FLEXIBLE",
+      title: "Straight-Through Processing",
       description:
-        "Allows for seamless integration to support your existing system and infrastructure and can be customised to meet your organisation's needs.",
+        "Automates the entire settlement workflow—from file retrieval to TTUM generation—eliminating manual intervention.",
     },
     {
       image: discount,
-      title: "EFFICIENT",
+      title: "Dual-Control Workflow",
       description:
-        "Our product reduces the cost and complexity involved in building high-quality products and delivering delightful user experiences.",
+        "No single user can complete a sensitive operation without approval. Every action is logged, meeting PCI-DSS standards.",
     },
     {
       image: shieldDone,
-      title: "SECURE & RELIABLE",
+      title: "Comprehensive Audit Trail",
       description:
-        "We deliver security where you need it and reliable infrastructure that enables innovation within the banking and payments ecosystem.",
-    },
-    {
-      image: headphones,
-      title: "AVAILABLE CUSTOMER SUPPORT",
-      description:
-        "Our people are always available to talk to you to ensure that you integrate smoothly and build your products with minimal roadblocks.",
+        "Immutable logs capture who did what, when, and from where. Version-controlled archives ensure regulatory readiness.",
     },
     {
       image: technology,
-      title: "STATE-OF-THE-ART TECHNOLOGY",
+      title: "Seamless Integration",
       description:
-        "We are constantly innovating and improving our product as well as releasing new features, ensuring that your company is equipped with the tools needed to build for the future.",
+        "Connects effortlessly with NIBSS / UP Portal, Interswitch, IMTO Portals, Internal Spool Systems, and Core Banking.",
     },
   ];
 
   const options = [
     {
       image: card_1,
-      title: "Card Authorization",
+      title: "UP ATM Settlement",
       description:
-        "Maintain complete control over card transactions. Make custom transaction approval decisions in real-time, and approve or deny each transaction based on a set of rules.",
+        "NOU (Not On Us), ROU (Remote On Us). Automated file retrieval, duplicate cleansing, SOLID extraction, GL mapping.",
     },
     {
       image: spending,
-      title: "Static and Dynamic Spend Controls",
+      title: "IMTO Settlement",
       description:
-        "Control the spending limits of customers and prevent fraud by setting spending limits or creating advanced combinations of rules. Apply spend controls based on rules like transaction type, account level and more. Update your spending controls at any time.",
+        "MoneyGram, RIA, Western. Rate computation, principal/commission separation.",
     },
     {
       image: block,
-      title: "Efficient Card Management",
+      title: "PayDirect Settlement",
       description:
-        "Centrally manage your entire card operations. Use CARD MON to effectively manage your car operations to deliver better customer experiences. Manage and maintain cardholder data from a single system. Pin management Block/unblock cards Manage disputes and chargebacksRisk & fraud management Link/unlink cards to accounts and more",
+        "Interswitch, ExtraSwitch. Cleared collections, lead/collecting bank earnings, split report processing.",
     },
     {
       image: encrypt,
-      title: "PCI Ready",
+      title: "VTU Settlement",
       description:
-        "We’re a certified PCI Service Provider Level 1 and use the best-in-class security tools and practices to maintain a high level of security that protects both your and your customers. Protect customers’ data & information when you use our PCI-compliant solution.",
+        "Virtual Top-Up recharges. Account mapping, exception management.",
     },
   ];
 
@@ -174,21 +168,22 @@ const CardMon: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="w-full md:text-left text-center"
           >
-            <h1 className="mb-4 md:mb-6 font-bold text-2xl text-[#020817] md:text-4xl leading-tight">
-              CARD <span className="text-[#E91E8C]">MON</span>
+            <h1 className="mb-4 md:mb-6 font-bold text-2xl text-[#020817] md:text-5xl leading-tight">
+              Enterprise Settlement <span className="text-[#E91E8C]">Automation</span>
             </h1>
 
-          
-
-            <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm leading-relaxed">
-             Control every detail of your card operation, from authorising transactions in real-time to managing card limits and velocity with CARD MON.
+            <p className="mx-auto md:mx-0 mb-4 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
+             Financial institutions face mounting pressure to process high-volume interbank settlements across ATM (NOU/ROU), IMTO, PayDirect, and VTU channels accurately, on time, and fully compliant.
+            </p>
+            <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
+             CardMon automates the entire settlement lifecycle. It replaces manual reconciliation with straight-through processing, dual-control workflows, and comprehensive audit trails.
             </p>
 
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => navigate("/contact")}
-              className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-7 md:px-8 py-3 rounded-lg font-semibold text-white text-sm transition-all"
+              className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-7 md:px-8 py-3 rounded-lg font-semibold text-white md:text-sm text-base transition-all"
             >
               Get Started
             </motion.button>
@@ -219,6 +214,7 @@ const CardMon: React.FC = () => {
         </div>
       </section>
 
+      {/* Core capabilities from PDF */}
       <section className="bg-gray-100 px-6 md:px-8 py-20 md:py-24 w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -228,12 +224,12 @@ const CardMon: React.FC = () => {
         >
           <h2 className="mb-4 font-bold text-xl md:text-4xl text-[#020817] leading-tight">
              <span className="text-[#E91E8C]">
-              Build and scale{" "}
+              Core Capabilities{" "}
             </span>
-           flexible card operations that benefit you and your customers
+            for Interbank Settlement
           </h2>
-          <p className="text-grey text-sm">
-           CARD MON enable financial institutions to easily manage and scale payment card operations effectively and centrally.
+          <p className="text-gray-600 text-sm md:text-lg">
+           CardMon is a comprehensive application that consolidates data, applies complex rules, and generates validated posting files.
           </p>
         </motion.div>
         <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full">
@@ -272,6 +268,118 @@ const CardMon: React.FC = () => {
         </div>
       </section>
 
+      {/* The Challenge & Solution */}
+      <section className="bg-white px-6 md:px-8 py-20 md:py-24 w-full">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div>
+            <h2 className="mb-3 font-bold text-xl md:text-3xl text-[#020817]">The Challenge</h2>
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              As transaction volumes surge across ATM networks, instant payments, and international remittances, financial
+              institutions struggle with fragmented, manual settlement processes. Officers juggle multiple portals, download
+              files, cleanse data in spreadsheets, and manually prepare posting files—leading to delayed customer funding,
+              reconciliation errors, compliance risks, and strained operations.
+            </p>
+          </div>
+          <div>
+            <h2 className="mb-3 font-bold text-xl md:text-3xl text-[#020817]">The Solution: CardMon</h2>
+            <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+              CardMon is a comprehensive interbank settlement automation application that consolidates data from disparate
+              sources, applies complex business rules, enforces dual-control approvals, and generates validated posting files
+              ready for core banking systems.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Financial Institutions Choose CardMon & Business Impact */}
+      <section className="bg-gray-50 px-6 md:px-8 py-20 md:py-24 w-full">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <div className="lg:col-span-7">
+            <h2 className="mb-4 font-bold text-xl md:text-3xl text-[#020817]">
+              Why Financial Institutions <span className="text-[#E91E8C]">Choose CardMon</span>
+            </h2>
+            <ul className="space-y-3 text-sm md:text-base text-gray-700">
+              <li>
+                <span className="font-semibold text-gray-900">Straight-through processing:</span> CardMon automates the
+                entire settlement workflow—from file retrieval to TTUM generation—eliminating manual intervention and the errors
+                it invites.
+              </li>
+              <li>
+                <span className="font-semibold text-gray-900">Dual-control (maker-checker) workflow:</span> No single user can
+                complete a sensitive operation without approval. Every action is logged to meet PCI-DSS and internal controls.
+              </li>
+              <li>
+                <span className="font-semibold text-gray-900">Comprehensive audit trail:</span> Immutable logs capture who did
+                what, when, and from where, with version-controlled archives for regulators and auditors.
+              </li>
+              <li>
+                <span className="font-semibold text-gray-900">Seamless integration:</span> Connects effortlessly with NIBSS/UP
+                Portal, Interswitch/ExtraSwitch, IMTO portals, internal spool systems, TTUM applications and core banking.
+              </li>
+            </ul>
+          </div>
+          <div className="lg:col-span-5">
+            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
+                Business Impact
+              </p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li>
+                  <span className="font-semibold text-gray-900">NOU/ROU Processing Time:</span> 80% reduction (3 hours → 30
+                  minutes)
+                </li>
+                <li>
+                  <span className="font-semibold text-gray-900">IMTO Processing Time:</span> 83% reduction per provider
+                </li>
+                <li>
+                  <span className="font-semibold text-gray-900">Error Rate:</span> Near-zero through automated validation
+                </li>
+                <li>
+                  <span className="font-semibold text-gray-900">Audit Readiness:</span> Full traceability with timestamped
+                  archives
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why CardMon Section */}
+      <section className="bg-white px-6 md:px-8 py-20 md:py-24 w-full">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="mb-4 font-bold text-xl md:text-3xl text-[#020817]">
+            Why <span className="text-[#E91E8C]">CardMon?</span>
+          </h2>
+          <div className="grid gap-5 md:grid-cols-2">
+            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+              <p className="font-semibold text-gray-900 text-sm md:text-base">Purpose-built for Africa</p>
+              <p className="mt-2 text-sm text-gray-700 leading-relaxed">
+                Understands Nigerian payment nuances such as SOLID extraction, PayDirect formulas, and cybersecurity fees.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+              <p className="font-semibold text-gray-900 text-sm md:text-base">Future-ready</p>
+              <p className="mt-2 text-sm text-gray-700 leading-relaxed">
+                Aligns with NIBSS National Payment Stack and ISO 20022 standards, ensuring long-term compatibility.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+              <p className="font-semibold text-gray-900 text-sm md:text-base">Enterprise-grade security</p>
+              <p className="mt-2 text-sm text-gray-700 leading-relaxed">
+                Role-based access control, dual authorization, and one-time key visibility help protect sensitive settlement
+                operations.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+              <p className="font-semibold text-gray-900 text-sm md:text-base">Proven in production</p>
+              <p className="mt-2 text-sm text-gray-700 leading-relaxed">
+                Processes settlement for millions of daily transactions across leading Nigerian banks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* With Twig Secure I-card Section */}
       <section className="bg-gray-100 px-6 md:px-8 py-20 md:py-24 w-full">
         <motion.div
@@ -281,7 +389,7 @@ const CardMon: React.FC = () => {
           className="mb-12 md:mb-16 w-[75%] text-left"
         >
           <h2 className="mb-4 font-bold text-xl md:text-4xl text-[#020817] leading-tight">
-           <span className="text-[#E91E8C]">Simple</span> to integrate into your system, feature-rich, and smooth to use.
+           <span className="text-[#E91E8C]">Enterprise-grade</span> features replacing manual efforts.
           </h2>
         </motion.div>
         <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full">
@@ -299,11 +407,11 @@ const CardMon: React.FC = () => {
               className="bg-white p-6 md:p-8 border border-gray-200 hover:border-[#E91E8C]/30 rounded-2xl transition-colors"
             >
               <div className="mb-5">
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center h-12 w-12 rounded-lg bg-[#E91E8C]/10">
                   <img
                     src={feature.image}
                     alt={feature.title}
-                    className="w-30 h-30 object-cover"
+                    className="w-6 h-6 object-contain"
                   />
                 </div>
               </div>
@@ -329,8 +437,8 @@ const CardMon: React.FC = () => {
           className="mb-12 md:mb-16 text-center"
         >
           <h2 className="mb-3 font-bold text-xl md:text-4xl text-[#020817] leading-tight">
-            Flexible product, built with your{" "}
-            <span className="text-[#E91E8C]">business needs in mind</span>
+              Why Financial Institutions{" "}
+            <span className="text-[#E91E8C]">Choose CardMon</span>
           </h2>
         </motion.div>
         <div className="gap-6 grid grid-cols-1 md:grid-cols-3 w-full">
@@ -460,12 +568,11 @@ const CardMon: React.FC = () => {
               viewport={{ once: true }}
             >
               <h2 className="mb-3 font-bold text-gray-900 text-lg md:text-4xl">
-               Ready to Get Started?
+               Ready to Automate Your Interbank Settlements?
               </h2>
 
               <p className="mb-6 text-gray-600 text-sm">
-              Stay on top of all card operations.
-
+              Contact SterlingPRO today to learn how CARDMON can streamline your ATM, IMTO, PayDirect, and VTU settlement operations.
               </p>
 
               <motion.button
@@ -474,7 +581,7 @@ const CardMon: React.FC = () => {
                 onClick={() => navigate("/contact")}
                 className="bg-[#E91E8C] hover:bg-[#C41A78] shadow-lg px-8 py-3 rounded-full font-semibold text-white text-base transition-all"
               >
-                Start Now
+                Request Demo
               </motion.button>
             </motion.div>
           </div>

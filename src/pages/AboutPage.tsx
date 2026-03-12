@@ -31,7 +31,7 @@ const AboutPage: React.FC = () => {
     { icon: Users, title: 'Rolling Up our Sleeves', description: 'We dive in head first to get work done and solve problems no matter what it takes.' },
     { icon: Eye, title: 'Transparency', description: 'Real-time, open and honest communication with every stakeholder at all times.' },
     { icon: Lightbulb, title: 'Creativity', description: 'Innovative thinking and creative solutions to complex challenges.' },
-    { icon: Award, title: 'Excellence', description: 'Our work is our art — meticulous attention to detail and the highest quality.' },
+    { icon: Award, title: 'Excellence', description: 'Our work is our art meticulous attention to detail and the highest quality.' },
   ];
 
   const timeline = [

@@ -1,0 +1,595 @@
+REWORKED WEB COPIES FOR THE NEW STERLINGPRO WEBSITE 
+Menu - Applications and Services 
+Self-Service Banking Solutions 
+REMOVE INSTANT PIN from the list of solutions in the TWIG SECURE 
+dropdown. Rename the product suite as TWIG SECURE Instant PIN instead of 
+TWIG SECURE. 
+Rearrange the list in this order: - ATM - POS - Mobile App & Internet Banking - USSD - IVR 
+Instant PIN solution for newly generated bank cards 
+Instant PIN solution for newly-issued bank cards 
+TWIG SECURE Instant PIN is trusted by leading institutions 
+TWIG SECURE Instant PIN is trusted by leading financial institutions 
+KEY TO UNDERSTNTING THE DOCUMENT 
+The SERVICE HUB PAGE is the homepage for each of the product suites, with the ‘Learn 
+More’ links leading to to individual PRODUCT PAGES within the suite, so visitors do not 
+have to go back to the list. 
+a) TWIG SECURE Instant PIN 
+SERVICE HUB PAGE 
+Secure Multi-Channel PIN Selection for Payment Cards 
+TWIG Secure Instant PIN enables banks to provide customers with a secure and convenient way to select or 
+change their payment card PIN instantly across multiple banking channels. The solution removes reliance on 
+traditional PIN mailers and allows customers to manage their card PIN securely using familiar banking 
+touchpoints. 
+By supporting PIN services across ATM, POS, MOBILE & INTERNET BANKING, USSD and IVR, TWIG 
+Secure Instant PIN helps financial institutions improve customer convenience while maintaining strong security 
+controls around PIN management. 
+Convenient PIN Management Across Banking Channels 
+Customers increasingly expect to manage their card security without visiting a branch or waiting for PIN mailers. 
+TWIG Secure Instant PIN allows customers to securely select or reset their PIN through several banking 
+channels already available to them. 
+Once a new PIN is confirmed, it is securely transmitted to the bank’s Card Management System, ensuring that 
+the update is processed immediately and reflected across all card transaction channels. 
+Supported Channels 
+TWIG Secure Instant PIN can be deployed across multiple banking channels, enabling customers to select or 
+reset their PIN in a way that is most convenient for them. 
+ATM 
+Customers can change their card PIN directly at ATMs. 
+Learn more 
+POS 
+Secure PIN selection through POS terminals at authorized locations. 
+Learn more 
+Mobile App & Internet Banking 
+Customers can securely select or change their card PIN directly through the bank’s mobile banking app or 
+internet banking platform, providing a convenient self-service option without visiting a branch or ATM. 
+Learn more 
+USSD 
+PIN management through simple mobile USSD banking sessions. 
+Learn more 
+IVR 
+Customers can reset or select a PIN through automated voice banking systems. 
+Learn more 
+PRODUCT PAGES 
+i. 
+ATM 
+Instant PIN Selection at the ATM 
+Enable cardholders to securely select or reset their payment card PIN directly at the ATM. TWIG Secure 
+Instant PIN empowers banks to deliver a fast, self-service PIN management  experience, reducing branch 
+dependency while improving customer convenience. 
+Secure and Convenient ATM PIN Experience 
+Give customers the freedom to create or change their card PIN instantly at the ATM without visiting a branch. 
+Built with strong authentication and secure integration to the bank’s Card Management System (CMS), the 
+solution ensures safe, reliable PIN selection while maintaining a seamless customer experience across the ATM 
+network. 
+Key Benefits for Banks 
+Enhanced Customer Convenience 
+Allow customers to securely select or reset their card PIN at any ATM, eliminating the need for branch visits. 
+Improved Security 
+Supports multi-factor verification such as OTP and biometric authentication before PIN creation. 
+Real-Time PIN Provisioning 
+New PINs are securely updated on the Card Management System (CMS) immediately after confirmation. 
+Operational Efficiency 
+Reduces branch workload associated with traditional PIN issuance or manual PIN reset requests. 
+Secure Infrastructure Integration 
+Leverages SterlingPRO’s TWIG infrastructure to ensure secure communication between ATM channels and 
+backend systems. 
+Secure, Flexible and ATM-Ready 
+TWIG Secure Instant PIN for ATM is designed to integrate easily with your existing ATM infrastructure while 
+maintaining the highest levels of transaction security and reliability. 
+Banks can extend secure PIN management services across their ATM network while maintaining PCI-aligned 
+security standards and operational efficiency. 
+Ready to Simplify Card Activation? 
+Contact SterlingPRO today to learn how TWIG Secure Instant PIN can enable seamless PIN selection across 
+ATM, in-branch POS, and alternate channels. 
+[Request Demo] | [Contact Sales] 
+ii. POS (In-Branch & Offsite) 
+PIN Selection on POS 
+Enable customers to securely select or reset their payment card PIN at a POS terminal within the  
+with assistance from bank staff where required, or offsite, with a merchant POS. 
+Secure PIN Services Within the Branch 
+branch, 
+TWIG Secure Instant PIN allows banks to provide assisted PIN selection using POS terminals deployed within 
+the branch environment. 
+Customers insert their payment card into the terminal, complete the required verification process, and securely 
+enter and confirm their new PIN. The PIN update is then transmitted to the card  
+management system for 
+immediate activation. 
+This provides a secure and controlled environment for customers who prefer in-branch assistance. 
+How POS PIN Selection Supports Card Management 
+⚫ Supports assisted PIN services within the branch 
+⚫ Provides a secure environment for sensitive transactions 
+⚫ Reduces reliance on manual PIN issuance processes 
+⚫ Ensures instant PIN update through the card management system 
+⚫ Improves customer support for PIN-related services 
+iii. Mobile App & Internet Banking 
+Secure PIN Selection via Mobile & Internet Banking 
+Enable customers to select or change their card PIN directly from the bank’s mobile or internet banking 
+platform, within their authenticated banking session. 
+Self-Service PIN Management Within Digital Banking 
+TWIG Secure Instant PIN integrates with the bank’s digital banking infrastructure, allowing customers to 
+securely initiate PIN selection or reset from their mobile banking app or internet banking portal. 
+Once authenticated within the banking platform, customers can enter and confirm a new PIN, which is securely 
+transmitted to the card management system for immediate update. 
+This approach ensures secure self-service PIN management within a trusted digital banking environment. 
+Benefits for your Banking Systems 
+⚫ Enables secure self-service PIN control within digital banking 
+⚫ Reduces the need for ATM or branch-based PIN services 
+⚫ Supports existing bank authentication mechanisms 
+⚫ Provides real-time PIN updates to the card management system 
+⚫ Improves customer convenience across digital channels 
+Ready to Simplify Card Activation? 
+Contact SterlingPRO today to learn how TWIG Secure Instant PIN can enable seamless PIN selection across 
+POS (In-Branch), ATM, and alternate channels. 
+iv. USSD 
+PIN Selection Through USSD Banking 
+Allow customers to securely initiate PIN selection or PIN reset through the bank’s USSD banking service, 
+accessible from any mobile phone. 
+Simple and Accessible PIN Services 
+TWIG Secure Instant PIN extends PIN management capabilities to USSD channels, enabling customers to 
+initiate a PIN change request through the bank’s USSD menu. 
+After completing the required authentication steps, the customer can securely enter and confirm a new PIN, 
+which is processed and updated through the bank’s card management system. 
+This ensures accessible PIN services for customers without smartphones or internet connectivity. 
+Why USSD PIN Selection Matters 
+⚫ Extends PIN services to customers using basic mobile phones 
+⚫ Enables PIN management without internet connectivity 
+⚫ Supports secure authentication before PIN entry 
+⚫ Reduces branch traffic for routine PIN changes 
+⚫ Ensures real-time integration with card management systems. 
+Ready to Simplify Card Activation? 
+Contact SterlingPRO today to learn how TWIG Secure Instant PIN can enable seamless PIN selection using 
+USSD. 
+[Request Demo] | [Contact Sales] 
+v. IVR 
+Secure PIN Selection via IVR 
+Allow customers to create or change their payment card PIN through the bank’s Interactive Voice Response 
+(IVR) system, using secure authentication and guided voice prompts. 
+Convenient PIN Management Over the Phone 
+With TWIG Secure Instant PIN, customers can securely set or reset their card PIN by calling the  
+service and following a guided verification process. 
+bank’s IVR 
+The solution integrates with the bank’s existing authentication systems and card management platform to ensure 
+secure PIN processing and real-time updates, without requiring a branch or ATM  
+How IVR PIN Selection Benefits your Payment Systems 
+⚫ Enables secure PIN management through voice banking 
+⚫ Reduces dependence on branch-based PIN services 
+⚫ Supports secure authentication before PIN entry 
+⚫ Ensures real-time synchronization with the card management system 
+⚫ Extends PIN services to customers without smartphone access. 
+Ready to Simplify Card Activation? 
+visit. 
+Contact SterlingPRO today to learn how TWIG Secure Instant PIN can enable seamless PIN selection using 
+IVR. 
+[Request Demo] | [Contact Sales] 
+TWIG SECURE ATM VAS (NO CONTENT YET - WILL WORK ON…) 
+ATM MONIT (NOTIFY) 
+ATM MONIT 
+SERVICE HUB PAGE 
+Intelligent Monitoring for ATM Operations 
+ATM MONIT is a 3-service product suite that provides banks with a centralized platform for monitoring, 
+managing, and reviewing ATM activity across their network. By bringing together ATM monitoring, camera 
+intelligence, and transaction journal management, the suite enables operations and security teams to maintain 
+visibility into ATM performance and quickly investigate transaction-related events. 
+Designed for modern banking operations, the MONIT Suite helps financial institutions improve oversight of 
+their ATM infrastructure while simplifying access to critical operational and security data. 
+Services within the ATM MONIT Suite 
+IntelliCAM 
+Monitor ATM activity with intelligent camera integration that provides visual context around transactions and 
+customer interactions. IntelliCAM helps operations and security teams quickly access relevant footage when 
+reviewing incidents or investigating disputes. By linking surveillance with ATM events, banks gain clearer 
+visibility into what happens at the terminal. Learn more  
+Journal Footage & Archiver Archival 
+Maintain a secure repository of ATM electronic journals and associated transaction records for easy retrieval and 
+review. Journal Footage & Archival allows banks to quickly access historical transaction data and supporting 
+evidence when handling customer inquiries, reconciliation issues, or internal audits. The system ensures reliable 
+long-term storage and efficient search of ATM activity records. Learn more  
+ATM Monitoring 
+Track the operational status and performance of ATMs across your network from a centralized monitoring 
+interface. ATM Monitoring provides real-time visibility into device availability, alerts operations teams to 
+potential issues, and supports faster response to service disruptions. This helps banks maintain reliable ATM 
+services and improve overall network uptime. Learn more 
+A Unified Platform for ATM Visibility 
+ATM networks generate large volumes of operational data, transaction records, and surveillance footage. 
+Managing these elements separately can slow down investigations and increase operational complexity. 
+The MONIT Suite addresses this by consolidating key ATM monitoring and verification tools into a single 
+platform. This enables banks to monitor ATM availability, review transaction journals, and access relevant 
+camera footage when required — all within a unified environment. 
+The result is improved operational efficiency, faster incident investigation, and stronger oversight of ATM 
+activity. 
+What the MONIT Suite Enables 
+⚫ Centralized monitoring of ATM network performance 
+⚫ Access to ATM electronic journals for transaction review 
+⚫ Integrated camera footage linked to ATM activity 
+⚫ Faster investigation of disputes and operational issues 
+⚫ Improved visibility for ATM operations and security teams 
+⚫ Built for ATM Operations and Security Teams 
+The MONIT Suite is designed to support the daily needs of teams responsible for managing ATM networks. By 
+combining operational monitoring with investigative tools, the platform enables banks to maintain reliable ATM 
+services while ensuring that transaction events can be reviewed quickly and efficiently when needed. 
+PRODUCT PAGES 
+i. 
+IntelliCAM 
+Intelligent ATM Camera Monitoring 
+Gain real-time visibility into ATM activity with intelligent camera that connects surveillance footage directly to 
+transaction events.  
+Designed to support transaction verification and security oversight. 
+Smarter ATM Surveillance 
+IntelliCAM enables banks to monitor ATM environments through intelligent camera integration that links visual 
+footage to ATM activity. By providing contextual video records around transactions and customer interactions, 
+banks can quickly review events and investigate suspicious activity. 
+The solution helps operations and security teams access relevant camera footage when needed, improving 
+response time and strengthening oversight across the ATM network. 
+Why Banks use IntelliCAM 
+⚫ Enables visual verification of ATM activity 
+⚫ Supports faster investigation of disputed transactions 
+⚫ Enhances ATM security monitoring 
+⚫ Provides easy access to relevant surveillance footage 
+⚫ Improves operational visibility across ATM channels 
+Ready to Improve ATM Transaction Visibility? 
+Contact SterlingPRO today to learn how IntelliCAM can help link ATM camera footage with transaction events 
+for faster investigation and operational oversight. 
+[Request Demo] | [Contact Sales] 
+ii. Journal Footage & Archiver Archival 
+Centralized ATM Journal and Footage Management 
+Maintain a secure, searchable repository of ATM transaction journals and related footage for easy retrieval and 
+audit purposes. 
+Reliable Transaction Records and Evidence 
+Journal Footage & Archival provides banks with a centralized platform to store, manage, and retrieve ATM 
+electronic journals alongside associated camera footage. This enables operations and dispute resolution teams to 
+quickly review transaction history and supporting evidence when investigating customer complaints or 
+reconciliation issues. 
+By securely archiving ATM activity records, the system ensures important transaction data remains accessible for 
+operational review, regulatory reporting, and internal audits. 
+Why Journal Footage & Archival Matters 
+⚫ Centralized storage of ATM electronic journals 
+⚫ Easy retrieval of transaction history and related footage 
+⚫ Supports dispute resolution and transaction verification 
+⚫ Enables secure long-term archival of ATM records 
+⚫ Improves efficiency for operations and audit teams 
+Need Reliable Access to Transaction Records? 
+Contact SterlingPRO today to learn how Journal Footage & Archival can help securely store and retrieve ATM 
+transaction logs for operational review and dispute resolution. 
+iii. ATM Monitoring 
+Real-Time ATM Network Monitoring 
+Monitor ATM availability, performance, and operational status across your entire ATM network from a single 
+interface. 
+Proactive ATM Operations Management 
+ATM Monitoring provides banks with real-time insight into the operational health of their ATM infrastructure. 
+The solution tracks ATM status, alerts operations teams to potential issues, and supports proactive management 
+of ATM uptime. 
+With clear visibility into ATM activity and system performance, banks can quickly respond to faults, minimize 
+service disruptions, and maintain reliable ATM services for customers. 
+Why ATM Monitoring Matters 
+⚫ Provides real-time visibility into ATM network status 
+⚫ Enables early detection of ATM faults and service issues 
+⚫ Supports improved ATM uptime and service availability 
+⚫ Helps operations teams respond to issues faster 
+⚫ Improves overall ATM network performance management 
+Looking to Strengthen ATM Network Oversight? 
+Contact SterlingPRO today to learn how ATM Monitoring can provide real-time visibility into ATM activity and 
+help your team respond quickly to operational issues. 
+[Request Demo] | [Contact Sales] 
+In-Branch Banking Solutions 
+SERVICE HUB PAGE 
+Secure and Efficient Banking at the Counter 
+Modern banking customers expect fast, secure service even when they visit a branch. SterlingPRO’s In-Branch 
+Banking Solutions provide banks with the tools needed to streamline counter transactions, improve customer 
+experience, and strengthen operational control within the branch environment. 
+The suite enables secure card-based transactions, instant PIN services, and transaction monitoring capabilities 
+that support branch staff in delivering efficient banking services while maintaining strong security and 
+operational oversight. 
+By combining secure authentication, transaction processing, and monitoring capabilities, these solutions help 
+banks modernize the branch experience while maintaining compliance with operational and security 
+requirements. 
+Built for Modern Branch Operations 
+Branches remain an important customer touchpoint for many banking services. SterlingPRO’s in-branch 
+solutions support bank staff with secure systems that simplify customer transactions, reduce manual processes, 
+and improve service efficiency. 
+From instant PIN selection to card-enabled teller services and transaction monitoring, the platform helps banks 
+deliver reliable services while maintaining full visibility into in-branch activities. 
+Solutions within the In-Branch Banking Suite 
+TWIG Secure Instant PIN 
+Enable customers to securely select or change their payment card PIN instantly. Besides the self-service options 
+(interlink to the TWIG SECURE Instant PIN page), a customer can also change/select PIN for their 
+payment card in-branch, assisted by a staffer using a POS. TWIG Secure Instant PIN helps banks eliminate 
+traditional PIN mailers while giving customers greater control over their card security. 
+By integrating directly with the bank’s card management system, the solution ensures secure PIN updates and 
+real-time processing across supported banking channels. 
+Learn more 
+TWIG Secure POSTeller 
+Extend teller and branch transaction services securely through Point-of-Sale (POS) terminals. TWIG Secure 
+POSTeller enables authorized personnel to perform banking transactions—including withdrawals, deposits, and 
+inquiries—while integrating seamlessly with the bank's existing transaction processing and core banking 
+infrastructure. Ideal for branch, agency banking, and controlled service locations. 
+Learn more 
+CardMon 
+Automate the end-to-end settlement lifecycle across ATM (NOU/ROU), IMTO, PayDirect, and VTU channels. 
+CardMon replaces manual reconciliation with straight-through processing, dual-control workflows, and 
+comprehensive audit trails—delivering faster, error-free settlements and full regulatory compliance. 
+[Learn More] 
+Twig Secure Instant Card (NO CONTENT YET - WILL WORK ON…) 
+PRODUCT PAGES 
+TWIG Secure Instant PIN 
+Secure PIN Selection with Teller Assistance 
+TWIG Secure Instant PIN enables customers to securely select or change their payment card PIN within the 
+branch, with assistance from bank staff when needed. Using a POS terminal at the counter, customers can 
+authenticate their card and securely create a new PIN without waiting for traditional PIN mailers. 
+This approach allows banks to provide immediate PIN services during card issuance or customer support 
+interactions, ensuring customers leave the branch with an active and secure PIN. 
+Assisted PIN Services at the Branch 
+When a customer requests a PIN setup or reset in the branch, the teller initiates the process using a POS 
+terminal connected to the TWIG Secure platform. The customer inserts their card and follows the guided 
+prompts to create or update their PIN directly on the device. 
+Once confirmed, the new PIN is securely transmitted to the bank’s Card Management System, allowing the 
+customer to begin using the card immediately across ATM and POS channels. 
+Key Benefits 
+Enables instant PIN setup during branch visits 
+Eliminates reliance on PIN mailers 
+Provides secure PIN entry by the customer 
+Allows assisted support from branch staff 
+Ensures real-time PIN updates through integration with the card management system. 
+Typical Use Cases 
+New Card Activation 
+Customers can select their preferred PIN immediately when collecting a newly issued card at the branch. 
+PIN Reset Assistance 
+Customers who have forgotten their PIN can reset it securely with teller assistance. 
+Customer Support Scenarios 
+Branch staff can assist customers who require help managing their card security. 
+TWIG Secure POSTeller 
+Extend Branch Services Securely Through POS Terminals 
+TWIG Secure POSTeller is a secure POS-based teller solution that enables financial institutions to extend 
+branch transaction services through standard Point-of-Sale (POS) terminals. It empowers authorized tellers and 
+agents to perform banking transactions securely, efficiently, and in full compliance with operational controls. 
+The solution acts as an intelligent intermediary between POS devices and the bank's backend systems, ensuring 
+every transaction is validated, authorized, and posted correctly. Whether deployed in traditional branches, agency 
+banking locations, or controlled service points, POSTeller integrates seamlessly with existing transaction 
+processing and core banking infrastructure. 
+Key Capabilities 
+Capability 
+Description 
+Teller Transaction Processing 
+Perform core banking transactions (withdrawals, deposits, balance 
+inquiries, fund transfers) directly from POS terminals. 
+Secure Authorization Workflow 
+Centralized Terminal Management 
+Teller login credentials and transaction validation ensure proper controls 
+Comprehensive management of all POS terminals—active, inactive, 
+pending, unattached, and deleted. 
+Business Unit Organization 
+Group terminals by branch, region, or agency location for simplified 
+oversight. 
+Transaction Audit Trail 
+Full visibility into all transactions performed on each terminal. 
+Centralized Terminal & Business Unit Management 
+Gain complete command of your entire POS terminal estate from a single, intuitive dashboard. TWIG Secure 
+POSTeller provides financial institutions with real-time visibility and control over every terminal across every 
+location—whether in a bustling branch, a remote agency banking outpost, or a specialized service point. 
+Effortlessly manage the full terminal lifecycle. Onboard new terminals with streamlined configuration forms, 
+track their status from activation to decommissioning, and maintain a complete audit trail—including deleted 
+terminals for compliance purposes. Monitor terminal health and usage at a glance, with clear visibility into active 
+and inactive devices, serial numbers, IP addresses, registration dates, and last utilized dates. 
+For terminals deployed across a distributed network, our Business Unit hierarchy organizes devices by branch, 
+region, or agency location. Create and activate new business units on the fly, assign terminals to their appropriate 
+locations, and instantly identify unattached devices awaiting assignment. Pending remote terminal configurations 
+are tracked through an authorization workflow, ensuring that no change occurs without proper oversight. 
+Transaction-level visibility is equally comprehensive. Drill down into terminal transaction histories, filter by date 
+or terminal ID, and export any list—active terminals, inactive units, pending approvals, or transaction logs—as 
+Excel, CSV, or PDF for reporting, reconciliation, or audit requests. 
+With TWIG Secure POSTeller, operations teams move from reactive firefighting to proactive management, IT 
+administrators maintain ironclad control, and auditors find every answer at their fingertips. 
+Who Benefits from POSTeller 
+User Group 
+Value Delivered 
+Branch Tellers 
+Agency Banking Operators 
+Perform transactions efficiently without leaving the counter. 
+Extend banking services to remote locations. 
+Operations Teams 
+IT Administrators 
+Centralized visibility and control over all terminals. 
+Comprehensive terminal lifecycle management. 
+Compliance & Audit 
+Full transaction audit trails and exportable reports. 
+Why Choose TWIG Secure POSTeller? 
+Benefit 
+Advantage 
+Extend Branch Reach 
+Lower Infrastructure Cost 
+Deliver teller services beyond traditional counters. 
+Leverage existing POS terminals instead of dedicated 
+teller stations. 
+Centralized Management 
+Operational Control 
+Single dashboard for all terminals across all locations. 
+Full visibility into terminal status, usage, and 
+transaction history. 
+Audit Ready 
+Comprehensive logs and exportable reports for 
+compliance. 
+Ready to Extend Your Branch Services? 
+Contact SterlingPRO today to learn how TWIG Secure POSTeller can transform your branch and agency 
+banking operations. 
+[Request Demo] | [Contact Sales] 
+Cardmon 
+Enterprise Settlement Automation 
+Financial institutions face mounting pressure to process high-volume interbank settlements across ATM 
+(NOU/ROU), IMTO, PayDirect, and VTU channels—accurately, on time, and fully compliant. 
+CardMon automates the entire settlement lifecycle. It replaces manual reconciliation with straight-through 
+processing, dual-control workflows, and comprehensive audit trails. Settlement officers move from fragmented 
+spreadsheets to a centralized, rules-based engine. 
+The result: 80% faster processing, zero posting errors, and full regulatory readiness. 
+Interbank Settlement Automation 
+The Challenge 
+As transaction volumes surge across ATM networks, instant payments, and international remittances, financial 
+institutions struggle with fragmented, manual settlement processes. Officers juggle multiple portals—NIBSS, 
+Interswitch, MoneyGram—downloading files, cleansing data in spreadsheets, and manually preparing posting 
+files. The result: delayed customer funding, reconciliation errors, compliance risks, and strained operations. 
+With the Central Bank of Nigeria's push for real-time settlements and the NIBSS National Payment Stack (NPS) 
+advancing ISO 20022 compliance, the need for robust settlement automation has never been greater. 
+The Solution: CardMon 
+CardMon is a comprehensive interbank settlement automation application that consolidates data from disparate 
+sources, applies complex business rules, enforces dual-control approvals, and generates validated posting files 
+ready for core banking systems like Finacle. 
+Core Capabilities 
+Channels 
+Key Functions 
+Module 
+UP ATM Settlement 
+NOU (Not On Us), ROU 
+(Remote On Us) 
+Automated file retrieval, 
+duplicate cleansing, SOLID 
+extraction, GL mapping. 
+IMTO Settlement 
+MoneyGram, RIA, Western 
+Rate computation, 
+principal/commission 
+separation. 
+PayDirect Settlement 
+Interswitch, ExtraSwitch 
+Cleared collections, 
+lead/collecting bank earnings, 
+split report processing. 
+VTU Settlement 
+Virtual Top-Up recharges 
+Account mapping, exception 
+management. 
+Why Financial Institutions Choose CardMon 
+Straight-Through Processing 
+CardMon automates the entire settlement workflow—from file retrieval to TTUM generation—eliminating 
+manual intervention and the errors it invites. 
+Dual-Control (Maker-Checker) Workflow 
+No single user can complete a sensitive operation without approval. Every action is logged, meeting the highest 
+standards of PCI-DSS and internal banking controls. 
+Comprehensive Audit Trail 
+Immutable logs capture who did what, when, and from where. Version-controlled archives ensure full regulatory 
+readiness for CBN, NIBSS, and external auditors. 
+Seamless Integration 
+CardMon connects effortlessly with: 
+NIBSS / UP Portal | Interswitch / ExtraSwitch | IMTO Portals 
+Internal Spool Systems | TTUM Application | Finacle / Core Banking 
+Business Impact 
+Metric 
+Improvement 
+NOU/ROU Processing Time 
+80% reduction (3 hours → 30 minutes) 
+IMTO Processing Time 
+Error Rate 
+83% reduction per provider 
+Near-zero (automated validation) 
+Audit Readiness 
+Full traceability with timestamped archives 
+Why CardMon? 
+Purpose-built for Africa: Understands Nigerian payment nuances: SOLID extraction, PayDirect formulas, 
+cybersecurity fees. 
+Future-ready: Aligns with NIBSS National Payment Stack and ISO 20022 standards. 
+Enterprise-grade security: RBAC, dual authorization, one-time key visibility. 
+Proven in production: Processes settlement for millions of daily transactions across leading Nigerian banks. 
+Ready to Automate Your Interbank Settlements? 
+Contact SterlingPRO today to learn how CARDMON can streamline your ATM, IMTO, PayDirect, and VTU 
+settlement operations. 
+[Request Demo] | [Contact Sales] 
+Biometric Payments  
+i. Biomonie 
+Cardless Payments Powered by Biometrics 
+Biomonie is a biometric payment scheme that enables customers to perform financial transactions without using 
+payment cards or PINs. By authenticating customers through fingerprint verification, the platform allows secure 
+access to bank accounts at registered merchant and agent locations. 
+Designed for agency banking environments, Biomonie connects banks, merchants, and agents on a shared 
+transaction infrastructure that enables customers to access funds conveniently using biometric authentication. 
+Where Biomonie Fits in the Payment Ecosystem 
+Financial services today are delivered through multiple channels including bank branches, ATMs, mobile 
+banking, and agency banking networks. 
+Agency banking platforms such as agent networks allow customers to perform everyday financial transactions 
+through neighborhood merchants and agents using specialized terminals or mobile devices. 
+Biomonie builds on this model by introducing biometric authentication as the primary method of accessing 
+funds, allowing customers to perform transactions securely without using payment cards or entering PINs. 
+Traditional Agency Banking 
+In most agency banking platforms today, customers perform transactions using one of the following: 
+➢ Payment cards 
+➢ Mobile banking transfers 
+➢ USSD transactions 
+➢ Wallet-based authentication 
+While these systems provide access to financial services, they still rely on cards, PINs, or mobile devices for 
+authentication. 
+How Biomonie Works 
+Biomonie enables customers to perform secure transactions through biometric authentication at participating 
+merchant and agent locations. 
+Step 1 — Customer Authentication 
+A customer visits a Biomonie-enabled merchant or agent and scans their fingerprint on the terminal. 
+Step 2 — Account Selection 
+The platform identifies the bank accounts linked to the customer’s biometric identity and displays available 
+options. 
+Step 3 — Transaction Authorization 
+The customer selects the account from which the transaction will be processed. 
+Step 4 — Transaction Completion 
+Biomonie enables customers to access their funds using fingerprint authentication linked directly to their bank 
+account. 
+Instead of presenting a card or entering a PIN, the customer simply scans their fingerprint at a registered 
+Biomonie merchant or agent terminal. The platform identifies the customer’s linked bank account (Biopurse) 
+and allows the transaction to proceed. 
+This provides a cardless and PIN-less way to perform financial transactions within an agency banking network. 
+The transaction is processed through the Biomonie payment scheme and completed instantly. 
+This process removes the need for physical payment cards while maintaining strong identity verification through 
+biometrics. 
+Use Cases 
+Biomonie supports multiple transaction scenarios within agency banking environments. 
+Cash Withdrawals at Agent Locations 
+Customers can withdraw funds from their bank accounts at registered agents without needing a debit card. 
+Fingerprint authentication provides a secure way to authorize the transaction. 
+Merchant Payments 
+Customers can complete payments at participating merchants using biometric authentication instead of cards. 
+Financial Access Through Agent Networks 
+Banks can extend financial services to areas without ATM or branch infrastructure by enabling transactions 
+through authorized agents. 
+Cardless Banking Services 
+Customers who may not have access to payment cards can still perform transactions securely using their 
+biometric identity. 
+Platform Infrastructure 
+Biomonie operates through a structured ecosystem designed to support agency banking operations. 
+Biopurse (Bank Account) 
+Biopurse is a user’s bank account, which is selected for transaction following authentication through Biometrics.  
+Biowallet (Merchant and Agent Wallet) 
+Merchants and agents operate using Biowallet accounts linked to their terminals, enabling them to process 
+customer transactions and manage operational balances. 
+Why Banks and Partners Choose Biomonie 
+Biomonie enables payments beyond traditional banking infrastructure while maintaining operational oversight. 
+Expanded Service Reach 
+Banks can deliver financial services through agent and merchant networks without relying solely on branches or 
+ATMs. 
+Cardless Customer Experience 
+Customers can perform transactions without carrying payment cards or remembering PINs. 
+Secure Biometric Authentication 
+Fingerprint verification provides a strong identity authentication method for customer transactions. 
+Structured Agency Banking Platform 
+Biomonie provides the operational framework required to manage agents, merchants, and transaction activities 
+within the ecosystem. 
+The Biomonie Network 
+Biomonie operates through a distributed ecosystem of participants: 
+Customers 
+Customers authenticate transactions using fingerprint verification linked to their bank account. 
+Agents 
+Agents provide cash-based financial services such as withdrawals and other transactions. 
+Merchants 
+Merchants enable customers to perform payments and other transactions using biometric authentication. 
+Biomonie Platform 
+The platform connects all participants, manages biometric authentication, and routes transactions securely. 
+Expanding Financial Access 
+By removing the need for payment cards and PIN-based authentication, Biomonie simplifies access to financial 
+services through local agents and merchants. 
+Customers can complete transactions quickly using biometric verification, while agents and merchants can serve 
+more customers using a secure and reliable transaction platform. 
+Why Agents and Merchants Join Biomonie 
+Biomonie is designed to support the growth of agent and merchant networks by providing a secure platform for 
+delivering financial services. 
+New Revenue Opportunities 
+Agents and merchants earn commissions from transactions processed through the Biomonie network. 
+Simple Customer Authentication 
+Customers authenticate transactions using fingerprints instead of cards or PINs. 
+Accessible Financial Services 
+Biomonie allows customers to access banking services easily through nearby agents and merchants. 
+Reliable Transaction Platform 
+The platform provides the infrastructure required to securely process biometric transactions. 
+Ready to Join the Biomonie Network? 
+Contact SterlingPRO today to learn how your business can offer biometric-powered financial services as a 
+Biomonie agent or merchant. 
+[Request Demo] | [Contact Sales] 

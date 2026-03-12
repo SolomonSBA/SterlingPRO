@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import suspicious from "../../assets/suspicious.webp"
 import activity from "../../assets/activity.webp"
 import miscellaneous from "../../assets/miscellaneous.webp";
@@ -153,7 +153,7 @@ const IntelliCam: React.FC = () => {
 
   return (
     <div className="bg-white w-full min-h-screen overflow-x-hidden">
-      {/* Hero Section*/}
+      {/* Hero Section – align more closely with PDF */}
       <section className="bg-white px-6 md:px-10 pt-10 pb-20 md:pb-24 w-full">
         <div className="items-center gap-12 md:gap-16 grid grid-cols-1 md:grid-cols-2 w-full">
           <motion.div
@@ -162,14 +162,16 @@ const IntelliCam: React.FC = () => {
             transition={{ duration: 0.8 }}
             className="w-full md:text-left text-center"
           >
-            <h1 className="mb-4 md:mb-6 font-bold text-2xl md:text-4xl text-[#020817] leading-tight">
-             Intelli<span className="text-[#E91E8C]">CAM</span>
+            <p className="inline-flex items-center rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-semibold tracking-wide text-gray-700 uppercase mb-3">
+              ATM MONIT · IntelliCAM
+            </p>
+            <h1 className="mb-3 md:mb-4 font-bold text-2xl md:text-4xl text-[#020817] leading-tight">
+              Intelligent ATM Camera <span className="text-[#E91E8C]">Monitoring</span>
             </h1>
 
-            <h3 className="mb-4 font-bold text-grey text-xl text-[#020817]">ATM Surveillance Solution</h3>
-
-            <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm leading-relaxed">
-              24/7 camera surveillance that does more than ATM monitoring. A smart solution that mitigates fraudulent activities.
+            <p className="mx-auto md:mx-0 mb-6 md:mb-8 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
+              Gain real-time visibility into ATM activity with intelligent cameras that connect surveillance footage directly to
+              transaction events supporting transaction verification and security oversight.
             </p>
 
             <motion.button
@@ -180,6 +182,15 @@ const IntelliCam: React.FC = () => {
             >
               Get Started 
             </motion.button>
+
+            <div className="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
+              <Link
+                to="/products/atm-monit"
+                className="inline-flex items-center justify-center rounded-lg border border-gray-200 px-4 py-2 text-xs font-semibold text-gray-800 hover:border-[#E91E8C]/30 hover:text-[#E91E8C] transition-colors"
+              >
+                Back to ATM MONIT Suite
+              </Link>
+            </div>
           </motion.div>
 
           <motion.div
@@ -208,6 +219,7 @@ const IntelliCam: React.FC = () => {
       </section>
 
        {/* Why Intellicam Section*/}
+      {/* Smarter ATM Surveillance – PDF narrative */}
       <section className="bg-gray-50 px-6 md:px-8 py-20 md:py-24 w-full">
              <div className="items-start gap-12 md:gap-20 grid grid-cols-1 md:grid-cols-2 w-full">
                <motion.div
@@ -233,12 +245,14 @@ const IntelliCam: React.FC = () => {
                  viewport={{ once: true }}
                  className="w-full"
                >
-                 <h2 className="mb-4 font-bold text-xl md:text-3xl text-[#020817]">
-                  Why{" "}
-                   <span className="text-[#E91E8C]"> Intellicam? </span>
-                  
-                 </h2>
-                 <p className="text-grey text-sm">ATM machines are prime targets for criminals. Financial institutions need to stay ahead of them by providing maximum protection across all their ATMs.</p>
+                <h2 className="mb-4 font-bold text-xl md:text-3xl text-[#020817]">
+                  Smarter <span className="text-[#E91E8C]">ATM Surveillance</span>
+                </h2>
+                 <p className="text-grey text-sm md:text-base">
+                  IntelliCAM enables banks to monitor ATM environments through intelligent camera integration that links visual
+                  footage to ATM activity. By providing contextual video records around transactions and customer interactions,
+                  banks can quickly review events and investigate suspicious activity.
+                 </p>
      
                  <div className="space-y-3 md:space-y-0 grid grid-cols-1 md:grid-cols-2">
                    {reasons.map((reason, index) => (
@@ -287,7 +301,7 @@ const IntelliCam: React.FC = () => {
           viewport={{ once: true }}
           className="mt-16 mb-16 text-center"
         >
-          <h2 className="mb-3 font-bold text-lg md:text-4xl">
+          <h2 className="mb-3 font-bold text-lg text-[#020817] md:text-4xl">
            Total {" "}
             <span className="text-[#E91E8C]">ATM Protection</span>
           </h2>

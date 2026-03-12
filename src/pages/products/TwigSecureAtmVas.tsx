@@ -429,7 +429,7 @@ const TwigSecureAtmVas: React.FC = () => {
           <h2 className="font-bold text-gray-900 text-xl md:text-4xl">
             <span className="text-[#E91E8C]">TWIG SECURE ATM VAS  </span>
             <br className="hidden md:block" />
-            is trusted by leading institutions
+            is trusted by leading financial institutions
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-gray-500 text-sm md:text-base">
