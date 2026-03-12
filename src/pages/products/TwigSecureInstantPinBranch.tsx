@@ -21,7 +21,7 @@ const TwigSecureInstantPinBranch: React.FC = () => {
             </p>
             <h1 className="mt-4 mb-4 md:mb-6 font-bold text-2xl md:text-3xl lg:text-4xl text-[#020817] leading-tight">
               Secure PIN Selection with{" "}
-              <span className="text-[#E91E8C]">Teller Assistance</span>
+              <span className="text-[#E91E8C]">Bank Staff Assistance</span>
             </h1>
             <p className="mx-auto md:mx-0 mb-4 max-w-xl text-gray-600 text-sm md:text-lg leading-relaxed">
               TWIG Secure Instant PIN enables customers to securely select or change their payment card PIN within the
@@ -70,6 +70,9 @@ const TwigSecureInstantPinBranch: React.FC = () => {
       <section className="bg-white px-6 md:px-10 py-20 md:py-24">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-7">
+            <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">
+              Branch Workflow
+            </p>
             <h2 className="text-xl md:text-3xl font-bold text-[#020817]">
               Assisted PIN Services at the <span className="text-[#E91E8C]">Branch</span>
             </h2>
@@ -85,16 +88,16 @@ const TwigSecureInstantPinBranch: React.FC = () => {
           </div>
 
           <div className="lg:col-span-5">
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
+            <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-white via-white to-gray-50 p-6 shadow-md">
+              <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78] mb-3">
                 Key Benefits
               </p>
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li>Enables instant PIN setup during branch visits</li>
-                <li>Eliminates reliance on traditional PIN mailers</li>
-                <li>Provides secure PIN entry directly by the customer</li>
-                <li>Allows assisted support from branch staff</li>
-                <li>Ensures real-time PIN updates via the card management system</li>
+              <ul className="space-y-3 text-sm text-gray-700">
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Enables instant PIN setup during branch visits</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Eliminates reliance on traditional PIN mailers</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Provides secure PIN entry directly by the customer</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Allows assisted support from branch staff</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Ensures real-time PIN updates via the card management system</li>
               </ul>
             </div>
           </div>

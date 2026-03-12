@@ -45,8 +45,8 @@ const AtmMonitoring: React.FC = () => {
             <div className="absolute -inset-6 bg-gradient-to-tr from-[#E91E8C]/15 to-transparent blur-2xl rounded-full" />
             <div className="relative bg-white rounded-2xl border border-gray-200 shadow-xl p-6">
               <img src={monitorImg} alt="ATM monitoring" className="w-full h-56 object-contain" />
-              <div className="mt-4 rounded-xl bg-gray-50 border border-gray-200 p-4">
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Proactive ATM Operations Management</p>
+              <div className="mt-4 rounded-xl bg-gradient-to-br from-gray-50 to-white border border-gray-200 p-4 shadow-sm">
+                <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">Proactive ATM Operations Management</p>
                 <p className="mt-2 text-sm text-gray-700 leading-relaxed">
                   Track status, raise alerts, and support proactive management of ATM uptime.
                 </p>
@@ -59,6 +59,9 @@ const AtmMonitoring: React.FC = () => {
       <section className="px-6 md:px-10 py-16 md:py-20">
         <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-10">
           <div className="lg:col-span-7">
+            <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">
+              Real-time Uptime Control
+            </p>
             <h2 className="text-xl md:text-3xl font-bold text-[#020817]">Proactive ATM Operations Management</h2>
             <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
               ATM Monitoring provides banks with real-time insight into the operational health of their ATM infrastructure.
@@ -71,14 +74,14 @@ const AtmMonitoring: React.FC = () => {
             </p>
           </div>
           <div className="lg:col-span-5">
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Why ATM Monitoring Matters</p>
-              <ul className="mt-4 space-y-2 text-sm text-gray-700">
-                <li>Provides real-time visibility into ATM network status</li>
-                <li>Enables early detection of ATM faults and service issues</li>
-                <li>Supports improved ATM uptime and service availability</li>
-                <li>Helps operations teams respond to issues faster</li>
-                <li>Improves overall ATM network performance management</li>
+            <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-white via-white to-gray-50 p-6 shadow-md">
+              <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">Why ATM Monitoring Matters</p>
+              <ul className="mt-4 space-y-3 text-sm text-gray-700">
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Provides real-time visibility into ATM network status</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Enables early detection of ATM faults and service issues</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Supports improved ATM uptime and service availability</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Helps operations teams respond to issues faster</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Improves overall ATM network performance management</li>
               </ul>
             </div>
           </div>

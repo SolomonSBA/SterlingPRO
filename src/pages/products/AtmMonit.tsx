@@ -301,8 +301,8 @@ const AtmMonit: React.FC = () => {
                  <p className="max-w-xl text-gray-600 text-sm leading-relaxed mb-4">The MONIT Suite addresses this by consolidating key ATM monitoring and verification tools into a single platform. This enables banks to monitor ATM availability, review transaction journals, and access relevant camera footage when required — all within a unified environment.</p>
                  <p className="max-w-xl text-gray-600 text-sm leading-relaxed">The result is improved operational efficiency, faster incident investigation, and stronger oversight of ATM activity.</p>
 
-                 <div className="mt-7 rounded-2xl border border-gray-200 bg-white p-5 md:p-6 shadow-sm">
-                   <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">
+                 <div className="mt-7 rounded-2xl border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-5 md:p-6 shadow-md">
+                   <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78] mb-3">
                      What the MONIT Suite Enables
                    </p>
                    <ul className="grid gap-2 text-sm text-gray-700">

@@ -319,8 +319,8 @@ const CardMon: React.FC = () => {
             </ul>
           </div>
           <div className="lg:col-span-5">
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
+            <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-6 shadow-md">
+              <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78] mb-3">
                 Business Impact
               </p>
               <ul className="space-y-2 text-sm text-gray-700">

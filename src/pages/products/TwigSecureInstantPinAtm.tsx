@@ -46,8 +46,10 @@ const TwigSecureInstantPinAtm: React.FC = () => {
             <div className="absolute -inset-6 bg-gradient-to-tr from-[#E91E8C]/15 to-transparent blur-2xl rounded-full" />
             <div className="relative bg-white rounded-2xl border border-gray-200 shadow-xl p-6">
               <img src={atmImg} alt="ATM" className="w-full h-56 object-contain" />
-              <div className="mt-4 rounded-xl bg-gray-50 border border-gray-200 p-4">
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Secure, Flexible and ATM-Ready</p>
+              <div className="mt-4 rounded-xl bg-gradient-to-br from-gray-50 to-white border border-gray-200 p-4 shadow-sm">
+                <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">
+                  Secure, Flexible and ATM-Ready
+                </p>
                 <p className="mt-2 text-sm text-gray-700 leading-relaxed">
                   Designed to integrate easily with your existing ATM infrastructure while maintaining the highest levels of
                   transaction security and reliability.
@@ -61,6 +63,9 @@ const TwigSecureInstantPinAtm: React.FC = () => {
       <section className="px-6 md:px-10 py-16 md:py-20">
         <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-10">
           <div className="lg:col-span-7">
+            <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">
+              ATM Experience
+            </p>
             <h2 className="text-xl md:text-3xl font-bold text-[#020817]">Secure and Convenient ATM PIN Experience</h2>
             <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
               Give customers the freedom to create or change their card PIN instantly at the ATM without visiting a branch.
@@ -70,8 +75,10 @@ const TwigSecureInstantPinAtm: React.FC = () => {
             </p>
           </div>
           <div className="lg:col-span-5">
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Key Benefits for Banks</p>
+            <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-white to-gray-50 p-6 shadow-md">
+              <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">
+                Key Benefits for Banks
+              </p>
               <ul className="mt-4 space-y-3 text-sm text-gray-700">
                 <li>
                   <span className="font-semibold text-gray-900">Enhanced Customer Convenience</span>

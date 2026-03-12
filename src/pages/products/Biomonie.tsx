@@ -50,8 +50,8 @@ const Biomonie: React.FC = () => {
             <div className="absolute -inset-6 bg-gradient-to-tr from-[#E91E8C]/15 to-transparent blur-2xl rounded-full" />
             <div className="relative bg-white rounded-2xl border border-gray-200 shadow-xl p-6">
               <img src={fingerprintImg} alt="Biometric authentication" className="w-full h-56 object-contain" />
-              <div className="mt-4 rounded-xl bg-gray-50 border border-gray-200 p-4">
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              <div className="mt-4 rounded-xl bg-gradient-to-br from-gray-50 to-white border border-gray-200 p-4 shadow-sm">
+                <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">
                   Where Biomonie Fits in the Payment Ecosystem
                 </p>
                 <p className="mt-2 text-sm text-gray-700 leading-relaxed">
@@ -67,6 +67,9 @@ const Biomonie: React.FC = () => {
       <section className="px-6 md:px-10 py-16 md:py-20">
         <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-10">
           <div className="lg:col-span-7">
+            <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">
+              Ecosystem Fit
+            </p>
             <h2 className="text-xl md:text-3xl font-bold text-[#020817]">Where Biomonie Fits in the Payment Ecosystem</h2>
             <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
               Financial services today are delivered through multiple channels including bank branches, ATMs, mobile
@@ -81,16 +84,16 @@ const Biomonie: React.FC = () => {
               funds, allowing customers to perform transactions securely without using payment cards or entering PINs.
             </p>
 
-            <div className="mt-8 rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Traditional Agency Banking</p>
+            <div className="mt-8 rounded-2xl border border-gray-200 bg-gradient-to-br from-white via-white to-gray-50 p-6 shadow-md">
+              <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">Traditional Agency Banking</p>
               <p className="mt-3 text-sm text-gray-700">
                 In most agency banking platforms today, customers perform transactions using one of the following:
               </p>
               <ul className="mt-3 space-y-2 text-sm text-gray-700">
-                <li>Payment cards</li>
-                <li>Mobile banking transfers</li>
-                <li>USSD transactions</li>
-                <li>Wallet-based authentication</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Payment cards</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Mobile banking transfers</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />USSD transactions</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Wallet-based authentication</li>
               </ul>
               <p className="mt-3 text-sm text-gray-700">
                 While these systems provide access to financial services, they still rely on cards, PINs, or mobile devices for
@@ -100,8 +103,8 @@ const Biomonie: React.FC = () => {
           </div>
 
           <div className="lg:col-span-5">
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">How Biomonie Works</p>
+            <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-white via-white to-gray-50 p-6 shadow-md">
+              <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">How Biomonie Works</p>
               <p className="mt-4 text-sm text-gray-700">
                 Biomonie enables customers to perform secure transactions through biometric authentication at participating
                 merchant and agent locations.
@@ -137,6 +140,9 @@ const Biomonie: React.FC = () => {
       <section className="px-6 md:px-10 py-16 md:py-20 bg-gray-50">
         <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-10">
           <div className="lg:col-span-7">
+            <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">
+              Transaction Scenarios
+            </p>
             <h2 className="text-xl md:text-3xl font-bold text-[#020817]">Use Cases</h2>
             <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
               Biomonie supports multiple transaction scenarios within agency banking environments.
@@ -160,7 +166,7 @@ const Biomonie: React.FC = () => {
                   body: 'Customers who may not have access to payment cards can still perform transactions securely using their biometric identity.',
                 },
               ].map((c) => (
-                <div key={c.title} className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+                <div key={c.title} className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all">
                   <p className="font-semibold text-gray-900">{c.title}</p>
                   <p className="mt-2 text-sm text-gray-700 leading-relaxed">{c.body}</p>
                 </div>
@@ -169,20 +175,20 @@ const Biomonie: React.FC = () => {
           </div>
 
           <div className="lg:col-span-5">
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Platform Infrastructure</p>
+            <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-white via-white to-gray-50 p-6 shadow-md">
+              <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">Platform Infrastructure</p>
               <p className="mt-4 text-sm text-gray-700 leading-relaxed">
                 Biomonie operates through a structured ecosystem designed to support agency banking operations.
               </p>
               <div className="mt-5 space-y-4">
-                <div className="rounded-xl bg-gray-50 border border-gray-200 p-4">
+                <div className="rounded-xl bg-white border border-gray-200 p-4 shadow-sm">
                   <p className="font-semibold text-gray-900 text-sm">Biopurse (Bank Account)</p>
                   <p className="mt-1 text-sm text-gray-700">
                     Biopurse is a user’s bank account, which is selected for transaction following authentication through
                     Biometrics.
                   </p>
                 </div>
-                <div className="rounded-xl bg-gray-50 border border-gray-200 p-4">
+                <div className="rounded-xl bg-white border border-gray-200 p-4 shadow-sm">
                   <p className="font-semibold text-gray-900 text-sm">Biowallet (Merchant and Agent Wallet)</p>
                   <p className="mt-1 text-sm text-gray-700">
                     Merchants and agents operate using Biowallet accounts linked to their terminals, enabling them to process
@@ -198,6 +204,9 @@ const Biomonie: React.FC = () => {
       <section className="px-6 md:px-10 py-16 md:py-20">
         <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-10">
           <div className="lg:col-span-7">
+            <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">
+              Partner Value
+            </p>
             <h2 className="text-xl md:text-3xl font-bold text-[#020817]">Why Banks and Partners Choose Biomonie</h2>
             <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed">
               Biomonie enables payments beyond traditional banking infrastructure while maintaining operational oversight.
@@ -223,12 +232,12 @@ const Biomonie: React.FC = () => {
             </div>
           </div>
           <div className="lg:col-span-5">
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">The Biomonie Network</p>
-              <ul className="mt-4 space-y-2 text-sm text-gray-700">
-                <li>Customers authenticate transactions using fingerprint verification linked to their bank account.</li>
-                <li>Agents provide cash-based financial services such as withdrawals and other transactions.</li>
-                <li>Merchants enable customers to perform payments and other transactions using biometric authentication.</li>
+            <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-white via-white to-gray-50 p-6 shadow-md">
+              <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">The Biomonie Network</p>
+              <ul className="mt-4 space-y-3 text-sm text-gray-700">
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Customers authenticate transactions using fingerprint verification linked to their bank account.</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Agents provide cash-based financial services such as withdrawals and other transactions.</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Merchants enable customers to perform payments and other transactions using biometric authentication.</li>
                 <li>
                   The platform connects all participants, manages biometric authentication, and routes transactions securely.
                 </li>

@@ -45,8 +45,8 @@ const TwigSecureInstantPinMobileInternet: React.FC = () => {
             <div className="absolute -inset-6 bg-gradient-to-tr from-[#E91E8C]/15 to-transparent blur-2xl rounded-full" />
             <div className="relative bg-white rounded-2xl border border-gray-200 shadow-xl p-6">
               <img src={mobileImg} alt="Mobile and internet banking" className="w-full h-56 object-contain" />
-              <div className="mt-4 rounded-xl bg-gray-50 border border-gray-200 p-4">
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+              <div className="mt-4 rounded-xl bg-gradient-to-br from-gray-50 to-white border border-gray-200 p-4 shadow-sm">
+                <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">
                   Self-Service PIN Management Within Digital Banking
                 </p>
                 <p className="mt-2 text-sm text-gray-700 leading-relaxed">
@@ -61,6 +61,9 @@ const TwigSecureInstantPinMobileInternet: React.FC = () => {
       <section className="px-6 md:px-10 py-16 md:py-20">
         <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-10">
           <div className="lg:col-span-7">
+            <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">
+              Digital Banking Journey
+            </p>
             <h2 className="text-xl md:text-3xl font-bold text-[#020817]">
               Self-Service PIN Management Within Digital Banking
             </h2>
@@ -77,14 +80,14 @@ const TwigSecureInstantPinMobileInternet: React.FC = () => {
             </p>
           </div>
           <div className="lg:col-span-5">
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Benefits for your Banking Systems</p>
-              <ul className="mt-4 space-y-2 text-sm text-gray-700">
-                <li>Enables secure self-service PIN control within digital banking</li>
-                <li>Reduces the need for ATM or branch-based PIN services</li>
-                <li>Supports existing bank authentication mechanisms</li>
-                <li>Provides real-time PIN updates to the card management system</li>
-                <li>Improves customer convenience across digital channels</li>
+            <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-white via-white to-gray-50 p-6 shadow-md">
+              <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">Benefits for your Banking Systems</p>
+              <ul className="mt-4 space-y-3 text-sm text-gray-700">
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Enables secure self-service PIN control within digital banking</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Reduces the need for ATM or branch-based PIN services</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Supports existing bank authentication mechanisms</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Provides real-time PIN updates to the card management system</li>
+                <li className="flex gap-2"><span className="mt-1.5 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />Improves customer convenience across digital channels</li>
               </ul>
             </div>
           </div>

@@ -1,34 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
-
-const SAMPLE_TRANSACTIONS = [
-  { amount: '₦485,000', channel: 'TWIG Secure ATM' },
-  { amount: '₦1.2M', channel: 'TWIG Secure POS' },
-  { amount: '₦250,000', channel: 'Biometric Payments' },
-  { amount: '₦780,000', channel: 'TWIG Secure ATM' },
-  { amount: '₦95,000', channel: 'Instant PIN' },
-];
+import { ArrowRight } from 'lucide-react';
 
 const TransactAtScale: React.FC = () => {
-  const [txIndex, setTxIndex] = useState(0);
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setTxIndex((i) => (i + 1) % SAMPLE_TRANSACTIONS.length);
-    }, 4000);
-    return () => clearInterval(id);
-  }, []);
-
   const stats = [
     { value: '₦1B+', label: 'In Transactions Processed' },
     { value: '17+', label: 'Bank Partners' },
     { value: '312M+', label: 'Monthly Txns' },
     { value: '10K+', label: 'ATMs Powered' },
   ];
-
-  const currentTx = SAMPLE_TRANSACTIONS[txIndex];
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50/80 pt-24 pb-16 md:pt-28 md:pb-20">
@@ -68,37 +49,13 @@ const TransactAtScale: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Right: Latest Transaction + Stats */}
+          {/* Right: Stats only */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="lg:col-span-5 space-y-6"
+            className="lg:col-span-5"
           >
-            {/* Latest Transaction card – cycles so the same figure isn’t always shown */}
-            <div className="bg-white rounded-2xl border border-gray-200 shadow-lg p-5 md:p-6 min-h-[120px]">
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">
-                Latest Transaction
-              </p>
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={txIndex}
-                  initial={{ opacity: 0, y: 6 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -6 }}
-                  transition={{ duration: 0.25 }}
-                >
-                  <p className="text-2xl md:text-3xl font-bold text-gray-900">{currentTx.channel}</p>
-                  <p className="mt-1 flex items-center gap-2 text-sm text-gray-600">
-                    <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
-                     Approved 
-                    {/* Approved · {currentTx.channel} */}
-                  </p>
-                </motion.div>
-              </AnimatePresence>
-            </div>
-
-            {/* Stats grid */}
             <div className="grid grid-cols-2 gap-3 md:gap-4">
               {stats.map((stat, index) => (
                 <div
