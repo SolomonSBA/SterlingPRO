@@ -20,12 +20,10 @@ export type ContactFormData = {
 
 export async function submitContactForm(data: ContactFormData): Promise<{ ok: boolean; error?: string }> {
   const apiUrl = getContactApiUrl();
-  if (!apiUrl) {
-    console.warn('VITE_CONTACT_API_URL not set; contact form will not send.');
-    return { ok: false, error: 'Contact form not configured' };
-  }
+  // Fallback to same-origin so deployments and local proxy keep working even if env var is missing.
+  const baseUrl = apiUrl ?? '';
   try {
-    const res = await fetch(`${apiUrl}/contact`, {
+    const res = await fetch(`${baseUrl}/contact`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

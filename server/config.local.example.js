@@ -3,9 +3,9 @@
  * On SmarterASP, .env may be stripped; use this or put values in FALLBACK in server.js.
  */
 module.exports = {
-  SMTP_HOST: 'mail.sterlingprong.com',
+  SMTP_HOST: 'mail5013.site4now.net',
   SMTP_PORT: '587',
-  SMTP_USER: 'info@sterlingprong.com',
+  SMTP_USER: 'info@encryptkey.co.uk',
   SMTP_PASS: 'your-smtp-password',
-  CONTACT_TO_EMAIL: 'info@sterlingprong.com',
+  CONTACT_TO_EMAIL: 'contact@sterlingprong.com',
 };

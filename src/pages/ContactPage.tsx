@@ -133,7 +133,7 @@ const ContactPage: React.FC = () => {
 
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <motion.a
-                href="mailto:info@sterlingprong.com"
+                href="mailto:contact@sterlingprong.com"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -144,7 +144,7 @@ const ContactPage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Email</h3>
                 <p className="text-gray-600 mb-4">Interested in our product or services?</p>
-                <p className="text-[#D80369] font-medium">info@sterlingprong.com</p>
+                <p className="text-[#D80369] font-medium">contact@sterlingprong.com</p>
               </motion.a>
 
               <motion.a
@@ -211,7 +211,7 @@ const ContactPage: React.FC = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#D80369] focus:border-transparent transition-all outline-none"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 placeholder:text-gray-500 focus:ring-2 focus:ring-[#D80369] focus:border-transparent transition-all outline-none"
                         placeholder="Your name"
                       />
                     </div>
@@ -226,7 +226,7 @@ const ContactPage: React.FC = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#D80369] focus:border-transparent transition-all outline-none"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 placeholder:text-gray-500 focus:ring-2 focus:ring-[#D80369] focus:border-transparent transition-all outline-none"
                         placeholder="your@email.com"
                       />
                     </div>
@@ -243,7 +243,7 @@ const ContactPage: React.FC = () => {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#D80369] focus:border-transparent transition-all outline-none"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 placeholder:text-gray-500 focus:ring-2 focus:ring-[#D80369] focus:border-transparent transition-all outline-none"
                         placeholder="Your company"
                       />
                     </div>
@@ -256,7 +256,7 @@ const ContactPage: React.FC = () => {
                         name="product"
                         value={formData.product}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#D80369] focus:border-transparent transition-all outline-none bg-white"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 focus:ring-2 focus:ring-[#D80369] focus:border-transparent transition-all outline-none bg-white"
                       >
                         <option value="">Select a Product</option>
                         {products.map(product => (
@@ -277,7 +277,7 @@ const ContactPage: React.FC = () => {
                         name="location"
                         value={formData.location}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#D80369] focus:border-transparent transition-all outline-none"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 placeholder:text-gray-500 focus:ring-2 focus:ring-[#D80369] focus:border-transparent transition-all outline-none"
                         placeholder="Your location"
                       />
                     </div>
@@ -290,7 +290,7 @@ const ContactPage: React.FC = () => {
                         name="industry"
                         value={formData.industry}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#D80369] focus:border-transparent transition-all outline-none bg-white"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 focus:ring-2 focus:ring-[#D80369] focus:border-transparent transition-all outline-none bg-white"
                       >
                         <option value="">Select Your Industry</option>
                         {industries.map(industry => (
@@ -311,7 +311,7 @@ const ContactPage: React.FC = () => {
                       onChange={handleChange}
                       rows={5}
                       required
-                      className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#D80369] focus:border-transparent transition-all outline-none resize-none"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-300 text-gray-900 placeholder:text-gray-500 focus:ring-2 focus:ring-[#D80369] focus:border-transparent transition-all outline-none resize-none"
                       placeholder="Tell us about your needs..."
                     />
                   </div>

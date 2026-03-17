@@ -105,8 +105,8 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-[#E91E8C] flex-shrink-0" />
-                <a href="mailto:info@sterlingprong.com" className="hover:text-[#E91E8C] transition-colors">
-                  info@sterlingprong.com
+                <a href="mailto:contact@sterlingprong.com" className="hover:text-[#E91E8C] transition-colors">
+                  contact@sterlingprong.com
                 </a>
               </div>
             </div>

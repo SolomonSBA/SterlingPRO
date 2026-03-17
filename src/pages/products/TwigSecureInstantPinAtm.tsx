@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import atmImg from '../../assets/atm.png';
+import atmImg from '../../assets/twig-instantpin-4.jpg';
 
 const TwigSecureInstantPinAtm: React.FC = () => {
   return (
@@ -45,7 +45,11 @@ const TwigSecureInstantPinAtm: React.FC = () => {
           >
             <div className="absolute -inset-6 bg-gradient-to-tr from-[#E91E8C]/15 to-transparent blur-2xl rounded-full" />
             <div className="relative bg-white rounded-2xl border border-gray-200 shadow-xl p-6">
-              <img src={atmImg} alt="ATM" className="w-full h-56 object-contain" />
+              <img
+                src={atmImg}
+                alt="ATM PIN selection experience"
+                className="w-full h-56 md:h-64 object-cover rounded-xl"
+              />
               <div className="mt-4 rounded-xl bg-gradient-to-br from-gray-50 to-white border border-gray-200 p-4 shadow-sm">
                 <p className="inline-flex items-center rounded-full bg-[#E91E8C]/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#C41A78]">
                   Secure, Flexible and ATM-Ready
