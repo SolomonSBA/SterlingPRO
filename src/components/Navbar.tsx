@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Menu, X, ChevronRight } from 'lucide-react';
+import logo from "../assets/Sterling-pro-logo-1-01-1-768x129.png";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -96,7 +97,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex flex-shrink-0 items-center">
             <img
-              src="https://sterlingprong.com/wp-content/uploads/2022/12/Sterling-pro-logo-1-01-1-768x129.png"
+              src={logo}
               alt="SterlingPRO Business Applications"
               className="w-auto h-8 sm:h-9 md:h-10 lg:h-11"
             />

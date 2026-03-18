@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import bgMesh from "../assets/bg-mesh.svg";
 
 const TransactAtScale: React.FC = () => {
   const stats = [
@@ -13,7 +14,7 @@ const TransactAtScale: React.FC = () => {
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50/80 pt-24 pb-16 md:pt-28 md:pb-20">
-      <div className="absolute inset-0 bg-[url('https://sterlingprong.com/wp-content/uploads/2023/01/bg-mesh.svg')] opacity-[0.07] bg-cover" aria-hidden />
+      <div className="absolute inset-0 opacity-[0.07] bg-cover" style={{ backgroundImage: `url(${bgMesh})` }} aria-hidden />
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
           {/* Left: Headline + copy + CTAs */}

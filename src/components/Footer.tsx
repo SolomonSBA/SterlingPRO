@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Linkedin, Twitter, Instagram, MapPin, Phone, Mail } from 'lucide-react';
+import logo from "../assets/Sterling-pro-logo-1-01-1-300x50.png";
 
 const Footer: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const Footer: React.FC = () => {
           >
             <Link to="/" className="inline-block mb-6">
               <img
-                src="https://sterlingprong.com/wp-content/uploads/2022/12/Sterling-pro-logo-1-01-1-300x50.png"
+                src={logo}
                 alt="SterlingPRO Business Applications"
                 className="h-8 w-auto"
               />

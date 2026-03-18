@@ -12,6 +12,19 @@ import headphones from "../assets/headphones-1.png";
 import discount from "../assets/discount-1.png";
 import shieldDone from "../assets/Shield-Done.png";
 import technology from "../assets/technology.png";
+import bgMesh from "../assets/bg-mesh.svg";
+import rectangleEdited from "../assets/Rectangle-3-_1_-Edited.webp";
+import group22 from "../assets/Group-22-2-Edited-1.png";
+import group21 from "../assets/Group-21-1-Edited.png";
+import group49 from "../assets/Group-49-1-e1676245917851.png";
+import pos20 from "../assets/pos_20-jpg.webp";
+import bio from "../assets/bio-jpg.webp";
+import img111 from "../assets/img-1-1-1.png";
+import unionCheck from "../assets/Union.svg";
+import img131 from "../assets/img-1-3-1.png";
+import jaizLogo from "../assets/jaiz-bank-logo-05B7DAAFDD-seeklogo-1.png";
+import staticIbct from "../assets/STATIC-IBCT-165.svg";
+import screenshot7 from "../assets/Screenshot_7-jpg.webp";
 
 const TwigSecure = () => {
   const fadeInUp = {
@@ -116,7 +129,7 @@ const TwigSecure = () => {
         {/* Background mesh pattern */}
         <div className="absolute inset-0 opacity-30">
           <img 
-            src="https://sterlingprong.com/wp-content/uploads/2023/01/bg-mesh.svg" 
+            src={bgMesh}
             alt="Background"
             className="absolute w-full h-full object-cover"
           />
@@ -173,7 +186,7 @@ const TwigSecure = () => {
               variants={fadeInRight}
             >
               <motion.img
-                src="https://sterlingprong.com/wp-content/uploads/2023/02/Rectangle-3-_1_-Edited.webp"
+                src={rectangleEdited}
                 alt="Twig Secure Dashboard"
                 className="shadow-2xl rounded-2xl w-full"
                 whileHover={{ scale: 1.02 }}
@@ -182,7 +195,7 @@ const TwigSecure = () => {
               
               {/* Floating images */}
               <motion.img
-                src="https://sterlingprong.com/wp-content/uploads/2023/02/Group-22-2-Edited-1.png"
+                src={group22}
                 alt="Feature 1"
                 className="-bottom-8 -left-8 absolute shadow-xl rounded-xl w-32 lg:w-48"
                 animate={{ 
@@ -196,7 +209,7 @@ const TwigSecure = () => {
               />
               
               <motion.img
-                src="https://sterlingprong.com/wp-content/uploads/2023/02/Group-21-1-Edited.png"
+                src={group21}
                 alt="Feature 2"
                 className="-top-8 -right-8 absolute shadow-xl rounded-xl w-32 lg:w-48"
                 animate={{ 
@@ -226,7 +239,7 @@ const TwigSecure = () => {
               variants={fadeInLeft}
             >
               <img
-                src="https://sterlingprong.com/wp-content/uploads/2023/02/Group-49-1-e1676245917851.png"
+                src={group49}
                 alt="Convenient Banking"
                 className="mx-auto w-full max-w-md"
               />
@@ -282,7 +295,7 @@ const TwigSecure = () => {
             >
               <div className="flex justify-center items-center bg-gradient-to-br from-pink-50 to-purple-50 aspect-video">
                 <img
-                  src="https://sterlingprong.com/wp-content/uploads/2023/02/pos_20-jpg.webp"
+                  src={pos20}
                   alt="POS Teller"
                   className="w-30 h-30 object-cover"
                 />
@@ -308,7 +321,7 @@ const TwigSecure = () => {
             >
               <div className="flex justify-center items-center bg-gradient-to-br from-blue-50 to-indigo-50 aspect-video">
                 <img
-                  src="https://sterlingprong.com/wp-content/uploads/2023/02/bio-jpg.webp"
+                  src={bio}
                   alt="FASTRANX"
                   className="w-30 h-30 object-cover"
                 />
@@ -337,7 +350,7 @@ const TwigSecure = () => {
               variants={fadeInLeft}
             >
               <img
-                src="https://sterlingprong.com/wp-content/uploads/2023/01/img-1-1-1.png"
+                src={img111}
                 alt="Customer Delight"
                 className="mx-auto w-full max-w-lg"
               />
@@ -400,7 +413,7 @@ const TwigSecure = () => {
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
                     <img 
-                      src="https://sterlingprong.com/wp-content/uploads/2023/01/Union.svg" 
+                      src={unionCheck}
                       alt="Check"
                       className="w-6 h-6"
                     />
@@ -441,7 +454,7 @@ const TwigSecure = () => {
               </div>
               <div>
                 <img
-                  src="https://sterlingprong.com/wp-content/uploads/2023/01/img-1-3-1.png"
+                  src={img131}
                   alt="Flexible Product"
                   className="ml-auto w-full max-w-md"
                 />
@@ -502,21 +515,21 @@ const TwigSecure = () => {
             variants={staggerContainer}
           >
             <motion.img
-              src="https://sterlingprong.com/wp-content/uploads/2023/01/jaiz-bank-logo-05B7DAAFDD-seeklogo-1.png"
+              src={jaizLogo}
               alt="Jaiz Bank"
               className="opacity-70 hover:opacity-100 grayscale hover:grayscale-0 h-12 transition-all"
               variants={fadeInUp}
               whileHover={{ scale: 1.1 }}
             />
             <motion.img
-              src="https://sterlingprong.com/wp-content/uploads/2023/01/STATIC-IBCT-165.svg"
+              src={staticIbct}
               alt="Heritage Bank"
               className="opacity-70 hover:opacity-100 grayscale hover:grayscale-0 h-12 transition-all"
               variants={fadeInUp}
               whileHover={{ scale: 1.1 }}
             />
             <motion.img
-              src="https://sterlingprong.com/wp-content/uploads/2023/02/Screenshot_7-jpg.webp"
+              src={screenshot7}
               alt="Providus Bank"
               className="opacity-70 hover:opacity-100 grayscale hover:grayscale-0 h-12 transition-all"
               variants={fadeInUp}
@@ -530,7 +543,7 @@ const TwigSecure = () => {
       <section className="relative bg-[#E91E8C] py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img 
-            src="https://sterlingprong.com/wp-content/uploads/2023/01/bg-mesh.svg" 
+            src={bgMesh}
             alt="Background"
             className="w-full h-full object-cover"
           />

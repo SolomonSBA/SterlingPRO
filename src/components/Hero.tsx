@@ -1,10 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import heroImage from "../assets/home-page-image.png";
 
 const Hero: React.FC = () => {
-  // Source: sterlingprong.com home hero
-  const heroImage = "https://sterlingprong.com/wp-content/uploads/2023/02/home-page-image.png";
-
   return (
     <section className="relative min-h-screen pt-20 overflow-hidden bg-gradient-to-br from-white via-white to-pink-50/30">
       {/* Background Decorations */}

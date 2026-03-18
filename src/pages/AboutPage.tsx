@@ -19,13 +19,6 @@ const stagger: Variants = {
 };
 
 const AboutPage: React.FC = () => {
-  const teamMembers = [
-    // { name: 'John Doe', role: 'Chief Executive Officer', image: 'https://d64gsuwffb70l.cloudfront.net/697f7ac71d12f67dac85b673_1769962402937_0a994ecb.png' },
-    // { name: 'Jane Smith', role: 'Chief Technology Officer', image: 'https://d64gsuwffb70l.cloudfront.net/697f7ac71d12f67dac85b673_1769962408805_0fcc1a40.png' },
-    // { name: 'Michael Johnson', role: 'Chief Operations Officer', image: 'https://d64gsuwffb70l.cloudfront.net/697f7ac71d12f67dac85b673_1769962401061_b7e9c925.jpg' },
-    // { name: 'Sarah Williams', role: 'Chief Financial Officer', image: 'https://d64gsuwffb70l.cloudfront.net/697f7ac71d12f67dac85b673_1769962404623_8e949876.png' },
-  ];
-
   const coreValues = [
     { icon: TrendingUp, title: 'Continuous Improvement', description: 'We continuously improve products, processes, and the services we provide.' },
     { icon: Users, title: 'Rolling Up our Sleeves', description: 'We dive in head first to get work done and solve problems no matter what it takes.' },
