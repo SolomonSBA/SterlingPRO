@@ -147,7 +147,7 @@ const TwigSecureAtmVas: React.FC = () => {
 
   const partners = [
     { name: "GTBank", logo: "/src/assets/GTBank-logo.png" },
-    { name: "Uba Bank", logo: "/src/assets/Uba-Bank-logo.webp" },
+    { name: "Uba Bank", logo: "/src/assets/Uba-bank-logo.webp" },
   ];
 
   return (

@@ -170,7 +170,7 @@ const AtmMonit: React.FC = () => {
     { name: "Access Bank", logo: "/src/assets/access-bank-logo.png" },
     { name: "FCMB", logo: "/src/assets/FCMB-logo.png" },
     { name: "Fidelity", logo: "/src/assets/fidelity-logo.png" },{ name: "GTBank", logo: "/src/assets/GTBank-logo.png" },
-    { name: "Polaris Bank", logo: "/src/assets/Polaris-Bank-logo.png" },
+    { name: "Polaris Bank", logo: "/src/assets/Polaris-bank-logo.png" },
   ];
 
   return (

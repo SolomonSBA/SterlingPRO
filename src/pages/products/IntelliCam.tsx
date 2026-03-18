@@ -141,7 +141,7 @@ const IntelliCam: React.FC = () => {
     { name: "GTBank", logo: "/src/assets/GTBank-logo.png" },
     { name: "Zenith Bank", logo: "/src/assets/Zenith-Bank-logo.png" },
     { name: "First Bank", logo: "/src/assets/first-bank-logo.png"},
-    { name: "Polaris Bank", logo: "/src/assets/Polaris-Bank-logo.png" },
+    { name: "Polaris Bank", logo: "/src/assets/Polaris-bank-logo.png" },
     { name: "Stanbic IBTC", logo: "/src/assets/Stanbic-logo.webp" },
      { name: "Fidelity", logo: "/src/assets/fidelity-logo.png" },
      { name: "Sterling Bank", logo: "/src/assets/Sterling-Bank-logo.png" },

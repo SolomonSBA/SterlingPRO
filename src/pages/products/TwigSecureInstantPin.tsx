@@ -148,14 +148,14 @@ const TwigSecureInstantPin: React.FC = () => {
   { name: "Wema Bank", logo: "/src/assets/wema-logo.jpg" },
   { name: "FCMB", logo: "/src/assets/FCMB-logo.png" },
   { name: "Zenith Bank", logo: "/src/assets/Zenith-Bank-logo.png" },
-  { name: "Polaris Bank", logo: "/src/assets/Polaris-Bank-logo.png" },
-  { name: "Taj Bank", logo: "/src/assets/Taj-Bank-logo.png", size: "2xl" },
+  { name: "Polaris Bank", logo: "/src/assets/Polaris-bank-logo.png" },
+  { name: "Taj Bank", logo: "/src/assets/Taj-bank-logo.png", size: "2xl" },
   { name: "Heritage Bank", logo: "/src/assets/heritage-bank-logo.png" },
   { name: "Jaiz Bank", logo: "/src/assets/jaiz-logo.jpg" },
   { name: "Stanbic IBTC", logo: "/src/assets/Stanbic-logo.webp" },
   { name: "Sterling Bank", logo: "/src/assets/Sterling-Bank-logo.png" },
   { name: "Skye Bank", logo: "/src/assets/skye-bank-logo.webp", size: "2xl" },
-  { name: "Uba Bank", logo: "/src/assets/Uba-Bank-logo.webp" },
+  { name: "Uba Bank", logo: "/src/assets/Uba-bank-logo.webp" },
 ];
 
   return (
